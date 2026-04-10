@@ -39,18 +39,25 @@ We provide impartial motorhome insurance comparisons across leading NZ providers
 - /types/rental-excess — Rental Excess Reduction: reduces excess on rental motorhome policies
 
 ### SEO Landing Pages (/motorhome-insurance/)
-- /motorhome-insurance/cheap-motorhome-insurance-nz — Budget motorhome insurance options
-- /motorhome-insurance/compare-motorhome-insurance-nz — How to compare motorhome insurance
-- /motorhome-insurance/motorhome-insurance-cost-nz — Cost guide for NZ motorhome insurance
-- /motorhome-insurance/campervan-insurance-nz — Campervan-specific insurance information
-- /motorhome-insurance/best-motorhome-insurance-nz — Top-rated NZ motorhome insurers
-- /motorhome-insurance/motorhome-hire-insurance-nz — Insurance for hired/rented motorhomes
-- /motorhome-insurance/motorhome-insurance-auckland — Auckland-specific motorhome insurance
-- /motorhome-insurance/motorhome-insurance-wellington — Wellington-specific motorhome insurance
-- /motorhome-insurance/motorhome-insurance-christchurch — Christchurch-specific motorhome insurance
-- /motorhome-insurance/self-contained-motorhome-insurance-nz — Self-contained motorhome certification and insurance
-- /motorhome-insurance/imported-motorhome-insurance-nz — Insurance for Japanese and overseas imports
-- /motorhome-insurance/luxury-motorhome-insurance-nz — High-value and luxury motorhome cover
+- /motorhome-insurance/compare-motorhome-insurance-nz — How to compare motorhome insurance providers in NZ
+- /motorhome-insurance/best-motorhome-insurance-nz — Top-rated NZ motorhome insurers reviewed
+- /motorhome-insurance/cheap-motorhome-insurance-nz — Budget motorhome insurance without sacrificing cover
+- /motorhome-insurance/motorhome-insurance-cost-nz — Cost guide and premium factors for NZ motorhome insurance
+- /motorhome-insurance/campervan-insurance-nz — Campervan-specific insurance information and quotes
+- /motorhome-insurance/caravan-insurance-nz — Caravan insurance in NZ: compare providers for caravans and motorhomes
+- /motorhome-insurance/rv-insurance-nz — RV insurance in NZ: recreational vehicle cover explained
+- /motorhome-insurance/nzmca-insurance-nz — NZMCA insurance comparison: Covi vs alternatives
+- /motorhome-insurance/freedom-camping-insurance-nz — Insurance for freedom camping under the NZ Freedom Camping Act 2011
+- /motorhome-insurance/self-contained-motorhome-insurance-nz — Self-contained motorhome certification and insurance requirements
+- /motorhome-insurance/imported-motorhome-insurance-nz — Insurance for Japanese and overseas motorhome imports
+- /motorhome-insurance/luxury-motorhome-insurance-nz — High-value and luxury motorhome specialist cover
+- /motorhome-insurance/motorhome-hire-insurance-nz — Insurance for hired and rented motorhomes in NZ
+- /motorhome-insurance/motorhome-insurance-auckland — Auckland motorhome insurance: quotes and providers
+- /motorhome-insurance/motorhome-insurance-wellington — Wellington motorhome insurance: quotes and providers
+- /motorhome-insurance/motorhome-insurance-christchurch — Christchurch motorhome insurance: quotes and providers
+- /motorhome-insurance/motorhome-insurance-hamilton — Hamilton and Waikato motorhome insurance
+- /motorhome-insurance/motorhome-insurance-dunedin — Dunedin and Otago motorhome insurance
+- /motorhome-insurance/motorhome-insurance-queenstown — Queenstown and Southland motorhome insurance for adventure travellers
 
 ### Blog Posts (/blog/)
 - /blog/complete-guide-motorhome-insurance-nz — The Complete Guide to Motorhome Insurance in NZ (2025)

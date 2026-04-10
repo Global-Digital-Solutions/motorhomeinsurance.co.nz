@@ -1,9 +1,39 @@
 import { Phone, Mail, Clock, Shield, CheckCircle, Zap, Lock, Users } from 'lucide-react';
 import QuoteForm from '@/components/QuoteForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   title: 'Contact MotorHomeInsurance.co.nz | Get a Free Quote',
   description: 'Contact our NZ motorhome insurance brokers. Phone 09 885 9549, email hello@cover4you.co.nz, or fill out our quick quote form for a free comparison.',
+};
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+  { name: 'Contact', url: 'https://motorhomeinsurance.co.nz/contact' }
+];
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MotorHomeInsurance.co.nz",
+  "url": "https://motorhomeinsurance.co.nz",
+  "telephone": "+64-9-885-9549",
+  "email": "hello@cover4you.co.nz",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+64-9-885-9549",
+    "contactType": "Customer Service"
+  },
+  "areaServed": "NZ",
+  "priceRange": "Free"
+};
+
+const contactPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact MotorHomeInsurance.co.nz",
+  "url": "https://motorhomeinsurance.co.nz/contact",
+  "description": "Get a free motorhome insurance quote or contact our NZ brokers"
 };
 
 const usps = [
@@ -18,6 +48,9 @@ const usps = [
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
       {/* Hero + Form Above Fold */}
       <section
         className="relative min-h-[92vh] flex items-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16"

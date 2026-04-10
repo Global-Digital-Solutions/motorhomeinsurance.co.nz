@@ -3,6 +3,7 @@ import { blogPosts } from '@/data/blog-posts';
 import QuoteForm from '@/components/QuoteForm';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const dynamicParams = false;
 
@@ -31,21 +32,37 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     notFound();
   }
 
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+    { name: 'Blog', url: 'https://motorhomeinsurance.co.nz/blog' },
+    { name: post.title, url: `https://motorhomeinsurance.co.nz/blog/${slug}` }
+  ];
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     image: post.image,
     datePublished: post.date,
+    dateModified: post.date,
     author: {
       '@type': 'Organization',
       name: post.author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MotorHomeInsurance.co.nz',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://motorhomeinsurance.co.nz/logo.png',
+      },
     },
     description: post.excerpt,
   };
 
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
       {/* JSON-LD Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

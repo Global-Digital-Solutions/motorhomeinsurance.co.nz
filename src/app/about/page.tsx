@@ -1,10 +1,51 @@
 import Link from 'next/link';
 import { ShieldCheck, Heart, Users, Zap, MapPin, Clock } from 'lucide-react';
 import QuoteForm from '@/components/QuoteForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   title: 'About MotorHomeInsurance.co.nz | NZ Motorhome Insurance',
   description: 'Learn about MotorHomeInsurance.co.nz. Connecting Kiwis with the right motorhome insurance through impartial quotes and trusted broker partnerships.',
+};
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+  { name: 'About Us', url: 'https://motorhomeinsurance.co.nz/about' }
+];
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MotorHomeInsurance.co.nz",
+  "url": "https://motorhomeinsurance.co.nz",
+  "logo": "https://motorhomeinsurance.co.nz/logo.png",
+  "description": "NZ motorhome insurance comparison service connecting Kiwis with the right coverage.",
+  "sameAs": [
+    "https://www.nzmca.org.nz",
+    "https://www.icnz.org.nz"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+64-9-885-9549",
+    "contactType": "Customer Service",
+    "areaServed": "NZ"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NZ"
+  }
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MotorHomeInsurance.co.nz",
+  "image": "https://motorhomeinsurance.co.nz/logo.png",
+  "description": "Motorhome insurance comparison service in New Zealand",
+  "url": "https://motorhomeinsurance.co.nz",
+  "telephone": "+64-9-885-9549",
+  "areaServed": "NZ",
+  "priceRange": "Free comparisons"
 };
 
 export default function AboutPage() {
@@ -28,6 +69,9 @@ export default function AboutPage() {
 
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       {/* Hero Section */}
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"

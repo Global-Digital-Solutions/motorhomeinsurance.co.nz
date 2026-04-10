@@ -4,6 +4,12 @@ import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { faqs } from '@/data/faqs';
 import QuoteForm from '@/components/QuoteForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+  { name: 'FAQs', url: 'https://motorhomeinsurance.co.nz/faqs' }
+];
 
 export default function FAQsPage() {
   const [expandedFAQ, setExpandedFAQ] = useState<string | null>(null);
@@ -17,8 +23,23 @@ export default function FAQsPage() {
     'Specialist Situations': faqs.slice(21, 25),
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero Section */}
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"

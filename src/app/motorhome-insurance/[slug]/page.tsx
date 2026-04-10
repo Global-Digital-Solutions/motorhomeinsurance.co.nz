@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { insurancePages } from '@/data/insurance-pages';
 import { faqs } from '@/data/faqs';
 import QuoteForm from '@/components/QuoteForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const dynamicParams = false;
 
@@ -284,6 +285,132 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
       { text: 'Contents Cover', href: '/types/contents-cover' },
     ],
     faqSlice: [5, 12]
+  },
+  'caravan-insurance-nz': {
+    intro: 'Caravan insurance in New Zealand covers towed caravans, on-road caravans, and caravan conversions with specialized motorhome insurance. In NZ, caravans and motorhomes overlap significantly — many people use the terms interchangeably, and caravans can be insured through motorhome insurance policies. High search volumes for "caravan insurance NZ" reflect the popularity of caravan holidays and freedom camping across New Zealand.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Caravan vs Motorhome Insurance in NZ</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Towed Caravans:</strong> Towed caravans (on-road caravans you pull behind a car) require separate caravan insurance, not motorhome insurance. Motorhome insurance covers self-contained motorhomes and campervans only. If you tow a caravan, ensure it's covered under caravan insurance or as part of a multi-vehicle policy.</p>
+        <p><strong>Motorhome-Type Caravans:</strong> Built-in or integrated caravans (where living facilities are integral to the vehicle) are covered by motorhome insurance and qualify for motorhome-specific policies.</p>
+        <p><strong>Freedom Camping with Caravans:</strong> Only self-contained motorhomes and caravans with MSD (Motorhome Self-Containment) certification can freedom camp in New Zealand under the Freedom Camping Act 2011. Non-self-contained caravans must use commercial campsites.</p>
+        <p><strong>Search Volume Reality:</strong> Many NZ searchers looking for "caravan insurance NZ" are actually seeking motorhome insurance. Motorhome insurance providers often cover what many Kiwis call caravans — campervans and motorhomes. Our brokers understand both caravan and motorhome insurance options.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Campervan Insurance', href: '/motorhome-insurance/campervan-insurance-nz' },
+      { text: 'Freedom Camping Insurance', href: '/motorhome-insurance/freedom-camping-insurance-nz' },
+      { text: 'Coverage Guide', href: '/coverage' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'rv-insurance-nz': {
+    intro: 'RV (recreational vehicle) insurance in New Zealand covers motorhomes, campervans, and self-contained recreational vehicles used for touring, holidays, and adventure travel. The term "RV" is commonly used internationally but less common in NZ — Kiwis typically say "motorhome" or "campervan". However, understanding RV insurance helps connect international and domestic terminology for NZ recreational vehicle owners.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">RV Insurance in the NZ Context</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>What is an RV?:</strong> RVs include motorhomes, Class A/B/C motorhomes, campervans, van conversions, and self-contained vehicles. In NZ terminology, we typically use "motorhome" or "campervan" instead of "RV", but the coverage needs are identical.</p>
+        <p><strong>Imported American RVs:</strong> Some Kiwis import American RVs (larger Class A or Class C motorhomes). These require specialist insurance because they have different dimensions, systems, and specifications than NZ-spec motorhomes. Imported RVs need professional valuations and experienced insurers familiar with overseas specifications.</p>
+        <p><strong>RV-Specific Coverage Needs:</strong> Whether you call it an RV or motorhome, coverage should include: comprehensive protection, agreed value for peace of mind, contents cover for camping gear and equipment, roadside assistance for touring, and freedom camping cover if self-contained.</p>
+        <p><strong>Insurance Terminology:</strong> Our brokers understand that "RV insurance", "motorhome insurance", "campervan insurance", and "recreational vehicle insurance" all describe the same product type. Use whatever terminology is comfortable — we'll find you the right coverage.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Imported Motorhomes', href: '/motorhome-insurance/imported-motorhome-insurance-nz' },
+      { text: 'Best Motorhome Insurance', href: '/motorhome-insurance/best-motorhome-insurance-nz' },
+      { text: 'Campervan Insurance', href: '/motorhome-insurance/campervan-insurance-nz' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'nzmca-insurance-nz': {
+    intro: 'The New Zealand Motor Caravan Association (NZMCA) is a major membership organization for motorhome enthusiasts with 10,000+ members. Many motorhome owners ask whether they should use "NZMCA insurance" — actually, NZMCA doesn\'t provide insurance directly, but endorses Covi Insurance as their preferred provider. Understanding your NZMCA insurance options helps you make an informed decision about the best coverage for your needs.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">NZMCA and Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>What NZMCA Does:</strong> The <a href="https://www.nzmca.org.nz" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 underline">NZMCA (NZ Motor Caravan Association)</a> is an advocacy organization for motorhome owners. They provide resources, campground discounts, event organization, and traveler support. They don't provide insurance but endorse Covi Insurance as their recommended motorhome insurance provider.</p>
+        <p><strong>NZMCA-Endorsed Insurance (Covi):</strong> Covi Insurance provides a motorhome policy specifically designed with NZMCA members in mind. NZMCA members may receive special rates through this arrangement. However, this doesn't automatically mean Covi is the best or cheapest option for every motorhome owner.</p>
+        <p><strong>You Have Choices:</strong> While Covi offers good coverage, you should always compare with other providers including AA Insurance, Tower, Star Insure, and others. Loyalty to NZMCA shouldn't limit your insurance options. Our brokers compare all providers including Covi, ensuring you find the best value regardless of NZMCA membership status.</p>
+        <p><strong>NZMCA Membership Benefits:</strong> NZMCA members enjoy camping discounts, touring guides, roadside support, and community events. These benefits complement your insurance but are separate. Getting comprehensive motorhome insurance is important whether you're an NZMCA member or not.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Best Motorhome Insurance', href: '/motorhome-insurance/best-motorhome-insurance-nz' },
+      { text: 'Compare Providers', href: '/compare' },
+      { text: 'Coverage Guide', href: '/coverage' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'freedom-camping-insurance-nz': {
+    intro: 'Freedom camping in New Zealand is legal and popular, but only if your motorhome meets specific requirements. Understanding freedom camping insurance requirements and the NZ Freedom Camping Act 2011 ensures you\'re properly covered and compliant when camping at designated freedom camping sites, council reserves, and public land across New Zealand.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Freedom Camping in NZ — Insurance & Compliance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Freedom Camping Act 2011:</strong> New Zealand\'s <a href="https://www.legislation.govt.nz/act/public/2011/0061/latest/whole.html" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 underline">Freedom Camping Act</a> allows self-contained motorhomes to camp for free at designated sites and council reserves. Non-self-contained motorhomes must use commercial campsites (fee-paying). This distinction directly affects insurance requirements.</p>
+        <p><strong>Self-Contained Certification (MSD):</strong> To freedom camp legally, your motorhome must have Ministry of Environment Motorhome Self-Containment (MSD) certification. This certificate verifies your motorhome has integrated water, waste, and power systems meeting government standards. Without MSD certification, you cannot freedom camp — even if your motorhome has the systems.</p>
+        <p><strong>Insurance Coverage at Freedom Camping Sites:</strong> Standard motorhome insurance covers you while freedom camping IF: (1) your motorhome is self-contained with valid MSD certification, and (2) your policy explicitly mentions freedom camping coverage. Many policies automatically include this, but always verify with your insurer that freedom camping is covered before relying on it.</p>
+        <p><strong>Responsible Freedom Camping:</strong> Freedom camping comes with responsibility — leave no trace, respect local communities, use only designated sites, and maintain your motorhome properly. Your insurance covers accidental damage and theft but not damage from irresponsible behavior. Check local council websites for freedom camping site restrictions and seasonal closures.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Self-Contained Motorhomes', href: '/motorhome-insurance/self-contained-motorhome-insurance-nz' },
+      { text: 'Coverage Guide', href: '/coverage' },
+      { text: 'FAQs', href: '/faqs' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-hamilton': {
+    intro: 'Hamilton motorhome insurance protects your asset while you\'re exploring the Waikato region. As the largest city in the Waikato region and NZ\'s fourth-largest city, Hamilton presents specific motorhome insurance considerations including regional theft rates, traffic patterns, and local storage challenges. Getting appropriate Hamilton-based motorhome insurance requires understanding these local factors.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Hamilton-Specific Motorhome Insurance Considerations</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Hamilton's Position in Waikato:</strong> Hamilton is the regional hub for Waikato motorhome owners. Many use it as a base for exploring the Waikato region, including Lake Taupo, Rotorua, and the King Country. Insurance should reflect usage patterns specific to central North Island touring.</p>
+        <p><strong>Theft Risk & Security:</strong> Hamilton has moderate theft risk for motorhomes. Secure storage is important — whether at your home property, a storage facility, or while parked. GPS trackers and alarm systems reduce premiums (typically 5-15% discount) and provide peace of mind in urban areas.</p>
+        <p><strong>Storage Options:</strong> Many Hamilton residents have limited on-property storage due to urban density. Discuss your actual storage arrangements with insurers — street parking, driveway parking, garage storage, or facility storage all affect premiums. Some facilities offer secure motorhome storage with 24/7 monitoring.</p>
+        <p><strong>Regional Touring Coverage:</strong> If you're using Hamilton as a base for regional touring, ensure your policy covers travel throughout the North Island. Standard motorhome policies cover all NZ travel, but confirm geographic scope. Winter weather in central North Island may require specific coverage considerations.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Auckland', href: '/motorhome-insurance/motorhome-insurance-auckland' },
+      { text: 'Compare Providers', href: '/compare' },
+      { text: 'Coverage Guide', href: '/coverage' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-dunedin': {
+    intro: 'Dunedin motorhome insurance protects your investment while exploring Otago and the lower South Island. Dunedin\'s unique geography, weather patterns, and position as a South Island touring hub create specific insurance considerations. Understanding Dunedin-specific motorhome risks helps you get appropriate coverage for South Island adventures.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Dunedin and South Island Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Coastal Weather & Wind:</strong> Dunedin is known for windy conditions due to its coastal Otago peninsula location. Wind damage affecting motorhome exteriors (antennas, awnings, side panels) is more common here. Comprehensive coverage including weather damage is essential. Coastal salt spray also requires attention to paint and exterior protection.</p>
+        <p><strong>South Island Touring Base:</strong> Many Dunedin-based motorhome owners use their vehicles for South Island exploring including Queenstown, Fiordland, and Central Otago. Ensure your policy covers full South Island travel. Winter mountain passes require good mechanical condition and comprehensive coverage. Some insurers offer lay-up periods for seasonal users.</p>
+        <p><strong>Adventure Tourism Insurance:</strong> If you're using your motorhome for adventure travel around Milford Sound, adventure activities, or challenging mountain terrain, confirm your policy covers these activities. Some policies may have exclusions for high-risk touring areas.</p>
+        <p><strong>Storage in Dunedin:</strong> Dunedin has good motorhome storage facilities and motor home parks. Discuss your storage arrangements — secure parking at facilities typically reduces premiums compared to street parking or exposed storage.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Christchurch', href: '/motorhome-insurance/motorhome-insurance-christchurch' },
+      { text: 'Coverage Types', href: '/coverage' },
+      { text: 'Best Motorhome Insurance', href: '/motorhome-insurance/best-motorhome-insurance-nz' },
+    ],
+    faqSlice: [5, 12]
+  },
+  'motorhome-insurance-queenstown': {
+    intro: 'Queenstown motorhome insurance covers your vehicle while exploring one of New Zealand\'s most popular adventure tourism destinations. Queenstown\'s stunning landscape, challenging roads, high tourism activity, and adventure-focused tourism create unique motorhome insurance considerations. Getting proper coverage ensures you\'re protected during your Otago and Central Otago adventures.',
+    guide: <>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Queenstown & Adventure Motorhome Insurance</h3>
+      <div className="space-y-4 text-slate-700">
+        <p><strong>Adventure Touring Territory:</strong> Queenstown is adventure capital — many motorhome owners visit for activities like Milford Sound, Glenorchy, Lake Wakatipu touring, and mountain pass travel. These activities are covered by standard motorhome insurance, but confirm your policy covers adventure tourism areas and challenging terrain.</p>
+        <p><strong>Mountain Pass & Winter Driving:</strong> Access to Milford Sound (from Te Anau), Crown Range Pass (to Wanaka), and Cardrona Valley involves challenging mountain driving. Winter driving requires particular caution. While comprehensive motorhome insurance covers accidental damage from driving incidents, ensure your motorhome is mechanically fit for mountain terrain. Regular servicing helps.</p>
+        <p><strong>High Tourism & Theft Risk:</strong> Queenstown has high tourism traffic and correspondingly higher theft risk for vehicles and contents. Secure parking at accommodations is important. Travel in groups when possible. Many Queenstown-based campsites offer secure parking — factor this into accommodation planning.</p>
+        <p><strong>Seasonal Tourism Activity:</strong> Queenstown experiences peak summer tourism (December-February) and winter sports season (June-August). Consider visiting during shoulder seasons if possible. Winter driving requires extra caution and comprehensive insurance coverage. Lay-up periods are available if you're storing your motorhome seasonally.</p>
+      </div>
+    </>,
+    relatedLinks: [
+      { text: 'Motorhome Insurance Dunedin', href: '/motorhome-insurance/motorhome-insurance-dunedin' },
+      { text: 'Adventure & Touring Guide', href: '/coverage' },
+      { text: 'Best Motorhome Insurance', href: '/motorhome-insurance/best-motorhome-insurance-nz' },
+    ],
+    faqSlice: [5, 12]
   }
 };
 
@@ -325,8 +452,29 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
 
   const faqItems = faqs.slice(pageContent.faqSlice[0], pageContent.faqSlice[1]);
 
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+    { name: 'Motorhome Insurance', url: 'https://motorhomeinsurance.co.nz/motorhome-insurance/' },
+    { name: page.title, url: `https://motorhomeinsurance.co.nz/motorhome-insurance/${slug}` }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero Section */}
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"

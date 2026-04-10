@@ -78,4 +78,46 @@ export const insurancePages: InsurancePage[] = [
     h1: 'Luxury Motorhome Insurance in New Zealand',
     metaDesc: 'Premium luxury motorhome insurance in NZ. Specialist coverage for high-value, premium motorhomes and coach conversions.',
   },
+  {
+    slug: 'caravan-insurance-nz',
+    title: 'Caravan Insurance NZ',
+    h1: 'Caravan Insurance in New Zealand',
+    metaDesc: 'Compare caravan insurance in NZ. Get quotes from leading NZ insurers for caravans, campervans and motorhomes. Free comparison service.',
+  },
+  {
+    slug: 'rv-insurance-nz',
+    title: 'RV Insurance NZ',
+    h1: 'RV Insurance in New Zealand',
+    metaDesc: 'Compare RV insurance in New Zealand. Comprehensive cover for recreational vehicles, motorhomes and campervans from NZ\'s top insurers.',
+  },
+  {
+    slug: 'nzmca-insurance-nz',
+    title: 'NZMCA Insurance NZ',
+    h1: 'NZMCA Motorhome Insurance — Compare Your Options',
+    metaDesc: 'Compare NZMCA-endorsed and alternative motorhome insurance options in NZ. Is Covi NZMCA insurance the best deal? Find out here.',
+  },
+  {
+    slug: 'freedom-camping-insurance-nz',
+    title: 'Freedom Camping Insurance NZ',
+    h1: 'Motorhome Insurance for Freedom Camping in New Zealand',
+    metaDesc: 'Does your motorhome insurance cover freedom camping in NZ? Understand the NZ Freedom Camping Act and get the right cover.',
+  },
+  {
+    slug: 'motorhome-insurance-hamilton',
+    title: 'Motorhome Insurance Hamilton',
+    h1: 'Motorhome Insurance in Hamilton',
+    metaDesc: 'Get motorhome insurance quotes in Hamilton, NZ. Compare rates and coverage from Hamilton and national insurance providers.',
+  },
+  {
+    slug: 'motorhome-insurance-dunedin',
+    title: 'Motorhome Insurance Dunedin',
+    h1: 'Motorhome Insurance in Dunedin',
+    metaDesc: 'Find motorhome insurance in Dunedin, NZ. Compare comprehensive coverage options from Dunedin and national insurers.',
+  },
+  {
+    slug: 'motorhome-insurance-queenstown',
+    title: 'Motorhome Insurance Queenstown',
+    h1: 'Motorhome Insurance in Queenstown',
+    metaDesc: 'Motorhome insurance for Queenstown and Otago. Get cover for adventure travel, freedom camping and year-round South Island touring.',
+  },
 ];

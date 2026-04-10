@@ -1,6 +1,7 @@
 import { CheckCircle, XCircle } from 'lucide-react';
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   title: 'Motorhome Insurance Coverage Guide | MotorHomeInsurance.co.nz',
@@ -33,9 +34,63 @@ const whatsNotCovered = [
   'Financial losses unrelated to physical damage',
 ];
 
+const breadcrumbs = [
+  { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+  { name: 'Coverage', url: 'https://motorhomeinsurance.co.nz/coverage' }
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my motorhome covered while parked at a campsite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, comprehensive motorhome insurance covers your motorhome 24/7 — whether driving, parked at a commercial campground, stored at home, or freedom camping (if self-contained). This is why standalone motorhome insurance is essential, as standard car policies typically don't cover you when parked. Make sure your policy specifically mentions coverage at campsites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my policy cover contents inside the motorhome?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard motorhome insurance covers the motorhome structure but not contents like camping gear, personal items, or appliances inside. You can add contents cover as an optional add-on to protect these items. Contents cover typically protects against theft, accidental damage, and weather damage to items stored in your motorhome."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if someone else drives my motorhome?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most motorhome policies allow named drivers to use the motorhome. However, cover may be restricted to the named policyholder and specified drivers. If an uninsured or non-named person damages your motorhome, you may not be covered. Always declare all potential drivers when getting quotes and check your policy wording about who can drive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Am I covered for freedom camping?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You're covered at freedom camping sites if your motorhome is self-contained (with integrated water, waste, and power systems) and your policy explicitly covers freedom camping. New Zealand's Freedom Camping Act 2011 allows self-contained motorhomes to camp at designated sites. Non-self-contained motorhomes must use commercial campsites. Always confirm your motorhome has an MSD certificate if planning to freedom camp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get cover for a motorhome I live in full-time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but you need a full-time living policy rather than a recreational motorhome policy. Full-time living policies are specifically designed for people who permanently reside in their motorhomes. They provide higher contents protection, cover wear from year-round living, and ensure liability protection is appropriate for residential use. Ask insurers specifically about full-time living cover."
+      }
+    }
+  ]
+};
+
 export default function CoveragePage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero Section */}
       <section
         className="relative min-h-[70vh] flex flex-col justify-end px-4 sm:px-6 lg:px-8 pt-28 pb-32"
@@ -393,6 +448,33 @@ export default function CoveragePage() {
                 <p className="text-slate-600 text-sm leading-relaxed">{type.description}</p>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages Section */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Related Pages</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href="/compare" className="p-4 bg-white border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Compare Providers →
+            </Link>
+            <Link href="/faqs" className="p-4 bg-white border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              FAQs →
+            </Link>
+            <Link href="/types/comprehensive" className="p-4 bg-white border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Comprehensive Cover →
+            </Link>
+            <Link href="/types/agreed-value" className="p-4 bg-white border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Agreed Value →
+            </Link>
+            <Link href="/motorhome-insurance/cheap-motorhome-insurance-nz" className="p-4 bg-white border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Cheap Insurance →
+            </Link>
+            <Link href="/motorhome-insurance/best-motorhome-insurance-nz" className="p-4 bg-white border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Best Insurance →
+            </Link>
           </div>
         </div>
       </section>

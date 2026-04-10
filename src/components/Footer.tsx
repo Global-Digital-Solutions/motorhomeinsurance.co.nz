@@ -35,23 +35,34 @@ const footerLinks = {
   insurance: {
     title: 'Motorhome Insurance',
     links: [
+      { label: 'Caravan Insurance NZ', href: '/motorhome-insurance/caravan-insurance-nz' },
+      { label: 'RV Insurance NZ', href: '/motorhome-insurance/rv-insurance-nz' },
       { label: 'Campervan Insurance NZ', href: '/motorhome-insurance/campervan-insurance-nz' },
       { label: 'Cheap Motorhome Insurance', href: '/motorhome-insurance/cheap-motorhome-insurance-nz' },
       { label: 'Best Motorhome Insurance', href: '/motorhome-insurance/best-motorhome-insurance-nz' },
       { label: 'Compare Motorhome Insurance', href: '/motorhome-insurance/compare-motorhome-insurance-nz' },
-      { label: 'Motorhome Insurance Cost', href: '/motorhome-insurance/motorhome-insurance-cost-nz' },
-      { label: 'Motorhome Hire Insurance', href: '/motorhome-insurance/motorhome-hire-insurance-nz' },
     ],
   },
   guides: {
-    title: 'Guides',
+    title: 'Regional & Specialist',
+    links: [
+      { label: 'NZMCA Insurance', href: '/motorhome-insurance/nzmca-insurance-nz' },
+      { label: 'Freedom Camping Insurance', href: '/motorhome-insurance/freedom-camping-insurance-nz' },
+      { label: 'Hamilton Insurance', href: '/motorhome-insurance/motorhome-insurance-hamilton' },
+      { label: 'Dunedin Insurance', href: '/motorhome-insurance/motorhome-insurance-dunedin' },
+      { label: 'Queenstown Insurance', href: '/motorhome-insurance/motorhome-insurance-queenstown' },
+      { label: 'Self-Contained Motorhomes', href: '/motorhome-insurance/self-contained-motorhome-insurance-nz' },
+    ],
+  },
+  regional: {
+    title: 'More Guides',
     links: [
       { label: 'Auckland Insurance', href: '/motorhome-insurance/motorhome-insurance-auckland' },
       { label: 'Wellington Insurance', href: '/motorhome-insurance/motorhome-insurance-wellington' },
       { label: 'Christchurch Insurance', href: '/motorhome-insurance/motorhome-insurance-christchurch' },
-      { label: 'Self-Contained Motorhomes', href: '/motorhome-insurance/self-contained-motorhome-insurance-nz' },
       { label: 'Imported Motorhomes', href: '/motorhome-insurance/imported-motorhome-insurance-nz' },
       { label: 'Luxury Motorhomes', href: '/motorhome-insurance/luxury-motorhome-insurance-nz' },
+      { label: 'Motorhome Hire Insurance', href: '/motorhome-insurance/motorhome-hire-insurance-nz' },
     ],
   },
   legal: {
@@ -98,8 +109,8 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
-          <div className="col-span-2 sm:col-span-3 lg:col-span-1">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-6">
+          <div className="col-span-2 sm:col-span-2 lg:col-span-1">
             <Logo variant="white" size="sm" />
             <div className="mt-4 space-y-3">
               <div>
@@ -154,6 +165,17 @@ export default function Footer() {
             <h3 className="text-white font-bold mb-4">{footerLinks.guides.title}</h3>
             <ul className="space-y-2">
               {footerLinks.guides.links.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-slate-400 hover:text-sky-300 transition-colors text-sm">{link.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-white font-bold mb-4">{footerLinks.regional.title}</h3>
+            <ul className="space-y-2">
+              {footerLinks.regional.links.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-slate-400 hover:text-sky-300 transition-colors text-sm">{link.label}</Link>
                 </li>

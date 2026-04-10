@@ -2,15 +2,33 @@ import { CheckCircle, XCircle } from 'lucide-react';
 import { providers } from '@/data/providers';
 import QuoteForm from '@/components/QuoteForm';
 import Link from 'next/link';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
   title: 'Compare Motorhome Insurance Providers NZ | MotorHomeInsurance.co.nz',
   description: 'Compare NZ motorhome insurance providers side-by-side. See ratings, prices, features, and choose the best coverage for your motorhome.',
 };
 
+const breadcrumbs = [
+  { name: 'Home', url: 'https://motorhomeinsurance.co.nz' },
+  { name: 'Compare Providers', url: 'https://motorhomeinsurance.co.nz/compare' }
+];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": providers.map((provider, index) => ({
+    "@type": "Organization",
+    "position": index + 1,
+    "name": provider.name
+  }))
+};
+
 export default function ComparePage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={breadcrumbs} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       {/* Hero Section */}
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
@@ -279,6 +297,27 @@ export default function ComparePage() {
                 <p className="text-sm text-slate-700">Licensed brokers have access to multiple insurers and receive your information once. They compare options on your behalf and provide expert recommendations. Our brokers never charge you fees — they earn commission from insurers. You get more choice and expert guidance at no extra cost.</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages Section */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Related Pages</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/coverage" className="p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Coverage Guide →
+            </Link>
+            <Link href="/faqs" className="p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              FAQs →
+            </Link>
+            <Link href="/motorhome-insurance/best-motorhome-insurance-nz" className="p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Best Insurance →
+            </Link>
+            <Link href="/motorhome-insurance/compare-motorhome-insurance-nz" className="p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
+              Comparison Guide →
+            </Link>
           </div>
         </div>
       </section>
