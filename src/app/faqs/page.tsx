@@ -10,10 +10,11 @@ export default function FAQsPage() {
 
   // Group FAQs by category
   const faqsByCategory: Record<string, typeof faqs> = {
-    'Getting a Quote': faqs.slice(0, 3),
-    'Coverage Questions': faqs.slice(3, 8),
-    'Claims & Excess': faqs.slice(8, 11),
-    'Rental & Hire': faqs.slice(11, 15),
+    'Getting a Quote': faqs.slice(0, 5),
+    'Coverage Questions': faqs.slice(5, 12),
+    'Cost & Premiums': faqs.slice(12, 17),
+    'Claims & Disputes': faqs.slice(17, 21),
+    'Specialist Situations': faqs.slice(21, 25),
   };
 
   return (
@@ -22,7 +23,7 @@ export default function FAQsPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1920&h=1080&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

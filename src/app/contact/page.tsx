@@ -22,7 +22,7 @@ export default function ContactPage() {
       <section
         className="relative min-h-[92vh] flex items-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1920&h=1080&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

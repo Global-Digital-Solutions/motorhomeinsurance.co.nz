@@ -21,25 +21,42 @@ export const blogPosts: BlogPost[] = [
     readTime: '9 min read',
     category: 'Insurance Guides',
     content: `<h2>Understanding Motorhome Insurance</h2>
-<p>Motorhomes are more than vehicles — they're homes on wheels, adventure companions, and significant investments. Whether you're a weekend explorer or a full-time traveller, proper motorhome insurance is essential to protect both your asset and your peace of mind.</p>
+<p>Motorhomes are more than vehicles — they're homes on wheels, adventure companions, and significant investments. Whether you're a weekend explorer or a full-time traveller, proper motorhome insurance is essential to protect both your asset and your peace of mind. New Zealand has over 35,000 registered motorhomes, with the fleet growing 8% annually, reflecting Kiwis' passion for adventure and freedom on wheels.</p>
 
 <h2>Why You Need Dedicated Motorhome Insurance</h2>
-<p>Standard car insurance policies typically don't cover motorhomes adequately. Your car policy may not cover the living facilities, appliances, and contents stored inside. Dedicated motorhome insurance addresses these unique needs, providing comprehensive protection whether you're parked at a campground, travelling across New Zealand, or in storage.</p>
+<p>Standard car insurance policies typically don't cover motorhomes adequately once they're parked. Your car policy may only cover the motorhome while you're actively driving it. Once parked at a campground, stored at home, or sitting in a scenic location, your motorhome is generally uninsured under standard car policies. This is where dedicated motorhome insurance becomes critical.</p>
+<p>Dedicated motorhome insurance addresses these unique needs, providing comprehensive protection whether you're parked at a commercial campground, enjoying freedom camping in a self-contained motorhome, travelling across New Zealand, or stored at home. The Insurance Council of New Zealand (ICNZ) strongly recommends standalone motorhome insurance because car policies simply don't provide adequate protection for vehicles that function as temporary or permanent homes.</p>
+
+<h2>The True Cost of Being Uninsured</h2>
+<p>Consider this scenario: You're enjoying a week at a scenic motorhome park when a storm causes significant water damage to your motorhome. Without standalone motorhome insurance, this could mean $5,000-$15,000 in repair costs coming directly from your pocket. Or imagine someone is injured on your motorhome property, or your motorhome damages someone else's vehicle — you could face personal liability exceeding $20 million. These are the risks that make motorhome insurance non-negotiable.</p>
 
 <h2>Types of Motorhome Coverage Available</h2>
-<p>Comprehensive coverage protects against accidental damage, theft, fire, and weather events. Third-party liability covers damage you cause to others or their property. Agreed value policies lock in your payout amount, while market value policies pay the current value at time of loss. Contents cover protects your camping gear, appliances, and personal belongings. Rental excess reduction lowers or eliminates your excess on hire motorhomes.</p>
+<p><strong>Comprehensive coverage</strong> provides the broadest protection, covering accidental damage from collisions and impacts, theft of your motorhome or parts, fire and structural damage, weather-related damage including storms and hail, vandalism and malicious damage, and third-party liability up to $20 million. This is the most popular choice and offers the best protection.</p>
+<p><strong>Third-party liability</strong> covers damage you cause to others or their property while driving. This is the legal minimum protection and is affordable but doesn't cover damage to your own motorhome.</p>
+<p><strong>Agreed value policies</strong> lock in your payout amount upfront, eliminating depreciation disputes at claim time. <strong>Market value policies</strong> pay current value at time of loss, typically costing less in premiums but with less certainty.</p>
+<p><strong>Contents cover</strong> protects your camping gear, appliances, personal belongings, and accessories inside your motorhome. This is crucial if you carry valuable equipment.</p>
+<p><strong>Rental excess reduction</strong> lowers or eliminates your excess on hire motorhomes, essential if you plan to rent motorhomes during holidays.</p>
 
 <h2>Factors Affecting Your Premium</h2>
-<p>Your motorhome's age, value, and type significantly impact premiums. Self-contained status (with water, waste, and power systems) may affect pricing. How often you use it — whether full-time, seasonal, or weekend trips — matters. Where it's stored when not in use, your location, driving history, and security measures all influence costs.</p>
+<p>Your motorhome's age, value, and type significantly impact premiums. A campervan worth $25,000 will cost far less to insure than a luxury self-contained motorhome worth $200,000. Self-contained status affects pricing because these motorhomes are more valuable and have more complex systems requiring specialist understanding.</p>
+<p>How often you use it matters greatly. Weekend users pay less than full-time dwellers. Where it's stored when not in use influences theft risk — secure garage storage costs less to insure than street parking. Your location matters (Auckland has higher theft rates than rural NZ). Your driving history affects costs (clean record = lower premiums). Security measures like GPS trackers can reduce premiums 5-15%.</p>
 
 <h2>Choosing Between Agreed and Market Value</h2>
-<p>Agreed value means you both agree on the value upfront. If your motorhome is written off, you receive that agreed amount with no depreciation arguments. Market value means the insurer pays what it's worth at the time of loss. Agreed value provides certainty but may cost slightly more in premiums.</p>
+<p>Agreed value means you and your insurer both agree on the value upfront, written into your policy. If your motorhome is written off, you receive that agreed amount with no depreciation arguments. Market value means the insurer pays what it's worth at the time of loss — which could be significantly less if your motorhome has depreciated. Agreed value provides certainty and peace of mind but may cost slightly more in premiums. Market value costs less but offers less certainty.</p>
+
+<h2>Special Considerations for Different Motorhome Types</h2>
+<p><strong>For Imported Motorhomes:</strong> Japanese imports like Toyota HiAce and Mitsubishi Rosa are increasingly popular. Get professional valuations from specialists familiar with imports. Use agreed value to lock in valuation. Specialist motorhome insurers have more experience with imports than standard car insurers.</p>
+<p><strong>For Self-Contained Motorhomes:</strong> Ensure coverage includes all integrated systems (water tanks, waste systems, electrical, solar panels, appliances). Check whether freedom camping is covered and that your motorhome has proper MSD certification.</p>
+<p><strong>For Full-Time Living:</strong> Dedicated full-time living policies are essential if you live permanently in your motorhome. Standard recreational motorhome policies may not provide adequate protection for year-round residence.</p>
 
 <h2>Getting the Best Quote</h2>
-<p>Compare quotes from at least three providers. Be honest about usage, modifications, and storage. Ask about discounts for security systems, multi-policy bundling, or good driving records. Review coverage limits, excess options, and what's included in each quote. Don't just pick the cheapest — consider overall value and claims reputation.</p>
+<p>Compare quotes from at least three providers — price differences of 40%+ for identical motorhomes are common. Be honest about usage, modifications, storage location, and security measures. Ask specifically about discounts for security systems, multi-policy bundling, safe driving records, and low usage. Review coverage limits, excess options, and what's included in each quote. Don't just pick the cheapest option — assess overall value, claims reputation, and specialist knowledge.</p>
+
+<h2>Red Flags to Avoid</h2>
+<p>Be wary of policies with very broad exclusions around motorhome-specific features, insurers unfamiliar with motorhome-specific risks, or policies that don't allow freedom camping if you plan to do it. Always confirm coverage is appropriate for your specific motorhome type, usage patterns, and plans.</p>
 
 <h2>Getting Started</h2>
-<p>Take time to understand your motorhome's value, usage patterns, and specific coverage needs. Gather documentation about your motorhome including purchase price, recent valuations, and any modifications. Get multiple quotes, compare thoroughly, and choose a provider that matches your needs and budget. Review your policy annually to ensure it remains appropriate.</p>`,
+<p>Take time to understand your motorhome's value, usage patterns, and specific coverage needs. Gather documentation including purchase price, recent valuations, any modifications made, and evidence of security measures. Use our service to get quotes from multiple providers in a single step. Compare quotes thoroughly, asking questions about anything unclear. Choose a provider that matches your needs, budget, and offers the specialist knowledge appropriate for your motorhome. Review your policy annually to ensure it remains appropriate as your motorhome ages and your usage patterns change.</p>`,
   },
   {
     slug: 'agreed-value-vs-market-value-motorhome',
@@ -51,25 +68,33 @@ export const blogPosts: BlogPost[] = [
     readTime: '7 min read',
     category: 'Coverage Explained',
     content: `<h2>The Core Difference</h2>
-<p>The main difference between agreed and market value insurance comes down to certainty. With agreed value, you know exactly what you'll receive if your motorhome is written off. With market value, the payout is determined at the time of loss.</p>
+<p>The main difference between agreed and market value insurance comes down to certainty. With agreed value, you know exactly what you'll receive if your motorhome is written off — no negotiations, no surprises. With market value, the payout is determined at the time of loss based on current market conditions, which could be significantly different from your expectations.</p>
 
 <h2>What Is Agreed Value?</h2>
-<p>Agreed value means you and your insurer agree on your motorhome's value when you take out the policy. This value is documented in your policy. If your motorhome is written off, stolen, or damaged beyond repair, you receive the full agreed amount. There's no depreciation argument, no "what it's worth now" negotiation. You get what you agreed to pay for.</p>
+<p>Agreed value insurance means you and your insurer formally agree on your motorhome's value when you take out the policy. This value is documented in your policy wording. If your motorhome is written off, stolen, or damaged beyond repair, you receive the full agreed amount. There's no depreciation argument, no "what it's worth now" negotiation. You get exactly what you agreed to at policy inception.</p>
+<p>This certainty is particularly valuable for motorhomes where market value is difficult to assess — imports, custom builds, specialty motorhomes. You avoid the risk of an insurer's valuation being significantly lower than you expected.</p>
 
 <h2>What Is Market Value?</h2>
-<p>Market value insurance means the insurer pays what your motorhome is worth at the time of loss. When you make a claim, they assess the current market value and pay that amount. This means if your motorhome has depreciated since you bought it, you'll receive less than your purchase price.</p>
+<p>Market value insurance means the insurer pays what your motorhome is worth at the time of loss based on comparable sales and market assessment. When you make a claim, they assess the current market value at that moment and pay that amount. This means if your motorhome has depreciated since you bought it, you'll receive less than your purchase price.</p>
+<p>For example, a motorhome purchased for $80,000 two years ago might be worth only $60,000 in today's market. With market value insurance, you'd receive $60,000, not your original investment.</p>
 
 <h2>Advantages of Agreed Value</h2>
-<p>You know exactly what you'll receive in a total loss claim — no surprises. You avoid depreciation arguments with the insurer. Motorhome values can be difficult to assess, and agreed value removes this uncertainty. You can ensure the payout covers replacing your motorhome.</p>
+<p>You know exactly what you'll receive in a total loss claim — there's no uncertainty or negotiation. You avoid depreciation arguments with the insurer completely. Motorhome values can be difficult to assess accurately, especially for imports or custom builds, and agreed value removes this uncertainty entirely. You can ensure the payout covers replacing your motorhome appropriately. This is particularly valuable for newer motorhomes where depreciation is rapid.</p>
 
 <h2>Advantages of Market Value</h2>
-<p>Premiums are typically lower than agreed value. It reflects the motorhome's actual value, which may be fairer if values have dropped significantly. For newer motorhomes that depreciate quickly, the savings can be substantial.</p>
+<p>Premiums are typically 10-20% lower than agreed value because the insurer's risk is reduced. It reflects the motorhome's actual current value, which may be fair if you're comfortable accepting depreciation. For older motorhomes (10+ years) where values are well-established and stable, market value can offer good value.</p>
+
+<h2>Financial Impact Example</h2>
+<p>Imagine a Class B motorhome purchased for $70,000. After 3 years with some wear and usage:</p>
+<ul><li><strong>Agreed Value (locked at $70,000):</strong> Total loss = $70,000 payout. Premium ~$800/year.</li>
+<li><strong>Market Value (assessed at $52,000):</strong> Total loss = $52,000 payout. Premium ~$650/year.</li></ul>
+<p>The $18,000 difference in payout is substantial. The $150/year premium saving over 3 years saves only $450, making agreed value the better financial choice in this scenario.</p>
 
 <h2>Which Should You Choose?</h2>
-<p>Choose agreed value if your motorhome is valuable, recently purchased, or difficult to replace at current market value. Choose market value if you're looking to minimize premiums and understand you may receive less than purchase price in a claim. Consider a hybrid approach: agreed value for older motorhomes with established values.</p>
+<p>Choose agreed value if your motorhome is under 7 years old, worth $50,000+, is difficult to value (import, custom), or if peace of mind about replacement cost is important. Choose market value if you're prioritizing low premiums, own an older motorhome with well-established values, or accept depreciation risk.</p>
 
 <h2>Making Your Decision</h2>
-<p>Get professional valuations for your motorhome. Research comparable prices in the current market. Consider your replacement plans if your motorhome was written off. Compare premium differences between agreed and market value. Make your decision based on peace of mind and financial security.</p>`,
+<p>Get professional valuations for your motorhome from specialists familiar with your specific model. Research comparable prices in the current NZ market to understand realistic valuations. Consider your replacement plans if your motorhome was written off — what would you actually need to spend to replace it appropriately? Compare premium differences between agreed and market value options. Make your decision based on balancing peace of mind with cost, not just picking the cheapest option.</p>`,
   },
   {
     slug: 'what-does-motorhome-insurance-cover',

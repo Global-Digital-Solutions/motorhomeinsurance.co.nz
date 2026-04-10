@@ -14,7 +14,7 @@ export default function BlogPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&h=1080&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

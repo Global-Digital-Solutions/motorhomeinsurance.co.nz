@@ -100,7 +100,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-            <Logo variant="white" />
+            <Logo variant="white" size="sm" />
             <div className="mt-4 space-y-3">
               <div>
                 <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Phone</p>
@@ -188,7 +188,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h4 className="text-sm font-bold text-slate-300 uppercase tracking-wide mb-3">How This Site Works</h4>
           <p className="text-xs text-slate-500 leading-relaxed max-w-4xl">
-            MotorHomeInsurance.co.nz is a free comparison and lead-generation service — we are not an insurer, broker, or financial adviser. When you request a quote, we connect you with licensed insurance brokers and advisers from our network who can provide personalised quotes and advice tailored to your circumstances. All insurance products are issued by licensed insurers through our broker partners. Information on this website is general in nature and does not constitute financial advice. You should seek independent financial advice before making insurance decisions. We may receive a referral fee from our broker partners, but this does not affect the price you pay or the advice you receive.
+            MotorHomeInsurance.co.nz is a free comparison service — we are not an insurer, broker, or financial adviser. When you request a quote, we connect you with licensed insurance brokers and advisers from our network who can provide personalised quotes and advice tailored to your circumstances. All insurance products are issued by licensed insurers through our broker partners. Information on this website is general in nature and does not constitute financial advice. You should seek independent financial advice before making insurance decisions. We may receive a referral fee from our broker partners, but this does not affect the price you pay or the advice you receive.
           </p>
         </div>
       </div>

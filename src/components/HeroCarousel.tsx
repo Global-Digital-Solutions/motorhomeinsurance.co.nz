@@ -4,12 +4,12 @@ import { useState, useEffect, useCallback } from 'react';
 
 const heroImages = [
   {
-    url: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&h=1080&fit=crop',
-    alt: 'Motorhome parked in scenic New Zealand landscape',
+    url: 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=1920&h=1080&fit=crop',
+    alt: 'Modern motorhome parked in a stunning New Zealand landscape',
   },
   {
-    url: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&h=1080&fit=crop',
-    alt: 'Campervan on an open road in New Zealand',
+    url: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1920&h=1080&fit=crop',
+    alt: 'Campervan driving through scenic New Zealand countryside',
   },
 ];
 
