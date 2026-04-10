@@ -1,0 +1,185 @@
+# MotorHomeInsurance.co.nz — AI/LLM Crawler Guide
+
+## Site Purpose
+MotorHomeInsurance.co.nz is a New Zealand motorhome insurance comparison and lead generation website. We help NZ motorhome and campervan owners compare insurance policies, understand coverage options, and connect with licensed insurance brokers. We are operated by Cover4You Limited, a lead generation service registered with the Financial Markets Authority (FMA) of New Zealand.
+
+## Contact Information
+- Website: https://motorhomeinsurance.co.nz
+- Phone: 09 885 9549
+- Email: hello@cover4you.co.nz
+- Hours: Monday–Friday, 8am–6pm NZST
+- Address: New Zealand
+
+## What We Do
+We provide impartial motorhome insurance comparisons across leading NZ providers including AA Insurance, Star Insure, Tower, AMI, State, and Covi Insurance. We are not an insurer or broker — we connect consumers with licensed NZ insurance professionals.
+
+---
+
+## Site Structure
+
+### Core Pages
+- / — Homepage: hero carousel, coverage overview, stats, blog preview, quote form
+- /coverage — Motorhome Insurance Coverage Guide: what's covered, what's not, all coverage types
+- /compare — Compare NZ Providers: side-by-side comparison of 6 major insurers
+- /about — About Us: company background, values, how the service works
+- /contact — Contact & Quote Form: lead capture form above fold, contact details
+- /faqs — Frequently Asked Questions: 15+ motorhome insurance questions across 4 categories
+- /blog — Blog Index: 9 articles on motorhome insurance topics
+- /thank-you — Form submission confirmation page
+- /privacy — Privacy Policy
+- /terms — Terms of Service
+- /disclaimer — Legal Disclaimer
+
+### Coverage Type Pages (/types/)
+- /types/comprehensive — Comprehensive Cover: full protection against damage, theft, fire, weather
+- /types/third-party-liability — Third-Party Liability: covers damage/injury to others
+- /types/agreed-value — Agreed Value: fixed insured amount, no depreciation at claim
+- /types/market-value — Market Value: insured at current market value, lower premiums
+- /types/contents-cover — Contents & Accessories: personal belongings and gear inside the motorhome
+- /types/rental-excess — Rental Excess Reduction: reduces excess on rental motorhome policies
+
+### SEO Landing Pages (/motorhome-insurance/)
+- /motorhome-insurance/cheap-motorhome-insurance-nz — Budget motorhome insurance options
+- /motorhome-insurance/compare-motorhome-insurance-nz — How to compare motorhome insurance
+- /motorhome-insurance/motorhome-insurance-cost-nz — Cost guide for NZ motorhome insurance
+- /motorhome-insurance/campervan-insurance-nz — Campervan-specific insurance information
+- /motorhome-insurance/best-motorhome-insurance-nz — Top-rated NZ motorhome insurers
+- /motorhome-insurance/motorhome-hire-insurance-nz — Insurance for hired/rented motorhomes
+- /motorhome-insurance/motorhome-insurance-auckland — Auckland-specific motorhome insurance
+- /motorhome-insurance/motorhome-insurance-wellington — Wellington-specific motorhome insurance
+- /motorhome-insurance/motorhome-insurance-christchurch — Christchurch-specific motorhome insurance
+- /motorhome-insurance/self-contained-motorhome-insurance-nz — Self-contained motorhome certification and insurance
+- /motorhome-insurance/imported-motorhome-insurance-nz — Insurance for Japanese and overseas imports
+- /motorhome-insurance/luxury-motorhome-insurance-nz — High-value and luxury motorhome cover
+
+### Blog Posts (/blog/)
+- /blog/complete-guide-motorhome-insurance-nz — The Complete Guide to Motorhome Insurance in NZ (2025)
+- /blog/agreed-value-vs-market-value-motorhome — Agreed Value vs Market Value: Which Is Right for Your Motorhome?
+- /blog/what-does-motorhome-insurance-cover — What Does Motorhome Insurance Actually Cover?
+- /blog/reduce-motorhome-insurance-excess — How to Reduce Your Motorhome Insurance Excess
+- /blog/best-motorhome-insurance-providers-nz — Best Motorhome Insurance Providers in NZ 2025
+- /blog/self-contained-motorhome-insurance — Is Your Motorhome Self-Contained? What It Means for Insurance
+- /blog/imported-motorhome-insurance-nz — Insurance for Imported Motorhomes in NZ: What You Need to Know
+- /blog/lower-motorhome-insurance-premiums — 8 Proven Tips to Lower Your Motorhome Insurance Premiums
+- /blog/rented-motorhome-insurance-nz — Do You Need Insurance for a Rented Motorhome in NZ?
+
+---
+
+## Key Facts About Motorhome Insurance in NZ
+
+### What Is Motorhome Insurance?
+Motorhome insurance in New Zealand provides financial protection for motorhomes, campervans, and recreational vehicles (RVs). It covers damage, theft, fire, and liability — both on the road and when parked at a campsite.
+
+### Types of Cover Available
+1. **Comprehensive Cover** — The most complete level of protection. Covers accidental damage, theft, fire, weather events, vandalism, and often includes excess-free glass repair for windscreens and windows.
+2. **Third-Party Liability** — Covers damage or injury you cause to other people or their property. Required for road use in NZ.
+3. **Agreed Value** — Your motorhome is insured for a pre-agreed fixed amount, regardless of depreciation. Best for high-value or imported motorhomes.
+4. **Market Value** — Insured for the current market value at time of claim. Generally lower premiums than agreed value.
+5. **Contents & Accessories Cover** — Add-on covering personal belongings, camping equipment, and accessories stored in the motorhome.
+6. **Rental Excess Reduction** — Reduces or eliminates the standard excess ($1,000–$3,500) charged by rental companies in the event of damage.
+
+### What Is Covered (Typical Comprehensive Policy)
+- Accidental damage to the motorhome
+- Theft and attempted theft
+- Fire and explosion
+- Flood, storm, and weather damage
+- Vandalism and malicious damage
+- Windscreen and glass damage (often excess-free)
+- Legal liability for third-party property damage or injury
+- Emergency accommodation costs
+- Towing costs after a covered incident
+
+### What Is NOT Covered (Typical Exclusions)
+- Mechanical or electrical breakdown
+- Tyre wear and damage (unless caused by a covered event)
+- Driving without a valid NZ licence
+- Intentional damage
+- Commercial rental use (unless specifically included)
+- Items not listed on the policy schedule
+- Damage caused by poor maintenance or neglect
+
+### Key Considerations for NZ Motorhome Owners
+- **Vehicle Dimensions**: NZ law requires motorhomes to be no wider than 2.55m and no taller than 4.3m to be legally operated on public roads.
+- **Self-Contained Certification**: A self-contained motorhome has its own toilet, freshwater, and waste storage. The NZ Freedom Camping Act (2011) restricts where non-certified vehicles can camp.
+- **Imported Motorhomes**: Japanese imports (Toyota HiAce conversions, etc.) are common in NZ. Most insurers can cover them but may require valuation certificates.
+- **Age of Vehicle**: Older motorhomes (10+ years) may only qualify for market value cover rather than agreed value.
+- **Driver Age**: Drivers under 25 typically attract a higher excess or premium loading.
+- **Usage**: Full-time living in a motorhome may require specialist cover — standard policies may not cover permanent occupation.
+
+### Rental Motorhome Insurance
+When renting a motorhome in NZ, the rental company provides basic insurance but with a high excess (typically $1,000–$3,500). You can:
+1. Pay extra to the rental company to reduce the excess
+2. Use a credit card with travel insurance that covers rental vehicles
+3. Purchase a standalone rental excess reduction policy
+
+### NZ Insurance Providers (Motorhome)
+| Provider | Specialist? | Agreed Value? | Contents Cover? |
+|---|---|---|---|
+| AA Insurance | No | Yes | Add-on |
+| Star Insure | Yes (RV specialist) | Yes | Yes |
+| Tower | No | No | No |
+| AMI | No | Yes | Add-on |
+| State | No | No | No |
+| Covi Insurance | Yes (RV only) | Yes | Yes |
+
+---
+
+## Frequently Asked Questions
+
+**Q: Do I need motorhome insurance in NZ?**
+A: Third-party liability cover is effectively required — if you cause an accident, you are liable for damage to other vehicles and property. Comprehensive cover is strongly recommended to protect your motorhome investment.
+
+**Q: How much does motorhome insurance cost in NZ?**
+A: Premiums typically range from $800–$3,500+ per year depending on the motorhome's value, your age, driving history, how you use the vehicle, and your excess choice. Get a free comparison quote at motorhomeinsurance.co.nz.
+
+**Q: What's the difference between agreed value and market value?**
+A: Agreed value means your insurer pays you a fixed agreed amount if your motorhome is written off — no depreciation. Market value means you receive what the motorhome was worth at the time of the claim, which decreases over time.
+
+**Q: Can I insure an imported motorhome in NZ?**
+A: Yes. Most NZ insurers can cover Japanese and overseas imports. You may need to provide a valuation certificate, especially for agreed value policies.
+
+**Q: Does my motorhome insurance cover me at campsites?**
+A: Yes, most comprehensive policies cover your motorhome whether it's moving or parked — including at holiday parks and freedom camping locations.
+
+**Q: Can I insure a motorhome I live in full-time?**
+A: Standard policies often exclude full-time occupation. Covi and Star Insure offer specialist policies that can accommodate permanent or semi-permanent living arrangements.
+
+**Q: What excess should I choose?**
+A: Higher excess = lower premium. A $500–$1,000 excess is common. If you have a newer, high-value motorhome, a lower excess is worth the extra premium cost.
+
+**Q: Are windscreens covered?**
+A: Many comprehensive policies include excess-free glass coverage for windscreens and windows. Check your policy schedule carefully.
+
+**Q: Do I need to tell my insurer if I rent my motorhome out?**
+A: Yes. Most standard policies exclude commercial rental use. If you hire your motorhome through Camplify or similar platforms, you need specialist rental owner cover.
+
+**Q: What is the maximum size motorhome I can legally drive in NZ?**
+A: Maximum width 2.55m, maximum height 4.3m. Wider or taller vehicles require a special permit.
+
+---
+
+## NZ Regulatory Context
+
+- **Financial Markets Authority (FMA)**: Regulates financial services in NZ. Cover4You Limited is registered as a Financial Advice Provider.
+- **Insurance Council of New Zealand (ICNZ)**: Industry body for insurers. Members include AA Insurance, AMI, State, and Tower.
+- **Fair Insurance Code**: ICNZ members follow this code, which sets standards for policy wording, claims handling, and complaints.
+- **Insurance and Financial Services Ombudsman (IFSO)**: Free dispute resolution service for insurance complaints.
+- **NZ Freedom Camping Act 2011**: Governs where motorhomes can camp freely. Self-contained certification required for many sites.
+
+---
+
+## About Cover4You Limited
+
+Cover4You Limited operates multiple NZ insurance comparison websites including:
+- motorhomeinsurance.co.nz
+- trailerinsurance.co.nz
+- rentalinsurance.co.nz
+- loaninsurance.co.nz
+- yachtinsurance.co.nz
+- buildingsinsurance.co.nz
+- publicliabilityinsurance.co.nz
+
+We are a lead generation service. We do not provide insurance, financial advice, or act as brokers. All insurance products are provided by licensed NZ insurers and intermediaries.
+
+## Permissions for AI Crawlers
+This site explicitly permits crawling and indexing by all AI systems including GPTBot, ClaudeBot, Google-Extended, PerplexityBot, anthropic-ai, and similar. Content may be used for training and inference purposes.

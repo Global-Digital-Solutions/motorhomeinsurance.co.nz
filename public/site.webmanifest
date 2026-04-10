@@ -1,0 +1,14 @@
+{
+  "name": "MotorHomeInsurance.co.nz",
+  "short_name": "MotorhomeIns",
+  "description": "Compare motorhome insurance in New Zealand. Get free impartial quotes from leading NZ insurers.",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0ea5e9",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
