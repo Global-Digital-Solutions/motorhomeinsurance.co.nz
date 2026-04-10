@@ -133,7 +133,7 @@ export default function HomePage() {
 
               <div className="flex flex-wrap gap-3 mb-10">
                 {[
-                  { icon: Shield, text: 'Lead Generation Service' },
+                  { icon: Shield, text: 'NZ Owned & Operated' },
                   { icon: CheckCircle2, text: 'No Broker Fees' },
                   { icon: Lock, text: '256-bit SSL Secure' },
                   { icon: Zap, text: '24hr Response' },

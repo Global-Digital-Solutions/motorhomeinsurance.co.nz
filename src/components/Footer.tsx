@@ -3,7 +3,7 @@ import Logo from './Logo';
 import { Shield, Zap, HeadphonesIcon, Lock, ExternalLink } from 'lucide-react';
 
 const footerTrustBadges = [
-  { icon: Shield, label: 'Lead Generation Service' },
+  { icon: Shield, label: 'NZ Owned & Operated' },
   { icon: Zap, label: 'Instant Quotes' },
   { icon: HeadphonesIcon, label: 'Expert Support' },
   { icon: Lock, label: '100% Secure' },

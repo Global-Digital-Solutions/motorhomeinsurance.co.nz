@@ -26,7 +26,7 @@ export default function DisclaimerPage() {
 
           <h2 className="text-3xl font-bold text-slate-900 mb-6">1. About MotorHomeInsurance.co.nz</h2>
           <p>
-            MotorHomeInsurance.co.nz is operated by Cover4You Limited, a New Zealand company. We are a lead generation service that connects motorhome owners with licensed insurance brokers and insurance providers.
+            MotorHomeInsurance.co.nz is operated by Cover4You Limited, a New Zealand company. We are a free comparison service that connects motorhome owners with licensed insurance brokers and insurance providers.
           </p>
 
           <h2 className="text-3xl font-bold text-slate-900 mb-6 mt-12">2. We Are Not An Insurer</h2>

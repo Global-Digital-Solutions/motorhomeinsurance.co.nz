@@ -135,7 +135,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
           {/* FMA Note */}
           <div className="mt-12 text-center text-xs text-slate-500 border-t border-slate-200 pt-6">
             <p>
-              MotorHomeInsurance.co.nz is a lead generation service. All insurance is provided by licensed New Zealand insurers.
+              MotorHomeInsurance.co.nz is a free comparison service. All insurance is provided by licensed New Zealand insurers.
               <br />We comply with all Financial Markets Authority (FMA) requirements for fair dealing and transparency.
             </p>
           </div>

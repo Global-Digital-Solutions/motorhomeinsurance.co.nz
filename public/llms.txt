@@ -1,7 +1,7 @@
 # MotorHomeInsurance.co.nz — AI/LLM Crawler Guide
 
 ## Site Purpose
-MotorHomeInsurance.co.nz is a New Zealand motorhome insurance comparison and lead generation website. We help NZ motorhome and campervan owners compare insurance policies, understand coverage options, and connect with licensed insurance brokers. We are operated by Cover4You Limited, a lead generation service registered with the Financial Markets Authority (FMA) of New Zealand.
+MotorHomeInsurance.co.nz is a New Zealand motorhome insurance comparison website. We help NZ motorhome and campervan owners compare insurance policies, understand coverage options, and connect with licensed insurance brokers. We are operated by Cover4You Limited, a comparison service registered with the Financial Markets Authority (FMA) of New Zealand.
 
 ## Contact Information
 - Website: https://motorhomeinsurance.co.nz
@@ -179,7 +179,7 @@ Cover4You Limited operates multiple NZ insurance comparison websites including:
 - buildingsinsurance.co.nz
 - publicliabilityinsurance.co.nz
 
-We are a lead generation service. We do not provide insurance, financial advice, or act as brokers. All insurance products are provided by licensed NZ insurers and intermediaries.
+We are a free comparison service. We do not provide insurance, financial advice, or act as brokers. All insurance products are provided by licensed NZ insurers and intermediaries.
 
 ## Permissions for AI Crawlers
 This site explicitly permits crawling and indexing by all AI systems including GPTBot, ClaudeBot, Google-Extended, PerplexityBot, anthropic-ai, and similar. Content may be used for training and inference purposes.
