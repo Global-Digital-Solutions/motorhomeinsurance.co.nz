@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import AnimatedStats from '@/components/AnimatedStats';
+import HowItWorksSection from '@/components/HowItWorksSection';
 import QuoteForm from '@/components/QuoteForm';
 import HeroCarousel from '@/components/HeroCarousel';
 import { faqs } from '@/data/faqs';
@@ -227,34 +228,7 @@ export default function HomePage() {
         </section>
 
         {/* How It Works Section */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">How Our Service Works</h2>
-              <p className="text-slate-600 text-lg">Get matched with the right motorhome insurance in just three simple steps</p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white font-bold text-xl flex items-center justify-center mb-6 mx-auto">1</div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 text-center">Tell Us About Your Motorhome</h3>
-                <p className="text-slate-700 text-center">Share your motorhome details — type, value, age, whether it's self-contained, and how you use it. Our quick form takes just 2 minutes to complete and gives us everything we need to find the best quotes.</p>
-              </div>
-
-              <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white font-bold text-xl flex items-center justify-center mb-6 mx-auto">2</div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 text-center">We Search Our Broker Network</h3>
-                <p className="text-slate-700 text-center">Our ICNZ-registered brokers compare quotes from New Zealand's top motorhome insurers, factoring in your specific situation, location, and coverage needs. We do the legwork so you don't have to.</p>
-              </div>
-
-              <div className="relative">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-sky-500 to-blue-600 text-white font-bold text-xl flex items-center justify-center mb-6 mx-auto">3</div>
-                <h3 className="text-xl font-bold text-slate-900 mb-3 text-center">Get Personalised Quotes Within 24 Hours</h3>
-                <p className="text-slate-700 text-center">Receive detailed quotes from multiple providers with expert recommendations tailored to your motorhome. Compare options at your leisure and choose the policy that offers the best value and coverage.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <HowItWorksSection />
 
         {/* Coverage Types Grid */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
