@@ -9,7 +9,7 @@ interface Stat {
 
 const stats: Stat[] = [
   { value: '38,000+', label: 'Motorhomes in NZ' },
-  { value: '6+', label: 'Providers Compared' },
+  { value: 'Save', label: 'Time & Money' },
   { value: 'Free', label: 'Fast Impartial Quotes' },
   { value: '✓', label: 'NZ Owned & Operated' },
 ];
