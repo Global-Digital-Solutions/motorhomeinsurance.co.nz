@@ -197,25 +197,28 @@ export default function HomePage() {
 
         <AnimatedStats />
 
-        {/* Why Motorhome Insurance Matters in NZ */}
+        {/* How It Works Section */}
+        <HowItWorksSection />
+
+        {/* Why Motorhome Insurance Matters */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Why Motorhome Insurance Matters in New Zealand</h2>
-              <p className="text-slate-600 text-lg">New Zealand's motorhome market is booming — and so is the need for proper protection.</p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Why Motorhome Insurance Matters</h2>
+              <p className="text-slate-600 text-lg">The motorhome market is booming — and so is the need for proper protection.</p>
             </div>
 
             <div className="space-y-6">
               <p className="text-lg text-slate-700 leading-relaxed">
-                New Zealand has over 35,000 registered motorhomes, with the fleet growing approximately 8% annually. From compact campervans to luxury Class A motorhomes, the diversity of the market reflects Kiwis' love of adventure and freedom on wheels. Whether you're taking weekend trips around the North Island or embarking on a full-time nomadic lifestyle, your motorhome represents a significant investment that deserves proper protection.
+                With over 35,000 registered motorhomes on NZ roads and the fleet growing approximately 8% annually, more Kiwis than ever are hitting the open road. From compact campervans to luxury Class A motorhomes, the diversity of the market reflects a love of adventure and freedom on wheels. Whether you're taking weekend trips around the North Island or embarking on a full-time nomadic lifestyle, your motorhome represents a significant investment that deserves proper protection.
               </p>
 
               <p className="text-lg text-slate-700 leading-relaxed">
-                The average motorhome value ranges from $40,000 to over $200,000, with self-contained models commanding premium prices. Without standalone motorhome insurance, this investment sits completely unprotected when parked at campsites, stored at home, or left overnight during your travels. The Financial Markets Authority (FMA) and Insurance Council of New Zealand (ICNZ) both recommend dedicated motorhome cover because standard car policies simply don't provide adequate protection for vehicles that function as temporary homes.
+                The average motorhome value ranges from $40,000 to over $200,000, with self-contained models commanding premium prices. Without standalone motorhome insurance, this investment sits completely unprotected when parked at campsites, stored at home, or left overnight during your travels. The Financial Markets Authority (FMA) and Insurance Council of NZ (ICNZ) both recommend dedicated motorhome cover because standard car policies simply don't provide adequate protection for vehicles that function as temporary homes.
               </p>
 
               <p className="text-lg text-slate-700 leading-relaxed">
-                Consider this scenario: You're enjoying a week at a scenic motorhome park when a storm causes significant water damage. If you only have car insurance, you're looking at thousands of dollars in repair costs and a vehicle that's uninsured while parked. Worse, if someone is injured on your motorhome property or your motorhome damages someone else's vehicle, your liability exposure could exceed $20 million. Additionally, under New Zealand's Freedom Camping Act 2011, some freedom camping sites have specific insurance requirements. Standalone motorhome insurance ensures compliance and provides 24/7 protection whether you're driving, parked at an official campground, or enjoying freedom camping in a self-contained motorhome.
+                Consider this: you're enjoying a week at a scenic motorhome park when a storm causes significant water damage. Without dedicated cover, you're looking at thousands of dollars in repair costs. Worse, if someone is injured on your motorhome property or your vehicle damages someone else's car, your liability exposure could exceed $20 million. Under the Freedom Camping Act 2011, some sites also carry specific insurance requirements — standalone motorhome insurance ensures compliance and provides 24/7 protection whether you're driving, parked at an official campground, or freedom camping.
               </p>
             </div>
 
@@ -226,9 +229,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* How It Works Section */}
-        <HowItWorksSection />
 
         {/* Coverage Types Grid */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -286,7 +286,7 @@ export default function HomePage() {
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Did You Know?</h4>
                   <p className="text-slate-700 text-sm leading-relaxed">
-                    Most comprehensive car insurance policies in New Zealand only cover your motorhome while you&apos;re driving it. Once you park at a campsite, in your driveway, or at a storage facility, your motorhome is generally considered a separate, uninsured asset. Standalone motorhome insurance covers you 24/7 — whether you&apos;re driving or parked.
+                    Most comprehensive car insurance policies only cover your motorhome while you&apos;re driving it. Once you park at a campsite, in your driveway, or at a storage facility, your motorhome is generally considered a separate, uninsured asset. Standalone motorhome insurance covers you 24/7 — whether you&apos;re driving or parked.
                   </p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export default function HomePage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-14">
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
-              <p className="text-slate-600 text-lg">Find answers to common questions about motorhome insurance in New Zealand</p>
+              <p className="text-slate-600 text-lg">Find answers to common questions about motorhome insurance</p>
             </div>
 
             <div className="space-y-3">
