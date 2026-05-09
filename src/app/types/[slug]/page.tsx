@@ -56,7 +56,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       </div>
 
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">Excess-Free Glass Cover — A Major NZ Selling Point</h3>
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Excess-Free Glass Cover — A Popular Add-On</h3>
         <p className="text-slate-700 leading-relaxed">
           Many NZ comprehensive motorhome policies include excess-free or reduced-excess glass cover for windscreens, windows, and mirrors. This is valuable because glass damage is common (stone chips on highways, tree branches at campsites) and repair costs $200-500+ per incident. Excess-free glass means you can claim without paying excess, protecting your windscreen while driving NZ roads.
         </p>
@@ -95,7 +95,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       </div>
 
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">NZ Liability Limits</h3>
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Liability Limits Explained</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
           Standard motorhome policies in NZ include third-party liability up to $20 million, which is very comprehensive. This covers almost any scenario you could face. In rare, catastrophic situations, claims could theoretically exceed $20 million, but these are extremely uncommon. The $20 million limit provides excellent protection for typical NZ motorhoming situations.
         </p>
@@ -269,7 +269,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       </div>
 
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">Top NZ Rental Companies and Their Excess Policies</h3>
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Top Rental Companies and Their Excess Policies</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
           Major NZ motorhome rental companies include Britz, Maui, Hippie Campers, and Apollo. Most include standard excess of $2,000-3,000 in their rental rate. Excess reduction is offered as optional add-on daily charge. Compare excess reduction costs across rental companies — some offer it cheaper or better coverage than others. Budget excess reduction into your rental motorhome costs upfront.
         </p>

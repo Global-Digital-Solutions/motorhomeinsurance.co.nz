@@ -59,6 +59,34 @@ export const metadata: Metadata = {
   },
 };
 
+const schemaOrg = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://motorhomeinsurance.co.nz/#organization",
+      name: "MotorHomeInsurance.co.nz",
+      url: "https://motorhomeinsurance.co.nz",
+      logo: "https://motorhomeinsurance.co.nz/android-chrome-512x512.png",
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+6498859549",
+        contactType: "customer service",
+        areaServed: "NZ",
+        availableLanguage: "English",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://motorhomeinsurance.co.nz/#website",
+      url: "https://motorhomeinsurance.co.nz",
+      name: "MotorHomeInsurance.co.nz",
+      description: "Motorhome insurance comparison and broker referral service",
+      publisher: { "@id": "https://motorhomeinsurance.co.nz/#organization" },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -67,6 +95,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased scroll-smooth">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0ea5e9" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

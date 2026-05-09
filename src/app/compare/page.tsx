@@ -49,7 +49,7 @@ export default function ComparePage() {
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding the NZ Motorhome Insurance Market</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding the Motorhome Insurance Market</h2>
 
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
               New Zealand's motorhome insurance market includes several excellent providers, each with different specialties and strengths. Motorhome insurance premiums can vary by 40% or more between providers for identical vehicles and coverage levels — which is why comparing quotes is so important for finding genuine value.
@@ -79,7 +79,7 @@ export default function ComparePage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">NZ Motorhome Insurance — Provider Comparison</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Motorhome Insurance — Provider Comparison</h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">Compare coverage features across New Zealand's leading motorhome insurance providers. ✓ = Included &nbsp; ◐ = Optional add-on &nbsp; ✗ = Not available</p>
           </div>
 
@@ -264,7 +264,7 @@ export default function ComparePage() {
       {/* Market Overview */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-slate-900 mb-8">NZ Motorhome Insurance Market Overview</h2>
+          <h2 className="text-3xl font-bold text-slate-900 mb-8">Motorhome Insurance Market Overview</h2>
 
           <div className="space-y-8">
             <div className="border-l-4 border-sky-500 pl-6">

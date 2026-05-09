@@ -307,7 +307,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
   'rv-insurance-nz': {
     intro: 'RV (recreational vehicle) insurance in New Zealand covers motorhomes, campervans, and self-contained recreational vehicles used for touring, holidays, and adventure travel. The term "RV" is commonly used internationally but less common in NZ — Kiwis typically say "motorhome" or "campervan". However, understanding RV insurance helps connect international and domestic terminology for NZ recreational vehicle owners.',
     guide: <>
-      <h3 className="text-2xl font-bold text-slate-900 mb-4">RV Insurance in the NZ Context</h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">RV Insurance in Context</h3>
       <div className="space-y-4 text-slate-700">
         <p><strong>What is an RV?:</strong> RVs include motorhomes, Class A/B/C motorhomes, campervans, van conversions, and self-contained vehicles. In NZ terminology, we typically use "motorhome" or "campervan" instead of "RV", but the coverage needs are identical.</p>
         <p><strong>Imported American RVs:</strong> Some Kiwis import American RVs (larger Class A or Class C motorhomes). These require specialist insurance because they have different dimensions, systems, and specifications than NZ-spec motorhomes. Imported RVs need professional valuations and experienced insurers familiar with overseas specifications.</p>
@@ -343,7 +343,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
   'freedom-camping-insurance-nz': {
     intro: 'Freedom camping in New Zealand is legal and popular, but only if your motorhome meets specific requirements. Understanding freedom camping insurance requirements and the NZ Freedom Camping Act 2011 ensures you\'re properly covered and compliant when camping at designated freedom camping sites, council reserves, and public land across New Zealand.',
     guide: <>
-      <h3 className="text-2xl font-bold text-slate-900 mb-4">Freedom Camping in NZ — Insurance & Compliance</h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Freedom Camping — Insurance & Compliance</h3>
       <div className="space-y-4 text-slate-700">
         <p><strong>Freedom Camping Act 2011:</strong> New Zealand\'s <a href="https://www.legislation.govt.nz/act/public/2011/0061/latest/whole.html" target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:text-sky-700 underline">Freedom Camping Act</a> allows self-contained motorhomes to camp for free at designated sites and council reserves. Non-self-contained motorhomes must use commercial campsites (fee-paying). This distinction directly affects insurance requirements.</p>
         <p><strong>Self-Contained Certification (MSD):</strong> To freedom camp legally, your motorhome must have Ministry of Environment Motorhome Self-Containment (MSD) certification. This certificate verifies your motorhome has integrated water, waste, and power systems meeting government standards. Without MSD certification, you cannot freedom camp — even if your motorhome has the systems.</p>
