@@ -6,6 +6,11 @@ const WORKER_SECRET = process.env.WORKER_SECRET!;
 const SITE_ID       = process.env.SITE_ID!;
 const REDIRECT_URL  = process.env.REDIRECT_URL ?? '/thank-you';
 
+function redirectPath() {
+  try { return new URL(REDIRECT_URL).pathname || '/thank-you/'; }
+  catch { return REDIRECT_URL; }
+}
+
 const CORE_FIELDS = new Set([
   'name', 'firstName', 'first_name', 'lastName', 'last_name',
   'email', 'phone', 'tel',
@@ -65,8 +70,12 @@ export async function POST(request: NextRequest) {
     });
   }
 
+  const wantsJson = contentType.includes('application/json');
+
   if (raw['_honey'] || raw['_honeypot']) {
-    return NextResponse.redirect(new URL(REDIRECT_URL, request.url), 302);
+    return wantsJson
+      ? NextResponse.json({ ok: true, redirect: redirectPath() })
+      : NextResponse.redirect(new URL(redirectPath(), request.url), 302);
   }
 
   const error = validate(raw);
@@ -109,5 +118,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Internal error' }, { status: 500 });
   }
 
-  return NextResponse.redirect(new URL(REDIRECT_URL, request.url), 302);
+  return wantsJson
+    ? NextResponse.json({ ok: true, redirect: redirectPath() })
+    : NextResponse.redirect(new URL(redirectPath(), request.url), 302);
 }
