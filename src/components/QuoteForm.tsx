@@ -47,7 +47,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
           <p className="text-sky-100 text-sm mt-1">Compare top NZ motorhome insurers in 2 minutes</p>
         </div>
 
-        <form action="https://shiny-bush-41cd.darinbutler.workers.dev" method="POST" onSubmit={handleSubmit} className="p-6 space-y-4">
+        <form action="/api/submit-form" method="POST" onSubmit={handleSubmit} className="p-6 space-y-4">
           <input type="hidden" name="_next" value="https://motorhomeinsurance.co.nz/thank-you/" />
           <input type="hidden" name="_subject" value="New Quote Request - MotorHomeInsurance.co.nz" />
           <input type="hidden" name="_cc" value="butlerdarin@gmail.com" />
@@ -131,7 +131,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
             <p className="text-sky-100 text-lg">Fill out the form below and a licensed broker will respond within 24 hours</p>
           </div>
 
-          <form action="https://shiny-bush-41cd.darinbutler.workers.dev" method="POST" onSubmit={handleSubmit} className="p-6 sm:p-10">
+          <form action="/api/submit-form" method="POST" onSubmit={handleSubmit} className="p-6 sm:p-10">
             <input type="hidden" name="_next" value="https://motorhomeinsurance.co.nz/thank-you/" />
             <input type="hidden" name="_subject" value="New Quote Request - MotorHomeInsurance.co.nz" />
             <input type="hidden" name="_cc" value="butlerdarin@gmail.com" />
