@@ -52,7 +52,7 @@ function validate(raw: Record<string, string>): string | null {
   if (!raw.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(raw.email)) {
     return 'Invalid email address';
   }
-  const name = raw.name || raw.firstName || '';
+  const name = raw.name || raw.firstName || raw.first_name || '';
   if (!name.trim()) return 'Name is required';
   return null;
 }
