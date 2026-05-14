@@ -44,7 +44,7 @@ export default function FAQsPage() {
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1592351763700-b9b35a6465ea?w=1920&h=1080&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

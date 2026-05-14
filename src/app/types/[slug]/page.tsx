@@ -6,11 +6,11 @@ import QuoteForm from '@/components/QuoteForm';
 export const dynamicParams = false;
 
 const unsplashImages: Record<string, string> = {
-  comprehensive: 'photo-1558618666-fcd25c85cd64',
-  'third-party-liability': 'photo-1469854523086-cc02fe5d8800',
-  'agreed-value': 'photo-1533104816931-20fa691ff6ca',
-  'market-value': 'photo-1544735716-392fe2489ffa',
-  'contents-cover': 'photo-1609587312208-cea54be969e7',
+  comprehensive: 'photo-1629222247198-00b164054719',
+  'third-party-liability': 'photo-1596470693312-9a3686a0af0f',
+  'agreed-value': 'photo-1519001896312-85f41baa90a0',
+  'market-value': 'photo-1592351763700-b9b35a6465ea',
+  'contents-cover': 'photo-1519980744-785dc86d4a7a',
   'rental-excess-reduction': 'photo-1523987355523-c7b5b0dd90a7',
 };
 
@@ -286,7 +286,7 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
     notFound();
   }
 
-  const imageId = unsplashImages[slug] || 'photo-1558618666-fcd25c85cd64';
+  const imageId = unsplashImages[slug] || 'photo-1629222247198-00b164054719';
   const imageUrl = `https://images.unsplash.com/${imageId}?w=1920&h=1080&fit=crop`;
 
   const content = typeSpecificContent[slug] || {

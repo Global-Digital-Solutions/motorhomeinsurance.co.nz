@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Everything you need to know about insuring your motorhome in New Zealand — from what\'s covered to choosing the right policy for your lifestyle.',
     date: '2026-04-08',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1629222247198-00b164054719?w=800&h=450&fit=crop',
     readTime: '9 min read',
     category: 'Insurance Guides',
     content: `<h2>Understanding Motorhome Insurance</h2>
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding the key differences between agreed and market value motorhome insurance policies and how to choose the right one for your needs.',
     date: '2026-04-05',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1596470689751-54f9687c1b7f?w=800&h=450&fit=crop',
     readTime: '7 min read',
     category: 'Coverage Explained',
     content: `<h2>The Core Difference</h2>
@@ -102,7 +102,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A detailed breakdown of what standard motorhome insurance covers and what gaps you might need to fill with additional cover.',
     date: '2026-04-02',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1635787501769-10b8e23b3ded?w=800&h=450&fit=crop',
     readTime: '8 min read',
     category: 'Coverage Explained',
     content: `<h2>Standard Comprehensive Motorhome Cover</h2>
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Practical strategies to lower your motorhome insurance excess and improve your claim outcomes.',
     date: '2026-03-30',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1519001896312-85f41baa90a0?w=800&h=450&fit=crop',
     readTime: '6 min read',
     category: 'Money-Saving Tips',
     content: `<h2>Understanding Your Excess</h2>
@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Comparing New Zealand\'s top motorhome insurance providers — their strengths, coverage options, and which suits different motorhome owners.',
     date: '2026-03-28',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1592351763700-b9b35a6465ea?w=800&h=450&fit=crop',
     readTime: '10 min read',
     category: 'Provider Reviews',
     content: `<h2>Leading NZ Motorhome Insurance Providers</h2>
@@ -204,7 +204,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding self-contained motorhomes and how this affects your insurance coverage and premiums.',
     date: '2026-03-26',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1519980744-785dc86d4a7a?w=800&h=450&fit=crop',
     readTime: '6 min read',
     category: 'Insurance Guides',
     content: `<h2>What Does Self-Contained Mean?</h2>
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Practical, proven strategies to reduce your motorhome insurance costs without compromising on coverage.',
     date: '2026-03-22',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1513311068348-19c8fbdc0bb6?w=800&h=450&fit=crop',
     readTime: '7 min read',
     category: 'Money-Saving Tips',
     content: `<h2>1. Increase Your Voluntary Excess</h2>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding rental motorhome insurance, what the rental company covers, and when you need additional protection.',
     date: '2026-03-20',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1596470693312-9a3686a0af0f?w=800&h=450&fit=crop',
     readTime: '6 min read',
     category: 'Rental Coverage',
     content: `<h2>What Comes with Rental Motorhome Insurance</h2>
