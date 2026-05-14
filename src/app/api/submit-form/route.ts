@@ -12,7 +12,7 @@ function redirectPath() {
 }
 
 const CORE_FIELDS = new Set([
-  'name', 'firstName', 'first_name', 'lastName', 'last_name',
+  'name', 'fullName', 'full_name', 'firstName', 'first_name', 'lastName', 'last_name',
   'email', 'phone', 'tel',
 ]);
 const META_FIELDS = new Set([
@@ -24,7 +24,7 @@ const RESERVED_FIELDS = new Set([...CORE_FIELDS, ...META_FIELDS]);
 function parseName(raw: Record<string, string>) {
   const first    = (raw['firstName'] || raw['first_name'] || '').trim();
   const last     = (raw['lastName']  || raw['last_name']  || '').trim();
-  const combined = (raw['name']      || '').trim();
+  const combined = (raw['name'] || raw['fullName'] || raw['full_name'] || '').trim();
 
   if (first || last) {
     return { firstName: first, lastName: last, fullName: `${first} ${last}`.trim() };
@@ -53,7 +53,7 @@ function validate(raw: Record<string, string>): string | null {
   if (!raw.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(raw.email)) {
     return 'Invalid email address';
   }
-  const name = raw.name || raw.firstName || raw.first_name || '';
+  const name = raw.name || raw.fullName || raw.full_name || raw.firstName || raw.first_name || '';
   if (!name.trim()) return 'Name is required';
   return null;
 }

@@ -76,17 +76,11 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-4">
-          <input type="hidden" name="_next" value="https://motorhomeinsurance.co.nz/thank-you/" />
-          <input type="hidden" name="_subject" value="New Quote Request - MotorHomeInsurance.co.nz" />
-          <input type="hidden" name="_cc" value="butlerdarin@gmail.com" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_honey" style={{ display: 'none' }} />
-
           <div>
             <label htmlFor="fullName-compact" className="block text-sm font-semibold text-slate-700 mb-1.5">Full Name</label>
             <div className="relative">
               <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-              <input id="fullName-compact" type="text" name="fullName" required className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm" placeholder="John Doe" />
+              <input id="fullName-compact" type="text" name="name" required className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm" placeholder="John Doe" />
             </div>
           </div>
 
@@ -166,19 +160,13 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
           </div>
 
           <form onSubmit={handleSubmit} className="p-6 sm:p-10">
-            <input type="hidden" name="_next" value="https://motorhomeinsurance.co.nz/thank-you/" />
-            <input type="hidden" name="_subject" value="New Quote Request - MotorHomeInsurance.co.nz" />
-            <input type="hidden" name="_cc" value="butlerdarin@gmail.com" />
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_honey" style={{ display: 'none' }} />
-
             <div className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="fullName-full" className="block text-sm font-semibold text-slate-900 mb-2">Full Name</label>
                   <div className="relative">
                     <User className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input id="fullName-full" type="text" name="fullName" required className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-base" placeholder="John Doe" />
+                    <input id="fullName-full" type="text" name="name" required className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-base" placeholder="John Doe" />
                   </div>
                 </div>
                 <div>

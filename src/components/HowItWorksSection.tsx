@@ -160,7 +160,7 @@ export default function HowItWorksSection() {
         {/* CTA below steps */}
         <div className="text-center mt-12">
           <a
-            href="#quote"
+            href="#quote-form"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 hover:-translate-y-0.5 transition-all duration-200 text-base"
           >
             Start Your Free Comparison
