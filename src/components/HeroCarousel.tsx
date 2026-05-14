@@ -8,7 +8,7 @@ const heroImages = [
     alt: 'Modern motorhome parked in a stunning New Zealand landscape',
   },
   {
-    url: 'https://images.unsplash.com/photo-1513311068348-19c8fbdc0bb6?w=1920&h=1080&fit=crop',
+    url: 'https://images.unsplash.com/photo-1626680114529-3f6ffa002b80?w=1920&h=1080&fit=crop',
     alt: 'Campervan driving through scenic New Zealand countryside',
   },
 ];

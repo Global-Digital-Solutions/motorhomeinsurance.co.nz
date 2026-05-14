@@ -95,7 +95,7 @@ export default function CoveragePage() {
       <section
         className="relative min-h-[70vh] flex flex-col justify-end px-4 sm:px-6 lg:px-8 pt-28 pb-32"
         style={{
-          backgroundImage: 'url(https://images.unsplash.com/photo-1629222247198-00b164054719?w=1920&h=1080&fit=crop)',
+          backgroundImage: 'url(https://images.unsplash.com/photo-1608161317310-c079ae39d224?w=1920&h=1080&fit=crop)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

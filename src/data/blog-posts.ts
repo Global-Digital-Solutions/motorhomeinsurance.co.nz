@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Everything you need to know about insuring your motorhome in New Zealand — from what\'s covered to choosing the right policy for your lifestyle.',
     date: '2026-04-08',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1629222247198-00b164054719?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1608161317310-c079ae39d224?w=800&h=450&fit=crop',
     readTime: '9 min read',
     category: 'Insurance Guides',
     content: `<h2>Understanding Motorhome Insurance</h2>
@@ -204,7 +204,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding self-contained motorhomes and how this affects your insurance coverage and premiums.',
     date: '2026-03-26',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1519980744-785dc86d4a7a?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1635787501769-10b8e23b3ded?w=800&h=450&fit=crop',
     readTime: '6 min read',
     category: 'Insurance Guides',
     content: `<h2>What Does Self-Contained Mean?</h2>
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Practical, proven strategies to reduce your motorhome insurance costs without compromising on coverage.',
     date: '2026-03-22',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1513311068348-19c8fbdc0bb6?w=800&h=450&fit=crop',
+    image: 'https://images.unsplash.com/photo-1626680114529-3f6ffa002b80?w=800&h=450&fit=crop',
     readTime: '7 min read',
     category: 'Money-Saving Tips',
     content: `<h2>1. Increase Your Voluntary Excess</h2>
