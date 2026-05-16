@@ -16,9 +16,7 @@ const coverageTypes = [
 const navLinks = [
   { label: 'Coverage', href: '/coverage' },
   { label: 'Compare', href: '/compare' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Resources', href: '/blog' },
 ];
 
 export default function NavBar() {
