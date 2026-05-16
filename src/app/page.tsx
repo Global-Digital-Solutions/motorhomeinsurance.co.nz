@@ -158,47 +158,49 @@ export default function HomePage() {
       <main>
 
         {/* ── HERO ────────────────────────────────────────────── */}
-        <section className="relative min-h-screen lg:min-h-[110vh] flex items-center overflow-hidden pb-20">
+        <section className="relative min-h-screen lg:min-h-[100vh] flex items-center overflow-hidden pb-20">
           <HeroCarousel />
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 lg:pt-0 lg:pb-0">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
-                <Shield className="w-4 h-4 text-sky-400" />
-                <span className="text-sm text-white font-medium">Connect with Licensed Insurance Brokers</span>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 lg:pt-16 lg:pb-0">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+              {/* Left: copy */}
+              <div className="lg:col-span-7">
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-6">
+                  <Shield className="w-4 h-4 text-sky-400" />
+                  <span className="text-sm text-white font-medium">Connect with Licensed Insurance Brokers</span>
+                </div>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                  Protect Your Motorhome
+                  <span className="block bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
+                    With Confidence
+                  </span>
+                </h1>
+                <p className="text-lg sm:text-xl text-slate-200 mb-8 leading-relaxed">
+                  Compare top motorhome insurance providers in minutes. Campervans, Class A, B &amp; C motorhomes, coaches — get comprehensive cover tailored to your needs.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  {[
+                    { icon: Shield, text: 'NZ Owned & Operated' },
+                    { icon: CheckCircle2, text: 'No Broker Fees' },
+                    { icon: Lock, text: '256-bit SSL Secure' },
+                    { icon: Zap, text: '24hr Response' },
+                  ].map((badge) => {
+                    const Icon = badge.icon;
+                    return (
+                      <div key={badge.text} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/15">
+                        <Icon className="w-4 h-4 text-sky-400 flex-shrink-0" />
+                        <span className="text-sm text-white font-medium">{badge.text}</span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                Protect Your Motorhome
-                <span className="block bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
-                  With Confidence
-                </span>
-              </h1>
-              <p className="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
-                Compare top motorhome insurance providers in minutes. Campervans, Class A, B &amp; C motorhomes, coaches — get comprehensive cover tailored to your needs.
-              </p>
-              <div className="flex flex-wrap gap-3 mb-10">
-                {[
-                  { icon: Shield, text: 'NZ Owned & Operated' },
-                  { icon: CheckCircle2, text: 'No Broker Fees' },
-                  { icon: Lock, text: '256-bit SSL Secure' },
-                  { icon: Zap, text: '24hr Response' },
-                ].map((badge) => {
-                  const Icon = badge.icon;
-                  return (
-                    <div key={badge.text} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-lg px-3 py-2 border border-white/15">
-                      <Icon className="w-4 h-4 text-sky-400 flex-shrink-0" />
-                      <span className="text-sm text-white font-medium">{badge.text}</span>
-                    </div>
-                  );
-                })}
+
+              {/* Right: quote form */}
+              <div className="lg:col-span-5">
+                <QuoteForm mode="compact" />
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/#quote-form" className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:-translate-y-0.5">
-                  Get a Quote <ArrowRight className="w-4 h-4" />
-                </Link>
-                <Link href="/compare" className="bg-white/15 hover:bg-white/25 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 border border-white/30 inline-flex items-center justify-center gap-2 backdrop-blur-sm">
-                  Compare Providers <ArrowRight className="w-4 h-4" />
-                </Link>
-              </div>
+
             </div>
           </div>
 
@@ -465,7 +467,7 @@ export default function HomePage() {
 
         {/* ── FAQ ── */}
         <section className="py-20 sm:py-28 bg-slate-50">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <p className="text-sky-600 text-sm font-semibold uppercase tracking-widest mb-3">Common Questions</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
@@ -498,6 +500,8 @@ export default function HomePage() {
 
         {/* ── QUOTE FORM ── */}
         <QuoteForm mode="full" />
+
+
 
       </main>
     </>
