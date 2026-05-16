@@ -257,8 +257,8 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
                   <img
-                    src="https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?w=800&h=600&fit=crop"
-                    alt="Motorhome campervan parked at a scenic New Zealand location"
+                    src="https://images.unsplash.com/photo-1513311068348-19c8fbdc0bb6?w=800&h=600&fit=crop"
+                    alt="White Maui Type-C motorhome on a New Zealand road"
                     className="w-full h-[420px] lg:h-[500px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />
