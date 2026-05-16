@@ -8,7 +8,7 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { value: '38,000+', label: 'Motorhomes in NZ' },
+  { value: '38,000+', label: 'Motorhomes on the Road' },
   { value: 'Save', label: 'Time & Money' },
   { value: 'No Fee', label: 'Fast Impartial Quotes' },
   { value: '✓', label: 'NZ Owned & Operated' },
@@ -20,7 +20,6 @@ function AnimatedCounter({ value, label, isVisible }: { value: string; label: st
   useEffect(() => {
     if (!isVisible) return;
 
-    // Non-numeric values (e.g. '✓', 'No Fee') — display immediately, no animation
     const numericPart = value.replace(/[^0-9]/g, '');
     if (!numericPart) {
       setDisplayValue(value);
@@ -48,11 +47,11 @@ function AnimatedCounter({ value, label, isVisible }: { value: string; label: st
   }, [isVisible, value]);
 
   return (
-    <div className="text-center">
-      <div className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent">
+    <div className="text-center px-4 py-2">
+      <div className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent">
         {displayValue}
       </div>
-      <p className="text-slate-600 font-medium mt-2 text-sm sm:text-base">{label}</p>
+      <p className="text-slate-500 font-medium mt-1.5 text-xs sm:text-sm">{label}</p>
     </div>
   );
 }
@@ -64,17 +63,23 @@ export default function AnimatedStats() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) { setIsVisible(true); observer.unobserve(entry.target); } },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     );
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
   }, []);
 
   return (
-    <div ref={containerRef} className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {stats.map((stat, idx) => (
-        <AnimatedCounter key={idx} value={stat.value} label={stat.label} isVisible={isVisible} />
-      ))}
+    /* Negative margin pulls the card up to overlap the hero bottom edge */
+    <div className="relative z-10 -mt-10 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <div
+        ref={containerRef}
+        className="bg-white rounded-2xl shadow-2xl shadow-slate-900/20 border border-slate-100 grid grid-cols-2 lg:grid-cols-4 divide-x divide-slate-100 divide-y lg:divide-y-0"
+      >
+        {stats.map((stat, idx) => (
+          <AnimatedCounter key={idx} value={stat.value} label={stat.label} isVisible={isVisible} />
+        ))}
+      </div>
     </div>
   );
 }

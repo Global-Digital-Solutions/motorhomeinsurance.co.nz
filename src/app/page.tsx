@@ -158,7 +158,7 @@ export default function HomePage() {
       <main>
 
         {/* ── HERO ────────────────────────────────────────────── */}
-        <section className="relative min-h-screen lg:min-h-[110vh] flex items-center overflow-hidden">
+        <section className="relative min-h-screen lg:min-h-[110vh] flex items-center overflow-hidden pb-20">
           <HeroCarousel />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-28 pb-16 lg:pt-0 lg:pb-0">
             <div className="max-w-3xl">
@@ -200,6 +200,14 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 z-10 animate-bounce">
+            <span className="text-white/60 text-xs font-medium tracking-widest uppercase">Scroll</span>
+            <svg className="w-5 h-5 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
           </div>
         </section>
 
