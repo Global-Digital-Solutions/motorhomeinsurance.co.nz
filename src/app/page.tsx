@@ -39,7 +39,7 @@ export default function HomePage() {
     {
       slug: 'do-i-need-motorhome-insurance',
       question: 'Do I need motorhome insurance?',
-      answer: 'Motorhome insurance is essential even though it's not legally mandatory. Your standard car policy typically only covers your motorhome while driving — once parked at a campground or stored at home, you\'re uninsured. Third-party liability protection is critical because if your motorhome damages someone else\'s property or causes injury, you could face massive personal liability. ICNZ recommends dedicated motorhome insurance for all owners.'
+      answer: 'Motorhome insurance is essential even though it\'s not legally mandatory. Your standard car policy typically only covers your motorhome while driving — once parked at a campground or stored at home, you\'re uninsured. Third-party liability protection is critical because if your motorhome damages someone else\'s property or causes injury, you could face massive personal liability. ICNZ recommends dedicated motorhome insurance for all owners.'
     },
     {
       slug: 'what-does-comprehensive-cover',

@@ -205,10 +205,10 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <h4 className="text-sm font-bold text-slate-300 uppercase tracking-wide mb-3">How This Site Works</h4>
           <p className="text-xs text-slate-500 leading-relaxed max-w-4xl">
-            MotorHomeInsurance.co.nz is a no-fee comparison service — we are not an insurer, broker, or financial adviser. When you request a quote, we connect you with licensed insurance brokers and advisers from our network who can provide personalised quotes and advice tailored to your circumstances. All insurance products are issued by licensed insurers through our broker partners. Information on this website is general in nature and does not constitute financial advice. You should seek independent financial advice before making insurance decisions.
+            MotorHomeInsurance.co.nz is a no-fee comparison and referral service operated by Cover4You. We are not an insurer, broker, or financial advice provider. When you submit a quote request, we connect you with licensed insurance brokers and advisers from our network who are regulated under the Financial Markets Conduct Act 2013 (FMCA) and hold Financial Advice Provider (FAP) licences issued by the Financial Markets Authority (FMA). Those brokers provide the personalised quotes and regulated advice — not us. All insurance products are issued by licensed New Zealand insurers. Information on this website is general in nature and does not constitute personal financial or insurance advice. You should seek independent advice tailored to your circumstances before making any insurance decision.
           </p>
           <p className="text-xs text-slate-500 leading-relaxed max-w-4xl mt-3">
-            <span className="text-slate-400 font-semibold">Commercial Relationships & Incentives:</span> We may receive referral fees, commissions, or other commercial incentives from the insurance brokers, underwriters, and providers featured on this website. These arrangements do not influence the price you pay for any insurance product. Before featuring any provider on our websites, we personally review and vet each broker, underwriter, and insurer to ensure they are appropriately licensed, hold a good standing with the relevant NZ regulatory bodies (including the FMA and ICNZ), and meet our standards for claims handling and customer service. Our editorial content and provider comparisons reflect our honest, independent assessment.
+            <span className="text-slate-400 font-semibold">Commercial Relationships:</span> We may receive referral fees or commissions from the brokers, underwriters, and insurers featured on this website. These arrangements do not affect the price you pay for any product. Before featuring any provider, we personally vet each broker and insurer to confirm appropriate licensing, good standing with the FMA and ICNZ, and compliance with our standards for claims handling and customer service. Our editorial content reflects our honest, independent assessment. See our full <Link href="/disclaimer" className="text-slate-400 hover:text-sky-300 transition-colors underline">Disclaimer</Link> for details.
           </p>
         </div>
       </div>
@@ -217,9 +217,11 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
             <p className="text-slate-400 text-sm">&copy; {currentYear} MotorHomeInsurance.co.nz. All rights reserved.</p>
-            <div className="flex items-center gap-4 text-slate-400 text-sm">
-              <span>Connect with Licensed Insurance Brokers</span>
-              <span className="hidden sm:inline">|</span>
+            <div className="flex items-center gap-4 text-slate-400 text-sm flex-wrap">
+              <Link href="/privacy" className="hover:text-sky-300 transition-colors">Privacy Policy</Link>
+              <span className="hidden sm:inline text-slate-600">|</span>
+              <Link href="/terms" className="hover:text-sky-300 transition-colors">Terms &amp; Conditions</Link>
+              <span className="hidden sm:inline text-slate-600">|</span>
               <Link href="/disclaimer" className="hover:text-sky-300 transition-colors">Disclaimer</Link>
             </div>
           </div>
