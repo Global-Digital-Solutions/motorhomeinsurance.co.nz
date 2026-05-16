@@ -372,38 +372,38 @@ export default function HomePage() {
             backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/92 via-slate-800/88 to-sky-900/90" />
+          <div className="absolute inset-0 bg-slate-900/85" />
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
               <p className="text-sky-400 text-sm font-semibold uppercase tracking-widest mb-3">Protection That Matters</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Why Motorhome Insurance is Essential</h2>
-              <p className="text-sky-200 max-w-2xl mx-auto text-lg">Your car insurance probably doesn&apos;t cover your motorhome the way you think it does.</p>
+              <p className="text-white/80 max-w-2xl mx-auto text-lg">Your car insurance probably doesn&apos;t cover your motorhome the way you think it does.</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {whyEssential.map((item, idx) => {
                 const Icon = item.icon;
                 return (
-                  <div key={idx} className="bg-white/8 backdrop-blur-sm border border-white/15 rounded-2xl p-6 sm:p-7 hover:bg-white/12 hover:border-sky-400/40 hover:-translate-y-1 transition-all duration-300">
+                  <div key={idx} className="bg-white/10 border border-white/20 rounded-2xl p-6 sm:p-7 hover:bg-white/15 hover:border-sky-400/50 hover:-translate-y-1 transition-all duration-300">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center mb-5 shadow-lg shadow-sky-500/30">
                       <Icon className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
+                    <p className="text-white/75 text-sm leading-relaxed">{item.description}</p>
                   </div>
                 );
               })}
             </div>
 
             {/* Did You Know callout */}
-            <div className="mt-10 bg-sky-500/15 border border-sky-400/30 rounded-2xl p-6 sm:p-8 backdrop-blur-sm">
+            <div className="mt-10 bg-sky-600/25 border border-sky-400/40 rounded-2xl p-6 sm:p-8">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-sky-500 flex items-center justify-center flex-shrink-0">
                   <AlertTriangle className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-1">Did You Know?</h4>
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <p className="text-white/80 text-sm leading-relaxed">
                     Most comprehensive car insurance policies only cover your motorhome while you&apos;re driving it. Once you park at a campsite, in your driveway, or at a storage facility, your motorhome is generally considered a separate, uninsured asset. Standalone motorhome insurance covers you 24/7 — whether you&apos;re driving or parked.
                   </p>
                 </div>
