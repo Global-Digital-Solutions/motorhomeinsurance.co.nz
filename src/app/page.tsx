@@ -38,8 +38,8 @@ export default function HomePage() {
   const homepageStaticFAQs = [
     {
       slug: 'do-i-need-motorhome-insurance',
-      question: 'Do I need motorhome insurance in NZ?',
-      answer: 'While not legally mandatory like vehicle registration, motorhome insurance is essential. Your standard car policy typically only covers your motorhome while driving — once parked at a campground or stored at home, you\'re uninsured. Third-party liability protection is critical because if your motorhome damages someone else\'s property or causes injury, you could face massive personal liability. ICNZ recommends dedicated motorhome insurance for all owners.'
+      question: 'Do I need motorhome insurance?',
+      answer: 'Motorhome insurance is essential even though it's not legally mandatory. Your standard car policy typically only covers your motorhome while driving — once parked at a campground or stored at home, you\'re uninsured. Third-party liability protection is critical because if your motorhome damages someone else\'s property or causes injury, you could face massive personal liability. ICNZ recommends dedicated motorhome insurance for all owners.'
     },
     {
       slug: 'what-does-comprehensive-cover',
@@ -48,7 +48,7 @@ export default function HomePage() {
     },
     {
       slug: 'how-much-motorhome-insurance-cost',
-      question: 'How much does motorhome insurance cost in NZ?',
+      question: 'How much does motorhome insurance cost?',
       answer: 'Motorhome insurance premiums typically range from $200 to $800+ per year, depending on your motorhome\'s value, age, type, usage patterns, location, chosen excess, and security measures. Self-contained motorhomes generally cost more to insure than non-self-contained models due to their higher value and complexity. The best way to find competitive pricing is to get quotes from multiple providers — prices vary significantly.'
     },
     {
@@ -77,7 +77,7 @@ export default function HomePage() {
     {
       icon: Flame,
       title: 'Protection Against Theft & Fire',
-      description: 'Motorhome theft is rising in NZ. Comprehensive cover protects whether at home, campsites, or storage — 24/7 protection.',
+      description: 'Motorhome theft is a growing concern. Comprehensive cover protects whether at home, campsites, or storage — 24/7 protection.',
     },
     {
       icon: Heart,
@@ -92,7 +92,7 @@ export default function HomePage() {
   ];
 
   const whyChooseUs = [
-    'Specialist NZ motorhome insurance brokers',
+    'Specialist motorhome insurance brokers',
     'Compare quotes from multiple top insurers',
     'Campervans, Class A, B & C motorhomes, coaches',
     'Agreed value and market value options',
@@ -115,7 +115,7 @@ export default function HomePage() {
             "logo": "https://motorhomeinsurance.co.nz/favicon.ico",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+64-9-885-9549",
+              
               "contactType": "customer service",
               "areaServed": "NZ",
               "availableLanguage": "English"
@@ -173,7 +173,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-200 mb-8 max-w-2xl leading-relaxed">
-                Compare top NZ motorhome insurance providers in minutes. Campervans, Class A, B &amp; C motorhomes, coaches — get comprehensive cover tailored to your needs.
+                Compare top motorhome insurance providers in minutes. Campervans, Class A, B &amp; C motorhomes, coaches — get comprehensive cover tailored to your needs.
               </p>
               <div className="flex flex-wrap gap-3 mb-10">
                 {[
@@ -258,7 +258,7 @@ export default function HomePage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/40">
                   <img
                     src="https://images.unsplash.com/photo-1513311068348-19c8fbdc0bb6?w=800&h=600&fit=crop"
-                    alt="White Maui Type-C motorhome on a New Zealand road"
+                    alt="White Maui Type-C motorhome on an open road"
                     className="w-full h-[420px] lg:h-[500px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent" />

@@ -41,7 +41,7 @@ export default function ComparePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Compare Motorhome Insurance Providers</h1>
-          <p className="text-xl text-slate-200">See how NZ's top motorhome insurers stack up on coverage, features, and value.</p>
+          <p className="text-xl text-slate-200">See how the top motorhome insurers stack up on coverage, features, and value.</p>
         </div>
       </section>
 
@@ -52,11 +52,11 @@ export default function ComparePage() {
             <h2 className="text-3xl font-bold text-slate-900 mb-6">Understanding the Motorhome Insurance Market</h2>
 
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
-              New Zealand's motorhome insurance market includes several excellent providers, each with different specialties and strengths. Motorhome insurance premiums can vary by 40% or more between providers for identical vehicles and coverage levels — which is why comparing quotes is so important for finding genuine value.
+              The motorhome insurance market includes several excellent providers, each with different specialties and strengths. Motorhome insurance premiums can vary by 40% or more between providers for identical vehicles and coverage levels — which is why comparing quotes is so important for finding genuine value.
             </p>
 
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
-              Multiple factors affect motorhome insurance pricing: your motorhome's age, value, type (campervan, Class A, B, or C), self-contained status, usage patterns (weekend, seasonal, or full-time), where it's stored, your location in NZ, driving history, chosen excess, and security measures installed. Some providers specialize in specific motorhome types or usage patterns, which is why getting quotes from multiple insurers is essential.
+              Multiple factors affect motorhome insurance pricing: your motorhome's age, value, type (campervan, Class A, B, or C), self-contained status, usage patterns (weekend, seasonal, or full-time), where it's stored, your location, driving history, chosen excess, and security measures installed. Some providers specialize in specific motorhome types or usage patterns, which is why getting quotes from multiple insurers is essential.
             </p>
 
             <p className="text-lg text-slate-700 leading-relaxed">
@@ -80,7 +80,7 @@ export default function ComparePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Motorhome Insurance — Provider Comparison</h2>
-            <p className="text-slate-600 text-lg max-w-3xl mx-auto">Compare coverage features across New Zealand's leading motorhome insurance providers. ✓ = Included &nbsp; ◐ = Optional add-on &nbsp; ✗ = Not available</p>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">Compare coverage features across the leading motorhome insurance providers. ✓ = Included &nbsp; ◐ = Optional add-on &nbsp; ✗ = Not available</p>
           </div>
 
           <div className="overflow-x-auto rounded-2xl shadow-xl border border-slate-200">
@@ -270,7 +270,7 @@ export default function ComparePage() {
             <div className="border-l-4 border-sky-500 pl-6">
               <h3 className="text-xl font-bold text-slate-900 mb-3">ICNZ Regulation & Fair Dealing</h3>
               <p className="text-slate-700 leading-relaxed">
-                New Zealand's motorhome insurance market is regulated by the Insurance Council of New Zealand (ICNZ). All legitimate motorhome insurers are bound by ICNZ's Code of Good Insurance Practice, which ensures fair dealing, transparency, and quality service. When you get quotes through our service, you're dealing exclusively with ICNZ-registered brokers and insurers who must comply with these standards. This protection ensures your claims are handled fairly and your information remains secure.
+                The motorhome insurance market is regulated by the Insurance Council of New Zealand (ICNZ). All legitimate motorhome insurers are bound by ICNZ's Code of Good Insurance Practice, which ensures fair dealing, transparency, and quality service. When you get quotes through our service, you're dealing exclusively with ICNZ-registered brokers and insurers who must comply with these standards. This protection ensures your claims are handled fairly and your information remains secure.
               </p>
             </div>
 
@@ -330,7 +330,7 @@ export default function ComparePage() {
           <div className="space-y-3">
             {[
               {
-                q: 'Which is the best motorhome insurance provider in NZ?',
+                q: 'Which is the best motorhome insurance provider?',
                 a: 'There\'s no single "best" provider — the best insurer for you depends on your motorhome type, age, value, usage patterns, and priorities. Some providers excel at comprehensive cover, others at competitive pricing, and some specialize in specific motorhome types. By comparing quotes from multiple providers, you\'ll find the best fit for your situation.'
               },
               {

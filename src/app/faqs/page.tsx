@@ -52,7 +52,7 @@ export default function FAQsPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Frequently Asked Questions</h1>
-          <p className="text-xl text-slate-200">Find answers to common questions about motorhome insurance in New Zealand.</p>
+          <p className="text-xl text-slate-200">Find answers to common questions about motorhome insurance.</p>
         </div>
       </section>
 
@@ -100,8 +100,8 @@ export default function FAQsPage() {
               Our licensed brokers are here to help. Get in touch and we'll answer any questions about motorhome insurance.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
-              <a href="tel:098859549" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300">
-                <span>Call 09 885 9549</span>
+              <a href="mailto:hello@cover4you.co.nz" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                <span>Email Us</span>
               </a>
               <a href="mailto:hello@cover4you.co.nz" className="inline-flex items-center gap-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 font-bold py-3 px-6 rounded-lg transition-all duration-300">
                 <span>Email us</span>

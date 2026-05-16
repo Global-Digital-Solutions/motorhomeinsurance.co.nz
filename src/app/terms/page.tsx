@@ -98,7 +98,7 @@ export default function TermsPage() {
           <p>
             Email: <a href="mailto:hello@cover4you.co.nz" className="text-sky-600 hover:text-sky-700 font-semibold">hello@cover4you.co.nz</a>
             <br />
-            Phone: <a href="tel:098859549" className="text-sky-600 hover:text-sky-700 font-semibold">09 885 9549</a>
+            
           </p>
         </div>
       </section>

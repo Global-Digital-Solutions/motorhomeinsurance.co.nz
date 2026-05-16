@@ -26,8 +26,7 @@ const organizationSchema = {
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "telephone": "+64-9-885-9549",
-    "contactType": "Customer Service",
+        "contactType": "Customer Service",
     "areaServed": "NZ"
   },
   "address": {
@@ -41,10 +40,9 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "MotorHomeInsurance.co.nz",
   "image": "https://motorhomeinsurance.co.nz/logo.png",
-  "description": "Motorhome insurance comparison service in New Zealand",
+  "description": "Motorhome insurance comparison service",
   "url": "https://motorhomeinsurance.co.nz",
-  "telephone": "+64-9-885-9549",
-  "areaServed": "NZ",
+    "areaServed": "NZ",
   "priceRange": "No broker fees"
 };
 
@@ -53,7 +51,7 @@ export default function AboutPage() {
     {
       icon: ShieldCheck,
       title: 'Expert Knowledge',
-      description: 'Deep understanding of motorhome risks and coverage needs specific to New Zealand motorhome owners.',
+      description: 'Deep understanding of motorhome risks and coverage needs specific to motorhome owners.',
     },
     {
       icon: Zap,
@@ -62,8 +60,8 @@ export default function AboutPage() {
     },
     {
       icon: Clock,
-      title: 'NZ-Based Support',
-      description: 'Local team who understand the NZ motorhome landscape and regional insurance needs.',
+      title: 'Local Support',
+      description: 'Local team who understand the motorhome landscape and regional insurance needs.',
     },
   ];
 
@@ -84,7 +82,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">About MotorHomeInsurance.co.nz</h1>
-          <p className="text-xl text-slate-200 mb-8">Helping New Zealand motorhome owners find the right insurance coverage through transparent, impartial comparisons and expert guidance.</p>
+          <p className="text-xl text-slate-200 mb-8">Helping motorhome owners find the right insurance coverage through transparent, impartial comparisons and expert guidance.</p>
         </div>
       </section>
 
@@ -93,8 +91,8 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-4">
             {[
-              { label: 'Motorhomes on NZ Roads', value: '38,000+', context: 'Industry stat' },
-              { label: 'NZ Motorhome Market Value', value: '$2B+', context: 'Industry stat' },
+              { label: 'Motorhomes on the Road', value: '38,000+', context: 'Industry stat' },
+              { label: 'Market Value', value: '$2B+', context: 'Industry stat' },
               { label: 'Quotes Returned Within', value: '24hrs', context: 'Our service' },
               { label: 'NZ Owned & Operated', value: '✓', context: 'Our service' },
             ].map((stat) => (
@@ -137,7 +135,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-4">How Our Service Works</h2>
               <p className="text-slate-700 text-lg mb-6 leading-relaxed">
-                Getting the right motorhome insurance shouldn't require hours of research or multiple phone calls. Our service streamlines the entire process. When you submit your information through our site, we connect you with licensed insurance brokers who understand the NZ motorhome market.
+                Getting the right motorhome insurance shouldn't require hours of research or multiple phone calls. Our service streamlines the entire process. When you submit your information through our site, we connect you with licensed insurance brokers who understand the motorhome market.
               </p>
               <div className="space-y-4">
                 <div className="flex gap-4">
@@ -151,7 +149,7 @@ export default function AboutPage() {
                   <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center text-white font-bold">2</div>
                   <div>
                     <h4 className="font-bold text-slate-900">We Compare the Market</h4>
-                    <p className="text-slate-600 text-sm mt-1">Our brokers compare quotes from NZ's leading motorhome insurers, considering your specific situation.</p>
+                    <p className="text-slate-600 text-sm mt-1">Our brokers compare quotes from the leading motorhome insurers, considering your specific situation.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">

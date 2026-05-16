@@ -103,7 +103,7 @@ export default function CoveragePage() {
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/55 via-slate-900/45 to-slate-900/60" />
         <div className="relative max-w-4xl mx-auto w-full">
           <div className="inline-flex items-center gap-2 bg-sky-500/20 border border-sky-400/40 rounded-full px-4 py-1.5 mb-5">
-            <span className="text-sky-300 text-sm font-semibold">Complete NZ Coverage Guide</span>
+            <span className="text-sky-300 text-sm font-semibold">Complete Coverage Guide</span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight">Motorhome Insurance Coverage Guide</h1>
           <p className="text-xl text-slate-200 max-w-2xl">Understand exactly what's covered, compare policy levels, and find the right cover for your motorhome.</p>
@@ -119,7 +119,7 @@ export default function CoveragePage() {
                 <span className="text-sky-600 text-sm font-semibold">Coverage Overview</span>
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">What Motorhome Insurance Covers</h2>
-              <p className="text-slate-600 text-lg max-w-2xl mx-auto">Comprehensive motorhome insurance in NZ protects you against the risks that matter most — on the road and at camp.</p>
+              <p className="text-slate-600 text-lg max-w-2xl mx-auto">Comprehensive motorhome insurance protects you against the risks that matter most — on the road and at camp.</p>
             </div>
 
             {/* Large icon grid for covered items */}
@@ -168,13 +168,13 @@ export default function CoveragePage() {
             {/* Prominent CTA */}
             <div className="bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-2">Ready to Get Covered?</h3>
-              <p className="text-sky-100 mb-6 text-lg">Compare motorhome insurance quotes from NZ's leading providers. Impartial and fast.</p>
+              <p className="text-sky-100 mb-6 text-lg">Compare motorhome insurance quotes from our leading providers. Impartial and fast.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/#quote-form" className="inline-flex items-center justify-center gap-2 bg-white text-sky-600 font-bold px-8 py-4 rounded-xl hover:bg-sky-50 transition-colors text-lg shadow-lg">
                   Get Quotes →
                 </a>
-                <a href="tel:+6498859549" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
-                  📞 09 885 9549
+                <a href="mailto:hello@cover4you.co.nz" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
+                  ✉ hello@cover4you.co.nz
                 </a>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function CoveragePage() {
 
                 <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
                   <p className="font-semibold text-slate-900 mb-3">No-Claims Bonus (NCB)</p>
-                  <p className="text-sm leading-relaxed">In New Zealand, maintaining a claims-free record often qualifies you for NCB discounts (typically 20-50% after 3-5 years). Some insurers also offer NCB protection as an optional add-on, preventing loss of discount if you have an at-fault claim. This can be valuable peace of mind.</p>
+                  <p className="text-sm leading-relaxed">Here, maintaining a claims-free record often qualifies you for NCB discounts (typically 20-50% after 3-5 years). Some insurers also offer NCB protection as an optional add-on, preventing loss of discount if you have an at-fault claim. This can be valuable peace of mind.</p>
                 </div>
 
                 <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
@@ -216,16 +216,16 @@ export default function CoveragePage() {
 
                 <div className="bg-orange-50 border border-orange-200 rounded-xl p-6">
                   <p className="font-semibold text-slate-900 mb-3">Geographical Limits</p>
-                  <p className="text-sm leading-relaxed">Most motorhome policies cover travel throughout New Zealand. Some policies include Pacific Islands coverage (Fiji, Samoa, Tonga). Confirm your policy's geographical scope before traveling. International travel outside NZ/Pacific requires specific cover.</p>
+                  <p className="text-sm leading-relaxed">Most motorhome policies cover travel throughout the country. Some policies include Pacific Islands coverage (Fiji, Samoa, Tonga). Confirm your policy's geographical scope before traveling. International travel outside NZ and the Pacific Islands requires specific cover.</p>
                 </div>
               </div>
             </div>
 
             {/* NZ-Specific Requirements */}
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">NZ-Specific Motorhome Requirements & Regulations</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Motorhome Requirements & Regulations</h3>
               <div className="space-y-4 text-slate-700">
-                <p className="leading-relaxed">New Zealand has specific regulations for motorhomes that affect insurance and compliance:</p>
+                <p className="leading-relaxed">There are specific local regulations for motorhomes that affect insurance and compliance:</p>
 
                 <ul className="space-y-3">
                   <li className="flex gap-3">

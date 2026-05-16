@@ -49,7 +49,7 @@ export default function ThankYouPage() {
         </div>
 
         <p className="text-sm text-slate-500 mt-8">
-          Have questions? Contact us at <a href="mailto:hello@cover4you.co.nz" className="text-sky-600 hover:text-sky-700">hello@cover4you.co.nz</a> or <a href="tel:+6498859549" className="text-sky-600 hover:text-sky-700">09 885 9549</a>
+          Have questions? Contact us at <a href="mailto:hello@cover4you.co.nz" className="text-sky-600 hover:text-sky-700">hello@cover4you.co.nz</a>
         </p>
       </div>
     </main>

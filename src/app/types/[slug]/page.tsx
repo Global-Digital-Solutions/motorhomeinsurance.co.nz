@@ -43,7 +43,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       'Windscreen and glass cover (often excess-free)',
       'Emergency accommodation costs if motorhome becomes uninhabitable',
     ],
-    whoIsItFor: 'Motorhome owners who want maximum peace of mind. Comprehensive cover is ideal if you own a valuable motorhome, travel frequently, or use your motorhome extensively. It\'s the most popular choice among NZ motorhome owners.',
+    whoIsItFor: 'Motorhome owners who want maximum peace of mind. Comprehensive cover is ideal if you own a valuable motorhome, travel frequently, or use your motorhome extensively. It\'s the most popular choice among motorhome owners.',
     expandedSection: <>
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Is Comprehensive Cover Worth It?</h3>
@@ -51,14 +51,14 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
           Comprehensive motorhome cover costs more than third-party only, but the protection justifies the cost for most owners. Consider that a single claim for theft, fire, or weather damage could cost thousands. Even a small accident repair could exceed your annual premium. For motorhomes valued at $40,000+, comprehensive cover is almost always worth the investment.
         </p>
         <p className="text-slate-700 leading-relaxed">
-          In New Zealand, motorhomes are frequently targeted for theft, especially high-value self-contained models and imported vehicles. Weather events can cause significant damage. Accidents happen to careful drivers. Comprehensive cover protects you against all these scenarios, ensuring you're not left facing thousands in out-of-pocket repairs.
+          Motorhomes are frequently targeted for theft, especially high-value self-contained models and imported vehicles. Weather events can cause significant damage. Accidents happen to careful drivers. Comprehensive cover protects you against all these scenarios, ensuring you're not left facing thousands in out-of-pocket repairs.
         </p>
       </div>
 
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Excess-Free Glass Cover — A Popular Add-On</h3>
         <p className="text-slate-700 leading-relaxed">
-          Many NZ comprehensive motorhome policies include excess-free or reduced-excess glass cover for windscreens, windows, and mirrors. This is valuable because glass damage is common (stone chips on highways, tree branches at campsites) and repair costs $200-500+ per incident. Excess-free glass means you can claim without paying excess, protecting your windscreen while driving NZ roads.
+          Many comprehensive motorhome policies include excess-free or reduced-excess glass cover for windscreens, windows, and mirrors. This is valuable because glass damage is common (stone chips on highways, tree branches at campsites) and repair costs $200-500+ per incident. Excess-free glass means you can claim without paying excess, protecting your windscreen on the road.
         </p>
       </div>
 
@@ -80,12 +80,12 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       'Protection for injury claims against you',
       'Legal costs covered',
       'Most affordable motorhome coverage option',
-      'Essential for NZ drivers — highly recommended',
+      'Essential — highly recommended',
     ],
     whoIsItFor: 'Third-party only is suitable if you have an older motorhome with minimal value, want the most budget-friendly option, or are purchasing a second motorhome purely for storage with minimal use. However, most motorhome owners choose comprehensive for better value.',
     expandedSection: <>
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">Understanding Third-Party Liability in NZ</h3>
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">Understanding Third-Party Liability</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
           Third-party liability protection covers damage or injury your motorhome causes to others while you're driving. If you hit another car, damage a carpark structure, or cause injury to someone, third-party liability pays the costs up to your policy limit (typically $20 million). This is essential protection because you could face massive personal liability without it.
         </p>
@@ -97,7 +97,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Liability Limits Explained</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
-          Standard motorhome policies in NZ include third-party liability up to $20 million, which is very comprehensive. This covers almost any scenario you could face. In rare, catastrophic situations, claims could theoretically exceed $20 million, but these are extremely uncommon. The $20 million limit provides excellent protection for typical NZ motorhoming situations.
+          Standard motorhome policies include third-party liability up to $20 million, which is very comprehensive. This covers almost any scenario you could face. In rare, catastrophic situations, claims could theoretically exceed $20 million, but these are extremely uncommon. The $20 million limit provides excellent protection for typical motorhoming situations.
         </p>
       </div>
 
@@ -165,7 +165,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
     whoIsItFor: 'Market value works well for older motorhomes (10+ years), owners prioritizing lower premiums, motorhomes that are easy to value, and those who understand and accept depreciation. If cost is your primary concern and motorhome value is modest, market value offers good value.',
     expandedSection: <>
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-slate-900 mb-4">How Market Value Is Calculated in NZ</h3>
+        <h3 className="text-2xl font-bold text-slate-900 mb-4">How Market Value Is Calculated</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
           At claim time, insurers assess your motorhome\'s market value using: current comparable sales (what similar motorhomes are selling for), motorhome condition and mileage, age and depreciation, any damage history or accident records, and market trends. They may hire an independent assessor to determine value. This value is what they\'ll pay for a total loss claim.
         </p>
@@ -252,12 +252,12 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       'Peace of mind while renting',
       'Essential for holiday motorhome rentals',
     ],
-    whoIsItFor: 'Rental excess reduction is ideal for anyone renting a motorhome in NZ, whether for a week-long holiday or longer adventure. It\'s especially important if you\'re nervous about accidental damage or sharing driving duties with less experienced drivers.',
+    whoIsItFor: 'Rental excess reduction is ideal for anyone renting a motorhome, whether for a week-long holiday or longer adventure. It\'s especially important if you\'re nervous about accidental damage or sharing driving duties with less experienced drivers.',
     expandedSection: <>
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Understanding the Standard Rental Excess</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
-          When you rent a motorhome in NZ, rental companies include basic insurance but with a significant excess. Standard excess ranges from $1,000 to $5,000, with $2,500 most common. This excess is your liability if the motorhome is damaged while renting. If you accidentally scrape a side, hit a tree, or damage interior appliances, you could face thousands in costs.
+          When you rent a motorhome, rental companies include basic insurance but with a significant excess. Standard excess ranges from $1,000 to $5,000, with $2,500 most common. This excess is your liability if the motorhome is damaged while renting. If you accidentally scrape a side, hit a tree, or damage interior appliances, you could face thousands in costs.
         </p>
       </div>
 
@@ -271,7 +271,7 @@ const typeSpecificContent: Record<string, { features: string[]; whoIsItFor: stri
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-slate-900 mb-4">Top Rental Companies and Their Excess Policies</h3>
         <p className="text-slate-700 mb-4 leading-relaxed">
-          Major NZ motorhome rental companies include Britz, Maui, Hippie Campers, and Apollo. Most include standard excess of $2,000-3,000 in their rental rate. Excess reduction is offered as optional add-on daily charge. Compare excess reduction costs across rental companies — some offer it cheaper or better coverage than others. Budget excess reduction into your rental motorhome costs upfront.
+          Major motorhome rental companies include Britz, Maui, Hippie Campers, and Apollo. Most include standard excess of $2,000-3,000 in their rental rate. Excess reduction is offered as optional add-on daily charge. Compare excess reduction costs across rental companies — some offer it cheaper or better coverage than others. Budget excess reduction into your rental motorhome costs upfront.
         </p>
       </div>
     </>
@@ -295,7 +295,7 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
       'Flexible excess options to suit your budget',
       'Fast and fair claims settlement',
       'Optional add-ons available',
-      'Support from licensed NZ brokers',
+      'Support from licensed brokers',
       'Competitive pricing from multiple providers',
     ],
     whoIsItFor: 'Motorhome owners who want protection tailored to their specific coverage needs and circumstances. Whether you own a campervan, Class A, B or C motorhome, or coach, we can help you find the right coverage level.',
@@ -396,7 +396,7 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
             <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Ready to Compare?</h3>
               <p className="text-slate-700 mb-6">
-                Get quotes from NZ's top motorhome insurers and find the right {type.title.toLowerCase()} coverage for your needs.
+                Get quotes and find the right {type.title.toLowerCase()} coverage for your needs.
               </p>
               <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-sky-500/25">
                 Get a Quote

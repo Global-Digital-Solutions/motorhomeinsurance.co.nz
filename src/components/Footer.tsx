@@ -115,12 +115,6 @@ export default function Footer() {
             <Logo variant="white" size="sm" />
             <div className="mt-4 space-y-3">
               <div>
-                <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Phone</p>
-                <a href="tel:+6498859549" className="text-white font-semibold hover:text-sky-300 transition-colors">
-                  09 885 9549
-                </a>
-              </div>
-              <div>
                 <p className="text-xs text-slate-400 uppercase tracking-wide mb-1">Email</p>
                 <a href="mailto:hello@cover4you.co.nz" className="text-white font-semibold hover:text-sky-300 transition-colors break-all text-sm">
                   hello@cover4you.co.nz

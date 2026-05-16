@@ -58,8 +58,7 @@ export default function PrivacyPage() {
         <p>
           MotorHomeInsurance.co.nz<br />
           Email: hello@cover4you.co.nz<br />
-          Phone: 09 885 9549
-        </p>
+                  </p>
       </div>
     </main>
   );

@@ -68,7 +68,7 @@ export default function BlogPage() {
               Get expert insights and cost-saving tips delivered to your inbox. Our guides help motorhome owners understand coverage and find better rates.
             </p>
             <p className="text-sm text-slate-600">
-              Questions? Call our brokers at <a href="tel:098859549" className="text-sky-600 hover:text-sky-700 font-semibold">09 885 9549</a> or <a href="mailto:hello@cover4you.co.nz" className="text-sky-600 hover:text-sky-700 font-semibold">email us</a>.
+              Questions? <a href="mailto:hello@cover4you.co.nz" className="text-sky-600 hover:text-sky-700 font-semibold">Email our brokers</a> and we'll get back to you within 24 hours.
             </p>
           </div>
         </div>

@@ -147,7 +147,7 @@ export default function DisclaimerPage() {
           <p>
             <strong>Email:</strong> <a href="mailto:hello@cover4you.co.nz" className="text-sky-600 hover:text-sky-700 font-semibold">hello@cover4you.co.nz</a>
             <br />
-            <strong>Phone:</strong> <a href="tel:098859549" className="text-sky-600 hover:text-sky-700 font-semibold">09 885 9549</a>
+            
             <br />
             <strong>Hours:</strong> Mon–Fri, 8am–6pm NZST
           </p>

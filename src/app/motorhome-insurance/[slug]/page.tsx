@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNode; relatedLinks: Array<{text: string; href: string}>; faqSlice: number[] }> = {
   'cheap-motorhome-insurance-nz': {
-    intro: 'Finding affordable motorhome insurance in New Zealand doesn\'t mean sacrificing coverage. Smart shopping and strategic choices can reduce your premiums significantly while maintaining comprehensive protection. Motorhome insurance premiums vary by 40% or more between providers for identical coverage — shopping around is your best bet for finding genuinely cheap motorhome insurance.',
+    intro: 'Finding affordable motorhome insurance doesn\'t mean sacrificing coverage. Smart shopping and strategic choices can reduce your premiums significantly while maintaining comprehensive protection. Motorhome insurance premiums vary by 40% or more between providers for identical coverage — shopping around is your best bet for finding genuinely cheap motorhome insurance.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">7 Proven Strategies to Get Cheap Motorhome Insurance</h3>
       <div className="space-y-6">
@@ -92,7 +92,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [0, 5]
   },
   'motorhome-insurance-cost-nz': {
-    intro: 'Motorhome insurance costs vary widely depending on your motorhome type, value, age, usage patterns, location, and chosen coverage. Understanding what factors affect pricing helps you budget properly and potentially reduce costs. NZ motorhome insurance typically ranges from $200-800+ annually.',
+    intro: 'Motorhome insurance costs vary widely depending on your motorhome type, value, age, usage patterns, location, and chosen coverage. Understanding what factors affect pricing helps you budget properly and potentially reduce costs. Motorhome insurance typically ranges from $200-800+ annually.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Understanding Motorhome Insurance Costs</h3>
       <div className="space-y-6">
@@ -126,7 +126,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [12, 17]
   },
   'campervan-insurance-nz': {
-    intro: 'Campervan insurance in NZ covers your compact motorhome with specialized protection for its unique features. Campervans differ from larger Class A, B, and C motorhomes in value, usage patterns, and coverage needs. Whether you own a van conversion or purpose-built campervan, specialized campervan insurance provides appropriate coverage.',
+    intro: 'Campervan insurance covers your compact motorhome with specialized protection for its unique features. Campervans differ from larger Class A, B, and C motorhomes in value, usage patterns, and coverage needs. Whether you own a van conversion or purpose-built campervan, specialized campervan insurance provides appropriate coverage.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Campervan vs Motorhome Insurance — Key Differences</h3>
       <div className="space-y-4 text-slate-700">
@@ -142,7 +142,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'best-motorhome-insurance-nz': {
-    intro: 'Finding the best motorhome insurance provider in NZ means identifying the insurer that offers the best combination of price, coverage options, and service quality for your specific situation. There\'s no single "best" provider for everyone — the best insurer for you depends on your motorhome type, age, value, and priorities.',
+    intro: 'Finding the best motorhome insurance provider means identifying the insurer that offers the best combination of price, coverage options, and service quality for your specific situation. There\'s no single "best" provider for everyone — the best insurer for you depends on your motorhome type, age, value, and priorities.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">What Makes a Motorhome Insurance Provider "Best"?</h3>
       <div className="space-y-4 text-slate-700">
@@ -160,7 +160,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'motorhome-hire-insurance-nz': {
-    intro: 'When renting a motorhome in New Zealand, understanding rental insurance is crucial. Rental companies include basic liability insurance, but this often comes with high excess ($2,500-5,000). Rental excess reduction insurance protects you from these excess costs, providing peace of mind during your NZ motorhome holiday.',
+    intro: 'When renting a motorhome, understanding rental insurance is crucial. Rental companies include basic liability insurance, but this often comes with high excess ($2,500-5,000). Rental excess reduction insurance protects you from these excess costs, providing peace of mind during your motorhome holiday.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Motorhome Rental Insurance Explained</h3>
       <div className="space-y-6">
@@ -185,11 +185,11 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [17, 21]
   },
   'motorhome-insurance-auckland': {
-    intro: 'Auckland motorhome insurance needs differ from other NZ regions due to specific risks. As NZ\'s largest city, Auckland has higher theft rates for motorhomes, denser traffic creating accident risks, and specific storage challenges. Getting motorhome insurance in Auckland means understanding these local considerations.',
+    intro: 'Auckland motorhome insurance needs differ from other regions due to specific local risks. As the country\'s largest city, Auckland has higher theft rates for motorhomes, denser traffic creating accident risks, and specific storage challenges. Getting motorhome insurance in Auckland means understanding these local considerations.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Auckland-Specific Motorhome Insurance Risks</h3>
       <div className="space-y-4 text-slate-700">
-        <p><strong>Theft Risk:</strong> Auckland has higher motorhome theft rates than other NZ regions. Premium prices reflect this. Installing GPS trackers can reduce your Auckland premiums significantly.</p>
+        <p><strong>Theft Risk:</strong> Auckland has higher motorhome theft rates than other regions. Premium prices reflect this. Installing GPS trackers can reduce your Auckland premiums significantly.</p>
         <p><strong>Traffic Density:</strong> Auckland's heavy traffic increases accident risk. Safe driving history becomes more valuable for premium calculations. Accident prevention is essential.</p>
         <p><strong>Storage Challenges:</strong> Many Aucklanders live in units or tight housing, limiting secure storage options. Explain your storage situation to insurers — street parking vs secure garage affects premiums.</p>
         <p><strong>Local Insurers:</strong> Multiple Auckland-based and national insurers operate here. Competition is strong, making this good for shopping around. Get quotes from at least 3 providers.</p>
@@ -236,7 +236,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'self-contained-motorhome-insurance-nz': {
-    intro: 'Self-contained motorhome insurance in NZ covers motorhomes with integrated water, waste, and power systems. Self-contained motorhomes are more valuable, more complex, and have different insurance needs than non-self-contained models. Proper specialist insurance ensures your self-contained motorhome is fully protected.',
+    intro: 'Self-contained motorhome insurance covers motorhomes with integrated water, waste, and power systems. Self-contained motorhomes are more valuable, more complex, and have different insurance needs than non-self-contained models. Proper specialist insurance ensures your self-contained motorhome is fully protected.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Self-Contained Motorhome Insurance Essentials</h3>
       <div className="space-y-4 text-slate-700">
@@ -253,13 +253,13 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'imported-motorhome-insurance-nz': {
-    intro: 'Imported motorhome insurance in New Zealand covers vehicles from overseas (European, Japanese, American models). Insuring imported motorhomes requires specialist knowledge because insurers must understand overseas specifications, valuation challenges, and parts availability. Our brokers connect you with insurers experienced in imported vehicles.',
+    intro: 'Imported motorhome insurance covers vehicles from overseas (European, Japanese, American models). Insuring imported motorhomes requires specialist knowledge because insurers must understand overseas specifications, valuation challenges, and parts availability. Our brokers connect you with insurers experienced in imported vehicles.',
     guide: <>
-      <h3 className="text-2xl font-bold text-slate-900 mb-4">Insuring Imported Motorhomes in NZ</h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Insuring Imported Motorhomes</h3>
       <div className="space-y-4 text-slate-700">
         <p><strong>Popular Imported Models:</strong> Japanese imports dominate (Toyota HiAce, Mitsubishi Rosa, Isuzu). European models (Fiat Ducato-based, Mercedes) are also common. American RVs are less common but occasionally imported. Each requires specific knowledge.</p>
         <p><strong>Valuation Challenges:</strong> Imported motorhomes are harder to value because comparable sales are limited. Get professional valuations from someone familiar with the specific model. Use agreed value insurance to lock in the valuation and avoid disputes.</p>
-        <p><strong>Parts & Service:</strong> Ensure your insurer understands parts availability for imported models. Some parts are expensive or hard to source in NZ. Mechanical breakdown cover becomes more valuable for imported vehicles.</p>
+        <p><strong>Parts & Service:</strong> Ensure your insurer understands parts availability for imported models. Some parts are expensive or hard to source locally. Mechanical breakdown cover becomes more valuable for imported vehicles.</p>
         <p><strong>Compliance Documentation:</strong> Have complete import documentation including customs valuations, mechanical inspection reports, and compliance documents. Specialist insurers appreciate complete paperwork.</p>
       </div>
     </>,
@@ -270,7 +270,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'luxury-motorhome-insurance-nz': {
-    intro: 'Luxury motorhome insurance in New Zealand covers high-value, premium motorhomes including coach conversions, specialty builds, and top-tier imported models. Luxury motorhomes require specialized coverage reflecting their high values ($150,000-$500,000+), complex systems, and unique risks. Specialist insurers understand luxury motorhome needs.',
+    intro: 'Luxury motorhome insurance covers high-value, premium motorhomes including coach conversions, specialty builds, and top-tier imported models. Luxury motorhomes require specialized coverage reflecting their high values ($150,000-$500,000+), complex systems, and unique risks. Specialist insurers understand luxury motorhome needs.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Luxury Motorhome Insurance Requirements</h3>
       <div className="space-y-4 text-slate-700">
@@ -287,9 +287,9 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'caravan-insurance-nz': {
-    intro: 'Caravan insurance in New Zealand covers towed caravans, on-road caravans, and caravan conversions with specialized motorhome insurance. In NZ, caravans and motorhomes overlap significantly — many people use the terms interchangeably, and caravans can be insured through motorhome insurance policies. High search volumes for "caravan insurance NZ" reflect the popularity of caravan holidays and freedom camping across New Zealand.',
+    intro: 'Caravan insurance covers towed caravans, on-road caravans, and caravan conversions through specialist motorhome insurance. Caravans and motorhomes overlap significantly — many people use the terms interchangeably, and caravans can often be insured through motorhome insurance policies. Caravan holidays and freedom camping are hugely popular here.',
     guide: <>
-      <h3 className="text-2xl font-bold text-slate-900 mb-4">Caravan vs Motorhome Insurance in NZ</h3>
+      <h3 className="text-2xl font-bold text-slate-900 mb-4">Caravan vs Motorhome Insurance</h3>
       <div className="space-y-4 text-slate-700">
         <p><strong>Towed Caravans:</strong> Towed caravans (on-road caravans you pull behind a car) require separate caravan insurance, not motorhome insurance. Motorhome insurance covers self-contained motorhomes and campervans only. If you tow a caravan, ensure it's covered under caravan insurance or as part of a multi-vehicle policy.</p>
         <p><strong>Motorhome-Type Caravans:</strong> Built-in or integrated caravans (where living facilities are integral to the vehicle) are covered by motorhome insurance and qualify for motorhome-specific policies.</p>
@@ -305,11 +305,11 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'rv-insurance-nz': {
-    intro: 'RV (recreational vehicle) insurance in New Zealand covers motorhomes, campervans, and self-contained recreational vehicles used for touring, holidays, and adventure travel. The term "RV" is commonly used internationally but less common in NZ — Kiwis typically say "motorhome" or "campervan". However, understanding RV insurance helps connect international and domestic terminology for NZ recreational vehicle owners.',
+    intro: 'RV (recreational vehicle) insurance in New Zealand covers motorhomes, campervans, and self-contained recreational vehicles used for touring, holidays, and adventure travel. The term "RV" is commonly used internationally but less common in NZ — Kiwis typically say "motorhome" or "campervan". However, understanding RV insurance helps connect international and domestic terminology.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">RV Insurance in Context</h3>
       <div className="space-y-4 text-slate-700">
-        <p><strong>What is an RV?:</strong> RVs include motorhomes, Class A/B/C motorhomes, campervans, van conversions, and self-contained vehicles. In NZ terminology, we typically use "motorhome" or "campervan" instead of "RV", but the coverage needs are identical.</p>
+        <p><strong>What is an RV?:</strong> RVs include motorhomes, Class A/B/C motorhomes, campervans, van conversions, and self-contained vehicles. Locally we typically say "motorhome" or "campervan" instead of "RV", but the coverage needs are identical.</p>
         <p><strong>Imported American RVs:</strong> Some Kiwis import American RVs (larger Class A or Class C motorhomes). These require specialist insurance because they have different dimensions, systems, and specifications than NZ-spec motorhomes. Imported RVs need professional valuations and experienced insurers familiar with overseas specifications.</p>
         <p><strong>RV-Specific Coverage Needs:</strong> Whether you call it an RV or motorhome, coverage should include: comprehensive protection, agreed value for peace of mind, contents cover for camping gear and equipment, roadside assistance for touring, and freedom camping cover if self-contained.</p>
         <p><strong>Insurance Terminology:</strong> Our brokers understand that "RV insurance", "motorhome insurance", "campervan insurance", and "recreational vehicle insurance" all describe the same product type. Use whatever terminology is comfortable — we'll find you the right coverage.</p>
@@ -359,14 +359,14 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'motorhome-insurance-hamilton': {
-    intro: 'Hamilton motorhome insurance protects your asset while you\'re exploring the Waikato region. As the largest city in the Waikato region and NZ\'s fourth-largest city, Hamilton presents specific motorhome insurance considerations including regional theft rates, traffic patterns, and local storage challenges. Getting appropriate Hamilton-based motorhome insurance requires understanding these local factors.',
+    intro: 'Hamilton motorhome insurance protects your asset while you\'re exploring the Waikato region. As the largest city in the Waikato and the country\'s fourth-largest city, Hamilton presents specific motorhome insurance considerations including regional theft rates, traffic patterns, and local storage challenges. Getting appropriate Hamilton-based motorhome insurance requires understanding these local factors.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Hamilton-Specific Motorhome Insurance Considerations</h3>
       <div className="space-y-4 text-slate-700">
         <p><strong>Hamilton's Position in Waikato:</strong> Hamilton is the regional hub for Waikato motorhome owners. Many use it as a base for exploring the Waikato region, including Lake Taupo, Rotorua, and the King Country. Insurance should reflect usage patterns specific to central North Island touring.</p>
         <p><strong>Theft Risk & Security:</strong> Hamilton has moderate theft risk for motorhomes. Secure storage is important — whether at your home property, a storage facility, or while parked. GPS trackers and alarm systems reduce premiums (typically 5-15% discount) and provide peace of mind in urban areas.</p>
         <p><strong>Storage Options:</strong> Many Hamilton residents have limited on-property storage due to urban density. Discuss your actual storage arrangements with insurers — street parking, driveway parking, garage storage, or facility storage all affect premiums. Some facilities offer secure motorhome storage with 24/7 monitoring.</p>
-        <p><strong>Regional Touring Coverage:</strong> If you're using Hamilton as a base for regional touring, ensure your policy covers travel throughout the North Island. Standard motorhome policies cover all NZ travel, but confirm geographic scope. Winter weather in central North Island may require specific coverage considerations.</p>
+        <p><strong>Regional Touring Coverage:</strong> If you're using Hamilton as a base for regional touring, ensure your policy covers travel throughout the North Island. Standard motorhome policies cover travel throughout the country, but always confirm geographic scope with your insurer. Winter weather in central North Island may require specific coverage considerations.</p>
       </div>
     </>,
     relatedLinks: [
@@ -395,7 +395,7 @@ const pageSpecificContent: Record<string, { intro: string; guide: React.ReactNod
     faqSlice: [5, 12]
   },
   'motorhome-insurance-queenstown': {
-    intro: 'Queenstown motorhome insurance covers your vehicle while exploring one of New Zealand\'s most popular adventure tourism destinations. Queenstown\'s stunning landscape, challenging roads, high tourism activity, and adventure-focused tourism create unique motorhome insurance considerations. Getting proper coverage ensures you\'re protected during your Otago and Central Otago adventures.',
+    intro: 'Queenstown motorhome insurance covers your vehicle while you\'re exploring one of the country\'s most popular adventure tourism destinations. Queenstown\'s stunning landscape, challenging roads, high tourism activity, and adventure-focused tourism create unique motorhome insurance considerations. Getting proper coverage ensures you\'re protected during your Otago and Central Otago adventures.',
     guide: <>
       <h3 className="text-2xl font-bold text-slate-900 mb-4">Queenstown & Adventure Motorhome Insurance</h3>
       <div className="space-y-4 text-slate-700">
@@ -423,7 +423,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
   }
 
   const pageContent = pageSpecificContent[slug] || {
-    intro: 'Finding the right motorhome insurance coverage tailored to your specific needs is essential. Get quotes from NZ\'s leading motorhome insurance providers within 24 hours.',
+    intro: 'Finding the right motorhome insurance coverage tailored to your specific needs is essential. Get quotes from our panel of leading motorhome insurance providers within 24 hours.',
     guide: null,
     relatedLinks: [
       { text: 'Coverage Guide', href: '/coverage' },
@@ -488,7 +488,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">{page.h1}</h1>
           <p className="text-xl text-slate-200 max-w-2xl">
-            Find the right motorhome insurance coverage tailored to your specific needs. Get quotes from NZ's leading providers within 24 hours.
+            Find the right motorhome insurance coverage tailored to your specific needs. Get quotes from our leading providers within 24 hours.
           </p>
         </div>
       </section>
@@ -558,7 +558,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
           <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Find Your Perfect Motorhome Insurance?</h2>
             <p className="text-slate-700 mb-8 max-w-2xl mx-auto">
-              Get quotes from NZ's top motorhome insurers. Our brokers will compare the market and deliver personalized recommendations within 24 hours.
+              Get quotes from our top motorhome insurers. Our brokers will compare the market and deliver personalized recommendations within 24 hours.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-sky-500/25">
