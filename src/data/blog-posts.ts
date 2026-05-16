@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Everything you need to know about insuring your motorhome in New Zealand — from what\'s covered to choosing the right policy for your lifestyle.',
     date: '2026-04-08',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1608161317310-c079ae39d224?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-1.jpg',
     readTime: '9 min read',
     category: 'Insurance Guides',
     content: `<h2>Understanding Motorhome Insurance</h2>
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding the key differences between agreed and market value motorhome insurance policies and how to choose the right one for your needs.',
     date: '2026-04-05',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1596470689751-54f9687c1b7f?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-2.jpg',
     readTime: '7 min read',
     category: 'Coverage Explained',
     content: `<h2>The Core Difference</h2>
@@ -102,7 +102,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A detailed breakdown of what standard motorhome insurance covers and what gaps you might need to fill with additional cover.',
     date: '2026-04-02',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1635787501769-10b8e23b3ded?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-3.jpg',
     readTime: '8 min read',
     category: 'Coverage Explained',
     content: `<h2>Standard Comprehensive Motorhome Cover</h2>
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Practical strategies to lower your motorhome insurance excess and improve your claim outcomes.',
     date: '2026-03-30',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1519001896312-85f41baa90a0?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-4.jpg',
     readTime: '6 min read',
     category: 'Money-Saving Tips',
     content: `<h2>Understanding Your Excess</h2>
@@ -168,7 +168,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Comparing New Zealand\'s top motorhome insurance providers — their strengths, coverage options, and which suits different motorhome owners.',
     date: '2026-03-28',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1592351763700-b9b35a6465ea?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-5.jpg',
     readTime: '10 min read',
     category: 'Provider Reviews',
     content: `<h2>Leading NZ Motorhome Insurance Providers</h2>
@@ -204,7 +204,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding self-contained motorhomes and how this affects your insurance coverage and premiums.',
     date: '2026-03-26',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1635787501769-10b8e23b3ded?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-6.jpg',
     readTime: '6 min read',
     category: 'Insurance Guides',
     content: `<h2>What Does Self-Contained Mean?</h2>
@@ -234,7 +234,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Guidance on insuring imported motorhomes in New Zealand, including unique considerations and coverage needs.',
     date: '2026-03-24',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-7.jpg',
     readTime: '7 min read',
     category: 'Insurance Guides',
     content: `<h2>Challenges of Insuring Imported Motorhomes</h2>
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Practical, proven strategies to reduce your motorhome insurance costs without compromising on coverage.',
     date: '2026-03-22',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1626680114529-3f6ffa002b80?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-1.jpg',
     readTime: '7 min read',
     category: 'Money-Saving Tips',
     content: `<h2>1. Increase Your Voluntary Excess</h2>
@@ -297,7 +297,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding rental motorhome insurance, what the rental company covers, and when you need additional protection.',
     date: '2026-03-20',
     author: 'MotorHomeInsurance.co.nz',
-    image: 'https://images.unsplash.com/photo-1596470693312-9a3686a0af0f?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-2.jpg',
     readTime: '6 min read',
     category: 'Rental Coverage',
     content: `<h2>What Comes with Rental Motorhome Insurance</h2>
@@ -327,7 +327,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'An in-depth comparison of New Zealand\'s two leading specialist motorhome insurers — Covi Insurance and Star Insure\'s CamperCare. We compare coverage, price, and features to help you choose.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1608161317310-c079ae39d224?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-3.jpg',
     readTime: '8 min read',
     category: 'Provider Reviews',
     content: `<h2>Two Specialist Insurers — What's the Difference?</h2>
@@ -360,7 +360,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Understanding how motorhome insurance excess works in New Zealand, how to choose the right level, and how voluntary excess increases can reduce your annual premium.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1519001896312-85f41baa90a0?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-4.jpg',
     readTime: '8 min read',
     category: 'Coverage Explained',
     content: `<h2>What Is an Insurance Excess?</h2>
@@ -391,7 +391,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A complete guide to motorhome contents insurance in NZ — what\'s covered, what\'s excluded, how much you need, and which providers auto-include it.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1592351763700-b9b35a6465ea?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-5.jpg',
     readTime: '8 min read',
     category: 'Coverage Explained',
     content: `<h2>Why Motorhome Contents Insurance Matters</h2>
@@ -421,7 +421,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A complete 2026 update on New Zealand\'s freedom camping rules — where you can camp, self-containment requirements, council rules, fines for violations, and how your insurance is affected.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1635787501769-10b8e23b3ded?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-6.jpg',
     readTime: '8 min read',
     category: 'Insurance Guides',
     content: `<h2>The Freedom Camping Act 2011 — What It Actually Says</h2>
@@ -451,7 +451,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'What happens to your motorhome insurance when your vehicle is in storage? Learn about laid-up cover, storage risks, and how to ensure you\'re protected even when you\'re not travelling.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1626680114529-3f6ffa002b80?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-7.jpg',
     readTime: '8 min read',
     category: 'Insurance Guides',
     content: `<h2>The Storage Gap — Are You Actually Covered?</h2>
@@ -478,7 +478,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Living in your motorhome full-time changes your insurance needs significantly. This guide covers what standard policies won\'t cover, what full-time living insurance looks like, and how to stay protected while living on the road.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1596470689751-54f9687c1b7f?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-1.jpg',
     readTime: '8 min read',
     category: 'Insurance Guides',
     content: `<h2>The Growing Full-Timer Movement in New Zealand</h2>
@@ -505,7 +505,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Comparing roadside assistance options for NZ motorhome owners — from AA and NZRA membership to Covi Wings and Star\'s bundled cover. What happens when you break down far from home?',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-2.jpg',
     readTime: '8 min read',
     category: 'Insurance Guides',
     content: `<h2>Why Motorhome Roadside Assistance Is Different</h2>
@@ -535,7 +535,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A complete guide to NZMCA membership — what you get, how it interacts with motorhome insurance, Covi\'s NZMCA partnership, member park discounts, and whether NZMCA membership is worth it.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1608161317310-c079ae39d224?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-3.jpg',
     readTime: '8 min read',
     category: 'Insurance Guides',
     content: `<h2>What Is NZMCA?</h2>
@@ -562,7 +562,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Are you making one of these costly motorhome insurance mistakes? From underinsuring contents to misunderstanding freedom camping cover, here are the seven most common errors NZ motorhome owners make.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1626680114529-3f6ffa002b80?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-4.jpg',
     readTime: '8 min read',
     category: 'Money-Saving Tips',
     content: `<h2>Mistake 1: Using a Standard Car Insurance Policy</h2>
@@ -592,7 +592,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'A practical step-by-step guide to making a motorhome insurance claim in New Zealand — what to do immediately after an incident, how to document damage, and how to work with your insurer for a smooth settlement.',
     date: '2026-05-15',
     author: 'MotorHomeInsurance.co.nz Editorial Team',
-    image: 'https://images.unsplash.com/photo-1596470693312-9a3686a0af0f?w=800&h=450&fit=crop',
+    image: '/hero-motorhome-5.jpg',
     readTime: '8 min read',
     category: 'Insurance Guides',
     content: `<h2>Step 1: Ensure Safety First</h2>

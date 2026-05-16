@@ -3,18 +3,13 @@
 import { useState, useEffect, useCallback } from 'react';
 
 const heroImages = [
-  {
-    url: '/hero-motorhome-1.jpg',
-    alt: 'Motorhome parked in a stunning New Zealand landscape',
-  },
-  {
-    url: '/hero-motorhome-2.jpg',
-    alt: 'Motorhome on a scenic New Zealand road trip',
-  },
-  {
-    url: '/hero-motorhome-3.jpg',
-    alt: 'Modern motorhome adventure in New Zealand',
-  },
+  { url: '/hero-motorhome-1.jpg', alt: 'Motorhome parked in a stunning New Zealand landscape' },
+  { url: '/hero-motorhome-2.jpg', alt: 'Motorhome on a scenic New Zealand road trip' },
+  { url: '/hero-motorhome-3.jpg', alt: 'Modern motorhome adventure in New Zealand' },
+  { url: '/hero-motorhome-4.jpg', alt: 'Motorhome touring the New Zealand countryside' },
+  { url: '/hero-motorhome-5.jpg', alt: 'Motorhome parked at a New Zealand freedom camping spot' },
+  { url: '/hero-motorhome-6.jpg', alt: 'Motorhome on an open New Zealand highway' },
+  { url: '/hero-motorhome-7.jpg', alt: 'Self-contained motorhome in New Zealand' },
 ];
 
 export default function HeroCarousel() {

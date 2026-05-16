@@ -11,11 +11,11 @@ const heroImages: Record<string, string> = {
   'comprehensive':            '/hero-motorhome-1.jpg',
   'third-party-liability':   '/hero-motorhome-2.jpg',
   'agreed-value':            '/hero-motorhome-3.jpg',
-  'market-value':            '/hero-motorhome-1.jpg',
-  'contents-cover':          '/hero-motorhome-2.jpg',
-  'rental-excess-reduction': '/hero-motorhome-3.jpg',
-  'roadside-assistance':     '/hero-motorhome-1.jpg',
-  'storage-cover':           '/hero-motorhome-2.jpg',
+  'market-value':            '/hero-motorhome-4.jpg',
+  'contents-cover':          '/hero-motorhome-5.jpg',
+  'rental-excess-reduction': '/hero-motorhome-6.jpg',
+  'roadside-assistance':     '/hero-motorhome-7.jpg',
+  'storage-cover':           '/hero-motorhome-1.jpg',
 };
 
 export async function generateStaticParams() {

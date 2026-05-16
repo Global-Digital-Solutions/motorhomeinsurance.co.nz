@@ -7,6 +7,41 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const dynamicParams = false;
 
+/* ── Hero image map — cycles through all 7 local photos ── */
+const slugHeroImages: Record<string, string> = {
+  'cheap-motorhome-insurance-nz':         '/hero-motorhome-1.jpg',
+  'compare-motorhome-insurance-nz':       '/hero-motorhome-2.jpg',
+  'motorhome-insurance-cost-nz':          '/hero-motorhome-3.jpg',
+  'campervan-insurance-nz':               '/hero-motorhome-4.jpg',
+  'best-motorhome-insurance-nz':          '/hero-motorhome-5.jpg',
+  'motorhome-hire-insurance-nz':          '/hero-motorhome-6.jpg',
+  'motorhome-insurance-auckland':         '/hero-motorhome-7.jpg',
+  'motorhome-insurance-wellington':       '/hero-motorhome-1.jpg',
+  'motorhome-insurance-christchurch':     '/hero-motorhome-2.jpg',
+  'self-contained-motorhome-insurance-nz':'/hero-motorhome-3.jpg',
+  'imported-motorhome-insurance-nz':      '/hero-motorhome-4.jpg',
+  'luxury-motorhome-insurance-nz':        '/hero-motorhome-5.jpg',
+  'caravan-insurance-nz':                 '/hero-motorhome-6.jpg',
+  'rv-insurance-nz':                      '/hero-motorhome-7.jpg',
+  'nzmca-insurance-nz':                   '/hero-motorhome-1.jpg',
+  'freedom-camping-insurance-nz':         '/hero-motorhome-2.jpg',
+  'motorhome-insurance-hamilton':         '/hero-motorhome-3.jpg',
+  'motorhome-insurance-dunedin':          '/hero-motorhome-4.jpg',
+  'motorhome-insurance-queenstown':       '/hero-motorhome-5.jpg',
+  'motorhome-insurance-tauranga':         '/hero-motorhome-6.jpg',
+  'motorhome-insurance-palmerston-north': '/hero-motorhome-7.jpg',
+  'motorhome-insurance-nelson':           '/hero-motorhome-1.jpg',
+  'motorhome-insurance-rotorua':          '/hero-motorhome-2.jpg',
+  'motorhome-insurance-napier':           '/hero-motorhome-3.jpg',
+  'motorhome-insurance-new-plymouth':     '/hero-motorhome-4.jpg',
+  'motorhome-insurance-whangarei':        '/hero-motorhome-5.jpg',
+  'motorhome-insurance-invercargill':     '/hero-motorhome-6.jpg',
+  'motorhome-storage-insurance-nz':       '/hero-motorhome-7.jpg',
+  'seasonal-motorhome-insurance-nz':      '/hero-motorhome-1.jpg',
+  'full-time-motorhome-insurance-nz':     '/hero-motorhome-2.jpg',
+  'motorhome-insurance-over-65-nz':       '/hero-motorhome-3.jpg',
+};
+
 export async function generateStaticParams() {
   return insurancePages.map((page) => ({
     slug: page.slug,
@@ -695,7 +730,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
       <section
         className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8"
         style={{
-          backgroundImage: 'url(/hero-motorhome-2.jpg)',
+          backgroundImage: `url(${slugHeroImages[slug] || '/hero-motorhome-1.jpg'})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
