@@ -485,7 +485,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-7xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">{page.h1}</h1>
           <p className="text-xl text-slate-200 max-w-2xl">
             Find the right motorhome insurance coverage tailored to your specific needs. Get quotes from our leading providers within 24 hours.
@@ -495,87 +495,85 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
 
       {/* Main Content */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          {/* Intro */}
-          <div className="mb-16">
-            <p className="text-lg text-slate-700 leading-relaxed mb-4">
-              {pageContent.intro}
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
 
-          {/* Benefits Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            {benefits.map((benefit) => (
-              <div key={benefit.title} className="p-6 rounded-2xl bg-sky-50 border border-sky-200">
-                <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">{benefit.title}</h3>
-                <p className="text-slate-700 text-sm leading-relaxed">{benefit.description}</p>
+            {/* ── Left: main content ── */}
+            <div className="lg:col-span-8">
+
+              {/* Intro */}
+              <p className="text-lg text-slate-700 leading-relaxed mb-12">
+                {pageContent.intro}
+              </p>
+
+              {/* Benefits */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                {benefits.map((benefit) => (
+                  <div key={benefit.title} className="p-6 rounded-2xl bg-sky-50 border border-sky-200">
+                    <div className="text-4xl mb-4">{benefit.icon}</div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">{benefit.title}</h3>
+                    <p className="text-slate-700 text-sm leading-relaxed">{benefit.description}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
 
-          {/* Detailed Guide Section */}
-          {pageContent.guide && (
-            <div className="mb-16">
-              {pageContent.guide}
+              {/* Detailed Guide */}
+              {pageContent.guide && (
+                <div className="mb-12">
+                  {pageContent.guide}
+                </div>
+              )}
+
+              {/* FAQ */}
+              <div className="mb-12">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+                <div className="space-y-3">
+                  {faqItems.map((faq) => (
+                    <details key={faq.slug} className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-sky-300 transition-colors">
+                      <summary className="flex items-center justify-between cursor-pointer gap-4">
+                        <span className="font-semibold text-slate-900">{faq.question}</span>
+                        <span className="text-sky-600 flex-shrink-0 group-open:rotate-180 transition-transform">▼</span>
+                      </summary>
+                      <p className="text-slate-700 text-sm mt-4 leading-relaxed">{faq.answer}</p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+
+              {/* Related Links */}
+              <div className="mb-12">
+                <h3 className="text-lg font-bold text-slate-900 mb-4">Related Guides</h3>
+                <div className="flex flex-wrap gap-3">
+                  {pageContent.relatedLinks.map((link) => (
+                    <Link key={link.href} href={link.href} className="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg hover:border-sky-300 hover:bg-sky-50 transition-all font-semibold text-sm text-sky-600 hover:text-sky-700">
+                      {link.text} →
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* FMA Note */}
+              <p className="text-xs text-slate-400 border-t border-slate-100 pt-6">
+                MotorHomeInsurance.co.nz is a no-fee comparison service. All insurance is provided by licensed New Zealand insurers regulated by the FMA.
+              </p>
             </div>
-          )}
 
-          {/* Related Links */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-slate-900 mb-6">Related Pages</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {pageContent.relatedLinks.map((link) => (
-                <Link key={link.href} href={link.href} className="p-4 bg-slate-50 border border-slate-200 rounded-lg hover:border-sky-300 hover:shadow-md transition-all text-center font-semibold text-sky-600 hover:text-sky-700">
-                  {link.text}
-                </Link>
-              ))}
+            {/* ── Right: sticky quote form ── */}
+            <div className="lg:col-span-4">
+              <div className="sticky top-24 space-y-6">
+                <QuoteForm mode="compact" />
+
+                {/* CTA panel */}
+                <div className="bg-slate-900 rounded-2xl p-6 text-center">
+                  <h3 className="text-white font-bold text-lg mb-2">Need help choosing?</h3>
+                  <p className="text-slate-400 text-sm mb-4">Our brokers are happy to talk through your options.</p>
+                  <Link href="/contact" className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">
+                    Contact Us →
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Quote Form */}
-          <div className="mb-16">
-            <QuoteForm mode="full" />
-          </div>
-
-          {/* FAQ Section */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-8">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              {faqItems.map((faq) => (
-                <details key={faq.slug} className="group bg-white border border-slate-200 rounded-lg p-6 hover:border-sky-300 transition-colors">
-                  <summary className="flex items-center justify-between cursor-pointer">
-                    <span className="font-bold text-slate-900">{faq.question}</span>
-                    <span className="text-sky-600 group-open:rotate-180 transition-transform">▼</span>
-                  </summary>
-                  <p className="text-slate-700 text-sm mt-4">{faq.answer}</p>
-                </details>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8 sm:p-12 text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Find Your Perfect Motorhome Insurance?</h2>
-            <p className="text-slate-700 mb-8 max-w-2xl mx-auto">
-              Get quotes from our top motorhome insurers. Our brokers will compare the market and deliver personalized recommendations within 24 hours.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-sky-500/25">
-                Get a Quote →
-              </Link>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 font-bold py-3 px-8 rounded-lg transition-all duration-300">
-                Contact us →
-              </Link>
-            </div>
-          </div>
-
-          {/* FMA Note */}
-          <div className="mt-12 text-center text-xs text-slate-500 border-t border-slate-200 pt-6">
-            <p>
-              MotorHomeInsurance.co.nz is a no-fee comparison service. All insurance is provided by licensed New Zealand insurers.
-              <br />We comply with all Financial Markets Authority (FMA) requirements for fair dealing and transparency.
-            </p>
           </div>
         </div>
       </section>
