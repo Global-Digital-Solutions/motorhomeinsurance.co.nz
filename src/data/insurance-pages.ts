@@ -82,7 +82,7 @@ export const insurancePages: InsurancePage[] = [
     slug: 'caravan-insurance-nz',
     title: 'Caravan Insurance NZ',
     h1: 'Caravan Insurance in New Zealand',
-    metaDesc: 'Compare caravan insurance in NZ. Get quotes from leading NZ insurers for caravans, campervans and motorhomes. Free comparison service.',
+    metaDesc: 'Compare caravan insurance in NZ. Get quotes from leading NZ insurers for caravans, campervans and motorhomes. No-fee comparison service.',
   },
   {
     slug: 'rv-insurance-nz',

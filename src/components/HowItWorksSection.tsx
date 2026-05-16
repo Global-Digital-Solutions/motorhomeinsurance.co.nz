@@ -25,7 +25,7 @@ const steps = [
     title: 'Get Personalised Quotes Within 24 Hours',
     description:
       'Receive detailed quotes from multiple providers with expert recommendations tailored to your motorhome. Compare options at your leisure and choose the policy that offers the best value and coverage.',
-    highlight: 'Free & no obligation',
+    highlight: 'No obligation',
   },
 ];
 
@@ -163,10 +163,10 @@ export default function HowItWorksSection() {
             href="#quote-form"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-sky-500/30 hover:shadow-xl hover:shadow-sky-500/40 hover:-translate-y-0.5 transition-all duration-200 text-base"
           >
-            Start Your Free Comparison
+            Start Your Comparison
             <span>→</span>
           </a>
-          <p className="text-slate-500 text-sm mt-3">Free · No obligation · Results within 24 hours</p>
+          <p className="text-slate-500 text-sm mt-3">No obligation · Results within 24 hours</p>
         </div>
       </div>
     </section>

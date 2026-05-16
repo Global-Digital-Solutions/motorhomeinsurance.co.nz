@@ -60,7 +60,7 @@ export default function NavBar() {
 
             <div className="hidden lg:block">
               <Link href="/#quote-form" className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                Get a Free Quote
+                Get a Quote
               </Link>
             </div>
 
@@ -105,7 +105,7 @@ export default function NavBar() {
 
                 <div className="pt-4 px-2">
                   <Link href="/#quote-form" className="block w-full text-center bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold px-6 py-3.5 rounded-xl transition-all duration-200 shadow-md text-base" onClick={() => setMobileMenuOpen(false)}>
-                    Get a Free Quote
+                    Get a Quote
                   </Link>
                 </div>
               </div>

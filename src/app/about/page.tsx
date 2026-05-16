@@ -45,7 +45,7 @@ const localBusinessSchema = {
   "url": "https://motorhomeinsurance.co.nz",
   "telephone": "+64-9-885-9549",
   "areaServed": "NZ",
-  "priceRange": "Free comparisons"
+  "priceRange": "No broker fees"
 };
 
 export default function AboutPage() {
@@ -81,7 +81,7 @@ export default function AboutPage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">About MotorHomeInsurance.co.nz</h1>
           <p className="text-xl text-slate-200 mb-8">Helping New Zealand motorhome owners find the right insurance coverage through transparent, impartial comparisons and expert guidance.</p>
@@ -199,10 +199,10 @@ export default function AboutPage() {
             <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">Ready to Get the Right Coverage?</h2>
               <p className="text-slate-700 mb-6">
-                Whether you own a campervan, Class A, B or C motorhome, or coach, we can help you find appropriate coverage at the right price. Our service is completely free — no obligation, no broker fees.
+                Whether you own a campervan, Class A, B or C motorhome, or coach, we can help you find appropriate coverage at the right price. No obligation, no broker fees — we charge nothing for our service.
               </p>
               <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 shadow-lg shadow-sky-500/25">
-                Get a Free Quote <span>→</span>
+                Get a Quote <span>→</span>
               </Link>
             </div>
           </div>

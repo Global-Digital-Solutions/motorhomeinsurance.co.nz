@@ -10,7 +10,7 @@ interface Stat {
 const stats: Stat[] = [
   { value: '38,000+', label: 'Motorhomes in NZ' },
   { value: 'Save', label: 'Time & Money' },
-  { value: 'Free', label: 'Fast Impartial Quotes' },
+  { value: 'No Fee', label: 'Fast Impartial Quotes' },
   { value: '✓', label: 'NZ Owned & Operated' },
 ];
 
@@ -20,7 +20,7 @@ function AnimatedCounter({ value, label, isVisible }: { value: string; label: st
   useEffect(() => {
     if (!isVisible) return;
 
-    // Non-numeric values (e.g. '✓', 'Free') — display immediately, no animation
+    // Non-numeric values (e.g. '✓', 'No Fee') — display immediately, no animation
     const numericPart = value.replace(/[^0-9]/g, '');
     if (!numericPart) {
       setDisplayValue(value);

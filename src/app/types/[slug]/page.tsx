@@ -316,7 +316,7 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <Link href="/coverage" className="inline-flex items-center gap-2 text-slate-200 hover:text-white font-semibold mb-6 transition-colors">
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -396,10 +396,10 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
             <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Ready to Compare?</h3>
               <p className="text-slate-700 mb-6">
-                Get free quotes from NZ's top motorhome insurers and find the right {type.title.toLowerCase()} coverage for your needs.
+                Get quotes from NZ's top motorhome insurers and find the right {type.title.toLowerCase()} coverage for your needs.
               </p>
               <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-sky-500/25">
-                Get a Free Quote
+                Get a Quote
               </Link>
             </div>
           </div>

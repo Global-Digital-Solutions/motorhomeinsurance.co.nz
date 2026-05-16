@@ -19,7 +19,7 @@ export default function BlogPage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Motorhome Insurance Insights</h1>
           <p className="text-xl text-slate-200">Expert guides, coverage explanations, and money-saving tips from NZ motorhome insurance specialists.</p>
@@ -42,7 +42,7 @@ export default function BlogPage() {
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent" />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-2 mb-3">

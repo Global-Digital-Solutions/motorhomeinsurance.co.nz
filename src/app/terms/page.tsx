@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Terms of Service | MotorHomeInsurance.co.nz',
-  description: 'Terms of service for MotorHomeInsurance.co.nz. Please review our terms before using our free comparison service.',
+  description: 'Terms of service for MotorHomeInsurance.co.nz. Please review our terms before using our no-fee comparison service.',
 };
 
 export default function TermsPage() {
@@ -19,7 +19,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto prose prose-lg max-w-none text-slate-700">
           <h2 className="text-3xl font-bold text-slate-900 mb-6">1. About MotorHomeInsurance.co.nz</h2>
           <p>
-            MotorHomeInsurance.co.nz is a free comparison service operated by Cover4You Limited, a New Zealand company. We connect motorhome owners with licensed insurance brokers and providers who can offer insurance quotes and coverage.
+            MotorHomeInsurance.co.nz is a no-fee comparison service operated by Cover4You Limited, a New Zealand company. We connect motorhome owners with licensed insurance brokers and providers who can offer insurance quotes and coverage.
           </p>
           <p>
             We are not an insurance company and do not provide insurance directly. All insurance products are provided by licensed New Zealand insurance providers.

@@ -423,7 +423,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
   }
 
   const pageContent = pageSpecificContent[slug] || {
-    intro: 'Finding the right motorhome insurance coverage tailored to your specific needs is essential. Get free quotes from NZ\'s leading motorhome insurance providers within 24 hours.',
+    intro: 'Finding the right motorhome insurance coverage tailored to your specific needs is essential. Get quotes from NZ\'s leading motorhome insurance providers within 24 hours.',
     guide: null,
     relatedLinks: [
       { text: 'Coverage Guide', href: '/coverage' },
@@ -446,7 +446,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
     {
       icon: '⚡',
       title: 'Fast Response',
-      description: 'Get free quotes within 24 hours with no obligation and no broker fees.',
+      description: 'Get quotes within 24 hours with no obligation and no broker fees.',
     },
   ];
 
@@ -484,11 +484,11 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">{page.h1}</h1>
           <p className="text-xl text-slate-200 max-w-2xl">
-            Find the right motorhome insurance coverage tailored to your specific needs. Get free quotes from NZ's leading providers within 24 hours.
+            Find the right motorhome insurance coverage tailored to your specific needs. Get quotes from NZ's leading providers within 24 hours.
           </p>
         </div>
       </section>
@@ -558,11 +558,11 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
           <div className="bg-gradient-to-r from-sky-50 to-blue-50 border border-sky-200 rounded-2xl p-8 sm:p-12 text-center">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready to Find Your Perfect Motorhome Insurance?</h2>
             <p className="text-slate-700 mb-8 max-w-2xl mx-auto">
-              Get free quotes from NZ's top motorhome insurers. Our brokers will compare the market and deliver personalized recommendations within 24 hours.
+              Get quotes from NZ's top motorhome insurers. Our brokers will compare the market and deliver personalized recommendations within 24 hours.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-sky-500/25">
-                Get a Free Quote →
+                Get a Quote →
               </Link>
               <Link href="/contact" className="inline-flex items-center gap-2 bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 font-bold py-3 px-8 rounded-lg transition-all duration-300">
                 Contact us →
@@ -573,7 +573,7 @@ export default async function InsuranceLandingPage({ params }: { params: Promise
           {/* FMA Note */}
           <div className="mt-12 text-center text-xs text-slate-500 border-t border-slate-200 pt-6">
             <p>
-              MotorHomeInsurance.co.nz is a free comparison service. All insurance is provided by licensed New Zealand insurers.
+              MotorHomeInsurance.co.nz is a no-fee comparison service. All insurance is provided by licensed New Zealand insurers.
               <br />We comply with all Financial Markets Authority (FMA) requirements for fair dealing and transparency.
             </p>
           </div>

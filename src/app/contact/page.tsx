@@ -3,8 +3,8 @@ import QuoteForm from '@/components/QuoteForm';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Contact MotorHomeInsurance.co.nz | Get a Free Quote',
-  description: 'Contact our NZ motorhome insurance brokers. Phone 09 885 9549, email hello@cover4you.co.nz, or fill out our quick quote form for a free comparison.',
+  title: 'Contact MotorHomeInsurance.co.nz | Get a Quote',
+  description: 'Contact our NZ motorhome insurance brokers. Phone 09 885 9549, email hello@cover4you.co.nz, or fill out our quick quote form for an instant comparison.',
 };
 
 const breadcrumbs = [
@@ -25,7 +25,7 @@ const localBusinessSchema = {
     "contactType": "Customer Service"
   },
   "areaServed": "NZ",
-  "priceRange": "Free"
+  "priceRange": "No broker fees"
 };
 
 const contactPageSchema = {
@@ -33,7 +33,7 @@ const contactPageSchema = {
   "@type": "ContactPage",
   "name": "Contact MotorHomeInsurance.co.nz",
   "url": "https://motorhomeinsurance.co.nz/contact",
-  "description": "Get a free motorhome insurance quote or contact our NZ brokers"
+  "description": "Get a motorhome insurance quote or contact our NZ brokers"
 };
 
 const usps = [
@@ -42,7 +42,7 @@ const usps = [
   { icon: CheckCircle, title: 'Impartial Quotes', desc: 'We compare providers on your behalf' },
   { icon: Lock, title: '256-bit SSL Secure', desc: 'Your data is safe and encrypted' },
   { icon: Users, title: 'Fast Response', desc: 'Quotes within 24 hours' },
-  { icon: Mail, title: 'No Fees', desc: 'Completely free comparison service' },
+  { icon: Mail, title: 'No Fees', desc: 'Completely no-fee comparison service' },
 ];
 
 export default function ContactPage() {
@@ -60,7 +60,7 @@ export default function ContactPage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 to-slate-900/75" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
 
         <div className="relative w-full max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
@@ -73,7 +73,7 @@ export default function ContactPage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 leading-tight">
-                Get Your Free<br />
+                Get Your<br />
                 <span className="bg-gradient-to-r from-sky-400 to-blue-400 bg-clip-text text-transparent">
                   Motorhome Insurance Quote
                 </span>

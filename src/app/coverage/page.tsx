@@ -100,7 +100,7 @@ export default function CoveragePage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/55 via-slate-900/45 to-slate-900/60" />
         <div className="relative max-w-4xl mx-auto w-full">
           <div className="inline-flex items-center gap-2 bg-sky-500/20 border border-sky-400/40 rounded-full px-4 py-1.5 mb-5">
             <span className="text-sky-300 text-sm font-semibold">Complete NZ Coverage Guide</span>
@@ -168,10 +168,10 @@ export default function CoveragePage() {
             {/* Prominent CTA */}
             <div className="bg-gradient-to-r from-sky-500 to-blue-600 rounded-2xl p-8 text-center">
               <h3 className="text-2xl font-bold text-white mb-2">Ready to Get Covered?</h3>
-              <p className="text-sky-100 mb-6 text-lg">Compare motorhome insurance quotes from NZ's leading providers. Free, impartial, and fast.</p>
+              <p className="text-sky-100 mb-6 text-lg">Compare motorhome insurance quotes from NZ's leading providers. Impartial and fast.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/#quote-form" className="inline-flex items-center justify-center gap-2 bg-white text-sky-600 font-bold px-8 py-4 rounded-xl hover:bg-sky-50 transition-colors text-lg shadow-lg">
-                  Get Free Quotes →
+                  Get Quotes →
                 </a>
                 <a href="tel:+6498859549" className="inline-flex items-center justify-center gap-2 border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors text-lg">
                   📞 09 885 9549
@@ -487,7 +487,7 @@ export default function CoveragePage() {
             Compare motorhome insurance providers and find the right coverage for your needs. Get quotes within 24 hours.
           </p>
           <Link href="/#quote-form" className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 shadow-lg shadow-sky-500/25">
-            Get a Free Quote <span>→</span>
+            Get a Quote <span>→</span>
           </Link>
         </div>
       </section>

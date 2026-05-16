@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <Link href="/blog" className="inline-flex items-center gap-2 text-slate-200 hover:text-white font-semibold mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" />

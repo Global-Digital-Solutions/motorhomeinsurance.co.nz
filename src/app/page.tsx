@@ -171,7 +171,7 @@ export default function HomePage() {
                   { icon: CheckCircle2, text: 'No Broker Fees' },
                   { icon: Lock, text: '256-bit SSL Secure' },
                   { icon: Zap, text: '24hr Response' },
-                  { icon: MessageCircle, text: 'Free Consultation' },
+                  { icon: MessageCircle, text: 'No Broker Fees' },
                 ].map((badge) => {
                   const Icon = badge.icon;
                   return (
@@ -185,7 +185,7 @@ export default function HomePage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/#quote-form" className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 inline-flex items-center justify-center gap-2 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:-translate-y-0.5">
-                  Get a Free Quote <span>→</span>
+                  Get a Quote <span>→</span>
                 </Link>
                 <Link href="/compare" className="bg-white/15 hover:bg-white/25 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 border border-white/30 inline-flex items-center justify-center gap-2 backdrop-blur-sm">
                   Compare Providers <span>→</span>
@@ -343,7 +343,7 @@ export default function HomePage() {
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent" />
                   </div>
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-3">

@@ -38,7 +38,7 @@ export default function ComparePage() {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
         <div className="relative max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">Compare Motorhome Insurance Providers</h1>
           <p className="text-xl text-slate-200">See how NZ's top motorhome insurers stack up on coverage, features, and value.</p>

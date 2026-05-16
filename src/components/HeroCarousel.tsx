@@ -49,7 +49,7 @@ export default function HeroCarousel() {
       ))}
 
       {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-slate-900/30" />
 
       {/* Slide indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">

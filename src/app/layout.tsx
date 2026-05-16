@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "MotorHomeInsurance.co.nz | Motorhome Insurance NZ | Compare & Save",
-  description: "Compare motorhome insurance in New Zealand. Get impartial quotes from leading NZ insurers. Comprehensive cover, agreed value, and more. Free expert advice.",
+  description: "Compare motorhome insurance in New Zealand. Get impartial quotes from leading NZ insurers. Comprehensive cover, agreed value, and more. Expert advice.",
   keywords: [
     "motorhome insurance NZ",
     "campervan insurance New Zealand",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "MotorHomeInsurance.co.nz | Motorhome Insurance NZ | Compare & Save",
-    description: "Compare motorhome insurance providers in New Zealand. Free expert quotes within 24 hours.",
+    description: "Compare motorhome insurance providers in New Zealand. Expert quotes within 24 hours.",
   },
   icons: {
     icon: [
@@ -109,7 +109,7 @@ export default function RootLayout({
         />
         <meta
           name="description"
-          content="Compare motorhome insurance in New Zealand. Get impartial quotes from leading NZ insurers. Comprehensive cover, agreed value, and more. Free expert advice."
+          content="Compare motorhome insurance in New Zealand. Get impartial quotes from leading NZ insurers. Comprehensive cover, agreed value, and more. Expert advice."
         />
         <script
           async
