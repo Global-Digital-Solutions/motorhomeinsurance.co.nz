@@ -2,7 +2,7 @@
 
 import { useRef, useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import { User, Mail, FileText, DollarSign, Lock, ShieldCheck, Clock, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { User, Mail, Phone, FileText, DollarSign, Lock, ShieldCheck, Clock, MessageSquare, CheckCircle2 } from 'lucide-react';
 import TurnstileWidget, { type TurnstileHandle } from './TurnstileWidget';
 
 interface QuoteFormProps {
@@ -105,6 +105,14 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
           </div>
 
           <div>
+            <label htmlFor="phone-compact" className="block text-sm font-semibold text-slate-700 mb-1.5">Phone <span className="text-red-500">*</span></label>
+            <div className="relative">
+              <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <input id="phone-compact" type="tel" name="phone" required pattern="[+]?[0-9\s\-().]{6,}" title="Please enter a valid phone number" minLength={6} className="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm" placeholder="021 xxx xxxx" />
+            </div>
+          </div>
+
+          <div>
             <label htmlFor="motorhomeType-compact" className="block text-sm font-semibold text-slate-700 mb-1.5">Motorhome Type</label>
             <div className="relative">
               <FileText className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
@@ -184,6 +192,14 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
                       <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
                       <input id="email-full" type="email" name="email" required className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-base" placeholder="john@example.com" />
                     </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="phone-full" className="block text-sm font-semibold text-slate-900 mb-2">Phone Number <span className="text-red-500">*</span></label>
+                  <div className="relative">
+                    <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
+                    <input id="phone-full" type="tel" name="phone" required pattern="[+]?[0-9\s\-().]{6,}" title="Please enter a valid phone number" minLength={6} className="w-full pl-11 pr-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-base" placeholder="021 xxx xxxx" />
                   </div>
                 </div>
 
