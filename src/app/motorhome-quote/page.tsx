@@ -30,7 +30,7 @@ export default function MotorHomeQuotePage() {
         <div className="mt-8 flex flex-wrap justify-center gap-6 text-center">
           {[
             { n: '2 min', d: 'Average completion time' },
-            { n: 'Star Insure', d: 'NZ RV specialist insurer' },
+            { n: 'NZ specialist', d: 'Direct insurer matched to you' },
             { n: '30 min', d: 'Typical response time' },
           ].map(({ n, d }) => (
             <div key={n} className="flex flex-col items-center">
@@ -42,7 +42,7 @@ export default function MotorHomeQuotePage() {
 
         {/* Disclaimer */}
         <p className="mt-8 text-xs text-slate-400 text-center max-w-lg mx-auto leading-relaxed">
-          By submitting this form your details will be passed to Star Insure, a licensed NZ insurer,
+          By submitting this form your details will be matched with a specialist NZ insurer,
           who will be in touch to discuss your cover options. Contact{' '}
           <a href="mailto:hello@cover4you.co.nz" className="underline hover:text-slate-600">
             hello@cover4you.co.nz

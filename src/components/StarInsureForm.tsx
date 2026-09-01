@@ -364,13 +364,13 @@ export default function StarInsureForm() {
             <Star className="w-5 h-5 text-sky-400" />
           </div>
           <div>
-            <p className="text-xs font-bold text-sky-400 uppercase tracking-widest">Powered by Star Insure</p>
+            <p className="text-xs font-bold text-sky-400 uppercase tracking-widest">RV Insurance Specialists</p>
             <h2 className="text-xl font-bold">Get Your Motorhome Quote</h2>
           </div>
         </div>
         <p className="text-slate-400 text-sm">NZ&apos;s leading RV insurance specialists. Takes about 2 minutes.</p>
         <div className="flex flex-wrap gap-4 mt-4">
-          {['No obligation', 'FSPR-registered advisers', 'Response within 30 mins'].map(t => (
+          {['No obligation', 'NZ specialist insurer', 'Response within 30 mins'].map(t => (
             <div key={t} className="flex items-center gap-1.5">
               <Check className="w-3.5 h-3.5 text-sky-400" />
               <span className="text-xs text-slate-300">{t}</span>
@@ -663,7 +663,7 @@ export default function StarInsureForm() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-slate-900 mb-1">Quick check</h3>
-                <p className="text-sm text-slate-500">8 short yes/no questions — required by Star Insure for all policies.</p>
+                <p className="text-sm text-slate-500">8 short yes/no questions — required for all cover applications.</p>
               </div>
 
               <div className="space-y-4">
@@ -681,7 +681,7 @@ export default function StarInsureForm() {
                     {form[q.key] === true && q.yesAlert && (
                       <p className="mt-2 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 flex items-start gap-2">
                         <AlertCircle className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
-                        Star Insure may ask for more details when reviewing your application. This won&apos;t necessarily affect your coverage.
+                        Your insurer may ask for more details when reviewing your application. This won&apos;t necessarily affect your coverage.
                       </p>
                     )}
                   </div>
@@ -690,7 +690,7 @@ export default function StarInsureForm() {
 
               <div className="bg-slate-900 rounded-xl p-5 text-sm text-slate-400 flex items-start gap-3">
                 <Shield className="w-5 h-5 text-sky-400 flex-shrink-0 mt-0.5" />
-                <p>Your answers are forwarded securely to Star Insure with your <strong className="text-sky-400">cover4you</strong> referral code. A specialist will review and respond — usually within 30 minutes during business hours.</p>
+                <p>Your enquiry is matched securely to a specialist insurer via the <strong className="text-sky-400">cover4you</strong> network. A specialist will review and respond — usually within 30 minutes during business hours.</p>
               </div>
 
               <TurnstileWidget ref={turnstileRef} />
@@ -718,7 +718,7 @@ export default function StarInsureForm() {
                   {isSubmitting ? (
                     <><Loader2 className="w-5 h-5 animate-spin" /> Submitting…</>
                   ) : (
-                    <>Send to Star Insure <ChevronRight className="w-5 h-5" /></>
+                    <>Submit My Enquiry <ChevronRight className="w-5 h-5" /></>
                   )}
                 </button>
               </div>
