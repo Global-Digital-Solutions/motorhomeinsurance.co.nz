@@ -358,7 +358,7 @@ export default function StarInsureForm() {
   return (
     <div className="max-w-2xl mx-auto">
       {/* Card */}
-      <div className="bg-white rounded-2xl border border-slate-100 shadow-xl overflow-hidden">
+      <div className="bg-white rounded-2xl border-2 border-sky-400 shadow-xl overflow-hidden">
         <div className="p-6 sm:p-8">
           <ProgressBar step={step} total={3} />
 
