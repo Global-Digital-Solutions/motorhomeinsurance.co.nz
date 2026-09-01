@@ -5,7 +5,7 @@
  * Wrangler secrets to set (wrangler secret put <NAME>):
  *   WORKER_SECRET       — HMAC signing secret (generate a long random string)
  *   TURNSTILE_SECRET    — Cloudflare Turnstile secret key
- *   SENDGRID_API_KEY    — SendGrid API key for email delivery
+ *   RESEND_API_KEY      — Resend API key (resend.com → API Keys)
  *   STAR_INSURE_EMAIL   — Star Insure recipient email (your contact's address)
  *   GOOGLE_SHEET_URL    — Google Apps Script Web App URL for sheet logging
  *
@@ -149,17 +149,18 @@ async function sendEmail(env, payload) {
   const vehicleLabel = [payload.vehicleMake, payload.vehicleModel, payload.vehicleYear].filter(Boolean).join(' ') || payload.vehicleType || 'RV';
 
   const body = {
-    personalizations: [{ to: [{ email: to }] }],
-    from: { email: 'leads@cover4you.co.nz', name: 'Cover4You Leads' },
-    reply_to: { email: payload.email, name },
+    from: 'Cover4You Leads <leads@cover4you.co.nz>',
+    to: [to],
+    cc: ['hello@cover4you.co.nz'],
+    reply_to: payload.email,
     subject: `New RV Quote — ${name} · ${vehicleLabel} · Ref: cover4you`,
-    content: [{ type: 'text/html', value: buildEmailHtml(payload) }],
+    html: buildEmailHtml(payload),
   };
 
-  const res = await fetch('https://api.sendgrid.com/v3/mail/send', {
+  const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${env.SENDGRID_API_KEY}`,
+      Authorization: `Bearer ${env.RESEND_API_KEY}`,
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(body),
@@ -167,7 +168,7 @@ async function sendEmail(env, payload) {
 
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`SendGrid error ${res.status}: ${err}`);
+    throw new Error(`Resend error ${res.status}: ${err}`);
   }
 }
 
