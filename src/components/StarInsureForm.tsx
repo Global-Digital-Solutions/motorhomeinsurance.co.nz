@@ -122,6 +122,20 @@ const QUICK_QUESTIONS: { key: keyof FormData; question: string; yesAlert?: boole
   { key: 'q_fullLicence',   question: 'Do you hold a current full NZ driver\'s licence?',                      yesAlert: false },
 ];
 
+const RV_MAKES = [
+  'Toyota','Fiat','Mercedes-Benz','Volkswagen','Ford','Iveco','Mitsubishi',
+  'Isuzu','Hymer','Winnebago','Jayco','Avida','Sunliner','Coachmen',
+  'Adria','Swift','Auto-Trail','Carado','Roller Team','Benimar','Other',
+];
+
+const RV_COLOURS = [
+  'White','Silver','Grey','Black','Blue','Red','Green',
+  'Beige / Cream','Brown','Orange','Yellow','Other',
+];
+
+const CURRENT_YEAR = new Date().getFullYear();
+const RV_YEARS = Array.from({ length: CURRENT_YEAR - 1974 }, (_, i) => String(CURRENT_YEAR - i));
+
 const NZ_CITIES = [
   'Auckland','Wellington','Christchurch','Hamilton','Tauranga','Napier','Palmerston North',
   'Dunedin','Nelson','Rotorua','New Plymouth','Whangarei','Invercargill','Whanganui','Gisborne',
@@ -216,6 +230,31 @@ function Input({ icon: Icon, ...props }: { icon: React.FC<{ className?: string }
   );
 }
 
+function SelectField({ icon: Icon, value, onChange, placeholder, options }: {
+  icon: React.FC<{ className?: string }>;
+  value: string;
+  onChange: (v: string) => void;
+  placeholder: string;
+  options: string[];
+}) {
+  return (
+    <div className="relative">
+      <Icon className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none z-10" />
+      <select
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        className="w-full pl-10 pr-8 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm appearance-none transition-all"
+      >
+        <option value="">{placeholder}</option>
+        {options.map(o => <option key={o} value={o}>{o}</option>)}
+      </select>
+      <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  );
+}
+
 /* ─── Main component ─────────────────────────────────── */
 
 export default function StarInsureForm() {
@@ -279,6 +318,7 @@ export default function StarInsureForm() {
       form.phone.trim().length >= 6 &&
       form.dob.trim() !== '' &&
       form.address.trim() !== '' &&
+      form.suburb.trim() !== '' &&
       form.city !== '' &&
       form.useFrequency !== '' &&
       form.primaryUse !== '' &&
@@ -430,16 +470,16 @@ export default function StarInsureForm() {
               {form.regoLookupDone && (
                 <div className="grid grid-cols-2 gap-3">
                   <FieldWrapper label="Make">
-                    <Input icon={Car} type="text" value={form.vehicleMake} onChange={e => set('vehicleMake', e.target.value)} placeholder="e.g. Toyota" />
+                    <SelectField icon={Car} value={form.vehicleMake} onChange={v => set('vehicleMake', v)} placeholder="Select make..." options={RV_MAKES} />
                   </FieldWrapper>
                   <FieldWrapper label="Model">
                     <Input icon={Car} type="text" value={form.vehicleModel} onChange={e => set('vehicleModel', e.target.value)} placeholder="e.g. HiAce" />
                   </FieldWrapper>
                   <FieldWrapper label="Year">
-                    <Input icon={Calendar} type="text" value={form.vehicleYear} onChange={e => set('vehicleYear', e.target.value)} placeholder="e.g. 2018" maxLength={4} />
+                    <SelectField icon={Calendar} value={form.vehicleYear} onChange={v => set('vehicleYear', v)} placeholder="Select year..." options={RV_YEARS} />
                   </FieldWrapper>
                   <FieldWrapper label="Colour">
-                    <Input icon={Car} type="text" value={form.vehicleColour} onChange={e => set('vehicleColour', e.target.value)} placeholder="e.g. White" />
+                    <SelectField icon={Car} value={form.vehicleColour} onChange={v => set('vehicleColour', v)} placeholder="Select colour..." options={RV_COLOURS} />
                   </FieldWrapper>
                 </div>
               )}
@@ -508,7 +548,7 @@ export default function StarInsureForm() {
                 </FieldWrapper>
               </div>
 
-              <FieldWrapper label="Date of Birth" hint="Required by Star Insure for rating purposes.">
+              <FieldWrapper label="Date of Birth" hint="Required by your insurer for rating purposes.">
                 <Input icon={Calendar} type="date" value={form.dob} onChange={e => set('dob', e.target.value)} required />
               </FieldWrapper>
 
@@ -518,21 +558,10 @@ export default function StarInsureForm() {
 
               <div className="grid grid-cols-2 gap-4">
                 <FieldWrapper label="Suburb">
-                  <Input icon={MapPin} type="text" value={form.suburb} onChange={e => set('suburb', e.target.value)} placeholder="Suburb (optional)" />
+                  <Input icon={MapPin} type="text" value={form.suburb} onChange={e => set('suburb', e.target.value)} placeholder="e.g. Ponsonby" />
                 </FieldWrapper>
                 <FieldWrapper label="City / Town">
-                  <div className="relative">
-                    <MapPin className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-                    <select
-                      value={form.city}
-                      onChange={e => set('city', e.target.value)}
-                      className="w-full pl-10 pr-4 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm appearance-none"
-                      required
-                    >
-                      <option value="">Select...</option>
-                      {NZ_CITIES.map(c => <option key={c} value={c}>{c}</option>)}
-                    </select>
-                  </div>
+                  <SelectField icon={MapPin} value={form.city} onChange={v => set('city', v)} placeholder="Select city..." options={NZ_CITIES} />
                 </FieldWrapper>
               </div>
 
@@ -602,15 +631,19 @@ export default function StarInsureForm() {
 
                   <FieldWrapper label="Where is it stored?">
                     <div className="relative">
+                      <Home className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                       <select
                         value={form.storageType}
                         onChange={e => set('storageType', e.target.value as StorageType)}
-                        className="w-full px-4 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm appearance-none"
+                        className="w-full pl-10 pr-8 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm appearance-none"
                         required
                       >
                         <option value="">Select...</option>
                         {STORAGE_OPTIONS.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
                       </select>
+                      <svg className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                      </svg>
                     </div>
                   </FieldWrapper>
                 </div>

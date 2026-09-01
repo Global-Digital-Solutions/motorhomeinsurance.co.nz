@@ -81,7 +81,7 @@ export default function MotorHomeQuotePage() {
                   {[
                     { n: '2 min', d: 'To complete' },
                     { n: '30 min', d: 'Response time' },
-                    { n: 'Direct', d: 'NZ insurer' },
+                    { n: 'Direct', d: 'Insurers' },
                     { n: '100%', d: 'No obligation' },
                   ].map(({ n, d }) => (
                     <div key={n} className="text-center py-1">
@@ -117,8 +117,8 @@ export default function MotorHomeQuotePage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-slate-900">NZ-based specialist</p>
-                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">Local insurer who understands NZ roads, weather and motorhome travel conditions.</p>
+                    <p className="text-sm font-bold text-slate-900">NZ specialist insurer</p>
+                    <p className="text-xs text-slate-500 mt-1 leading-relaxed">Specialist motorhome and RV cover from an insurer right here in New Zealand.</p>
                   </div>
                 </div>
               </div>
