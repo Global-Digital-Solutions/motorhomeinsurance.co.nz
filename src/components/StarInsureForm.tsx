@@ -185,8 +185,8 @@ function YesNoToggle({
         onClick={() => onChange(false)}
         className={`flex-1 py-3 rounded-xl font-semibold text-sm border-2 transition-all ${
           value === false
-            ? 'bg-emerald-500 border-emerald-500 text-white shadow-lg shadow-emerald-500/25'
-            : 'bg-white border-slate-200 text-slate-600 hover:border-emerald-300'
+            ? 'bg-sky-500 border-sky-500 text-white shadow-lg shadow-sky-500/25'
+            : 'bg-white border-slate-200 text-slate-600 hover:border-sky-300'
         }`}
       >
         No
@@ -198,8 +198,8 @@ function YesNoToggle({
           value === true
             ? yesAlert
               ? 'bg-amber-500 border-amber-500 text-white shadow-lg shadow-amber-500/25'
-              : 'bg-emerald-500 border-emerald-500 text-white shadow-lg shadow-emerald-500/25'
-            : 'bg-white border-slate-200 text-slate-600 hover:border-amber-300'
+              : 'bg-sky-500 border-sky-500 text-white shadow-lg shadow-sky-500/25'
+            : 'bg-white border-slate-200 text-slate-600 hover:border-sky-300'
         }`}
       >
         Yes
