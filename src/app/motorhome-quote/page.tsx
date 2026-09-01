@@ -43,10 +43,10 @@ export default function MotorHomeQuotePage() {
       {/* ── Content ── */}
       <div className="relative -mt-20 px-4 pb-16">
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-6 items-start">
+          <div className="flex flex-row lg:flex-row gap-3 lg:gap-6 items-start">
 
             {/* Form */}
-            <div className="w-full lg:flex-1 min-w-0">
+            <div className="flex-1 min-w-0">
               <StarInsureForm />
               <p className="mt-6 text-xs text-slate-400 text-center leading-relaxed">
                 By submitting this form your details will be matched with a specialist NZ insurer who will be in touch to discuss your cover options. Contact{' '}
@@ -54,11 +54,11 @@ export default function MotorHomeQuotePage() {
               </p>
             </div>
 
-            {/* Trust sidebar */}
-            <div className="hidden lg:flex flex-col gap-5 w-60 flex-shrink-0 pt-2">
+            {/* Trust sidebar — compact column on mobile, full width on desktop */}
+            <div className="flex flex-col gap-2 lg:gap-5 w-16 sm:w-20 lg:w-60 flex-shrink-0 pt-2">
 
-              {/* How it works */}
-              <div className="bg-slate-900 rounded-2xl p-5 text-white">
+              {/* How it works — desktop only */}
+              <div className="hidden lg:block bg-slate-900 rounded-2xl p-5 text-white">
                 <p className="text-xs font-bold text-sky-400 uppercase tracking-widest mb-4">How it works</p>
                 {[
                   { n: '1', t: 'Tell us about your RV', d: 'Vehicle type, value and your details' },
@@ -75,9 +75,24 @@ export default function MotorHomeQuotePage() {
                 ))}
               </div>
 
-              {/* Stats */}
-              <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
-                <div className="grid grid-cols-2 gap-4">
+              {/* Stats — desktop full / mobile compact badges */}
+              <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-2 lg:p-5">
+                {/* Mobile: vertical stack of compact badges */}
+                <div className="flex flex-col gap-2 lg:hidden">
+                  {[
+                    { n: '2m', d: 'Quick' },
+                    { n: '30m', d: 'Reply' },
+                    { n: '✓', d: 'Direct' },
+                    { n: '0', d: 'Obligation' },
+                  ].map(({ n, d }) => (
+                    <div key={d} className="text-center py-1">
+                      <div className="text-sm font-black text-slate-900 leading-none">{n}</div>
+                      <div className="text-[9px] text-slate-500 mt-0.5 leading-tight">{d}</div>
+                    </div>
+                  ))}
+                </div>
+                {/* Desktop: 2-col grid */}
+                <div className="hidden lg:grid grid-cols-2 gap-4">
                   {[
                     { n: '2 min', d: 'To complete' },
                     { n: '30 min', d: 'Response time' },
@@ -92,8 +107,8 @@ export default function MotorHomeQuotePage() {
                 </div>
               </div>
 
-              {/* Security */}
-              <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
+              {/* Security — desktop only */}
+              <div className="hidden lg:block bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center">
                     <svg className="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -107,8 +122,16 @@ export default function MotorHomeQuotePage() {
                 </div>
               </div>
 
-              {/* NZ flag trust */}
-              <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
+              {/* Security — mobile compact */}
+              <div className="lg:hidden bg-white rounded-2xl border border-slate-200 p-2 shadow-sm flex flex-col items-center gap-1">
+                <svg className="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                </svg>
+                <span className="text-[9px] text-slate-500 text-center leading-tight">Secure &amp; encrypted</span>
+              </div>
+
+              {/* NZ trust — desktop only */}
+              <div className="hidden lg:block bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-9 h-9 rounded-xl bg-sky-50 border border-sky-100 flex items-center justify-center">
                     <svg className="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -121,6 +144,15 @@ export default function MotorHomeQuotePage() {
                     <p className="text-xs text-slate-500 mt-1 leading-relaxed">Specialist motorhome and RV cover from an insurer right here in New Zealand.</p>
                   </div>
                 </div>
+              </div>
+
+              {/* NZ trust — mobile compact */}
+              <div className="lg:hidden bg-white rounded-2xl border border-slate-200 p-2 shadow-sm flex flex-col items-center gap-1">
+                <svg className="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                </svg>
+                <span className="text-[9px] text-slate-500 text-center leading-tight">NZ insurer</span>
               </div>
 
             </div>

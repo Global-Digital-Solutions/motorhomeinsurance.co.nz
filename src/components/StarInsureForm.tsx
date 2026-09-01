@@ -230,6 +230,52 @@ function Input({ icon: Icon, ...props }: { icon: React.FC<{ className?: string }
   );
 }
 
+function DobField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const parts = value ? value.split('-') : ['', '', ''];
+  const year = parts[0] || '';
+  const month = parts[1] || '';
+  const day = parts[2] || '';
+
+  function update(y: string, m: string, d: string) {
+    if (y && m && d) onChange(`${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`);
+    else onChange('');
+  }
+
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  const maxDay = month && year ? new Date(Number(year), Number(month), 0).getDate() : 31;
+  const days = Array.from({ length: maxDay }, (_, i) => String(i + 1));
+  const currentYear = new Date().getFullYear();
+  const years = Array.from({ length: currentYear - 1924 }, (_, i) => String(currentYear - 17 - i));
+
+  const selectClass = "w-full px-3 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm appearance-none";
+
+  return (
+    <div className="grid grid-cols-3 gap-2">
+      <div className="relative">
+        <select value={day} onChange={e => update(year, month, e.target.value)} className={selectClass}>
+          <option value="">Day</option>
+          {days.map(d => <option key={d} value={d}>{d}</option>)}
+        </select>
+        <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </div>
+      <div className="relative">
+        <select value={month} onChange={e => update(year, e.target.value, day)} className={selectClass}>
+          <option value="">Month</option>
+          {MONTHS.map((m, i) => <option key={m} value={String(i + 1).padStart(2,'0')}>{m}</option>)}
+        </select>
+        <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </div>
+      <div className="relative">
+        <select value={year} onChange={e => update(e.target.value, month, day)} className={selectClass}>
+          <option value="">Year</option>
+          {years.map(y => <option key={y} value={y}>{y}</option>)}
+        </select>
+        <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+      </div>
+    </div>
+  );
+}
+
 function SelectField({ icon: Icon, value, onChange, placeholder, options }: {
   icon: React.FC<{ className?: string }>;
   value: string;
@@ -260,6 +306,7 @@ function SelectField({ icon: Icon, value, onChange, placeholder, options }: {
 export default function StarInsureForm() {
   const router = useRouter();
   const turnstileRef = useRef<TurnstileHandle>(null);
+  const formRef = useRef<HTMLDivElement>(null);
 
   const [step, setStep] = useState(1);
   const [form, setForm] = useState<FormData>(INITIAL);
@@ -271,6 +318,17 @@ export default function StarInsureForm() {
   const set = useCallback(<K extends keyof FormData>(key: K, value: FormData[K]) => {
     setForm(prev => ({ ...prev, [key]: value }));
   }, []);
+
+  function goToStep(n: number) {
+    setStep(n);
+    setTimeout(() => {
+      const el = formRef.current;
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.pageYOffset - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }, 50);
+  }
 
   /* ── Rego lookup ── */
   async function handleRegoLookup() {
@@ -398,7 +456,7 @@ export default function StarInsureForm() {
   return (
     <div className="max-w-2xl mx-auto">
       {/* Card */}
-      <div className="bg-white rounded-2xl border-2 border-sky-400 shadow-xl overflow-hidden">
+      <div ref={formRef} className="bg-white rounded-2xl border-2 border-sky-400 shadow-xl overflow-hidden">
         <div className="p-6 sm:p-8">
           <ProgressBar step={step} total={3} />
 
@@ -513,7 +571,7 @@ export default function StarInsureForm() {
 
               <button
                 type="button"
-                onClick={() => setStep(2)}
+                onClick={() => goToStep(2)}
                 disabled={!isStep1Valid()}
                 className="w-full bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 disabled:opacity-40 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 text-base shadow-lg shadow-sky-500/25 hover:shadow-xl hover:-translate-y-0.5"
               >
@@ -549,7 +607,7 @@ export default function StarInsureForm() {
               </div>
 
               <FieldWrapper label="Date of Birth" hint="Required by your insurer for rating purposes.">
-                <Input icon={Calendar} type="date" value={form.dob} onChange={e => set('dob', e.target.value)} required />
+                <DobField value={form.dob} onChange={v => set('dob', v)} />
               </FieldWrapper>
 
               <FieldWrapper label="Street Address">
@@ -659,7 +717,7 @@ export default function StarInsureForm() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => setStep(3)}
+                  onClick={() => goToStep(3)}
                   disabled={!isStep2Valid()}
                   className="flex-1 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 disabled:opacity-40 text-white font-bold py-4 rounded-xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-sky-500/25 hover:shadow-xl hover:-translate-y-0.5"
                 >
