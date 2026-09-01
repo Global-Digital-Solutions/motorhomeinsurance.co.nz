@@ -10,64 +10,40 @@ export const metadata: Metadata = {
 
 export default function MotorHomeQuotePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-slate-50">
 
-      {/* ── Hero with background image ── */}
+      {/* ── Hero ── */}
       <div
-        className="relative py-16 sm:py-24 px-4 overflow-hidden"
+        className="relative px-4 pt-14 pb-28 overflow-hidden"
         style={{
           backgroundImage: 'url(/hero-motorhome-1.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 60%',
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/75 via-slate-900/65 to-slate-900/80" />
-
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/75" />
         <div className="relative max-w-2xl mx-auto text-center text-white">
           <p className="text-sky-400 text-xs font-bold uppercase tracking-widest mb-3">NZ RV Insurance Specialists</p>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
             Motorhome &amp; RV Insurance
           </h1>
-          <p className="text-slate-300 text-base sm:text-lg mb-8 max-w-lg mx-auto">
+          <p className="text-slate-300 text-base sm:text-lg mb-6 max-w-lg mx-auto">
             Tell us about your vehicle and we&apos;ll connect you with a specialist who can tailor the right cover.
           </p>
-
-          {/* Trust signals */}
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 mb-2">
-            {[
-              { icon: '✓', label: 'No obligation' },
-              { icon: '✓', label: 'NZ specialist insurer' },
-              { icon: '✓', label: 'Response within 30 mins' },
-              { icon: '✓', label: 'Takes about 2 minutes' },
-            ].map(({ icon, label }) => (
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+            {['No obligation', 'NZ specialist insurer', 'Response within 30 mins', '2 minutes to complete'].map(label => (
               <div key={label} className="flex items-center gap-1.5 text-sm text-slate-200">
-                <span className="text-sky-400 font-bold">{icon}</span>
-                {label}
+                <span className="text-sky-400 font-bold">✓</span> {label}
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* ── Form section ── */}
-      <div className="bg-slate-50 px-4 py-10 sm:py-14">
+      {/* ── Form — pulled up over the hero ── */}
+      <div className="relative -mt-16 px-4 pb-12">
         <div className="max-w-2xl mx-auto">
           <StarInsureForm />
-
-          {/* Stat row */}
-          <div className="mt-10 grid grid-cols-3 gap-4 text-center border-t border-slate-200 pt-8">
-            {[
-              { n: '2 min', d: 'Average completion' },
-              { n: 'Direct', d: 'NZ specialist insurer' },
-              { n: '30 min', d: 'Typical response' },
-            ].map(({ n, d }) => (
-              <div key={n}>
-                <div className="text-2xl font-black text-slate-900">{n}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{d}</div>
-              </div>
-            ))}
-          </div>
 
           {/* Disclaimer */}
           <p className="mt-8 text-xs text-slate-400 text-center max-w-lg mx-auto leading-relaxed">

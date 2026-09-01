@@ -357,28 +357,6 @@ export default function StarInsureForm() {
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* Header */}
-      <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-6 sm:p-8 mb-6 text-white">
-        <div className="flex items-center gap-3 mb-3">
-          <div className="flex items-center justify-center w-10 h-10 bg-sky-500/20 rounded-full border border-sky-500/30">
-            <Star className="w-5 h-5 text-sky-400" />
-          </div>
-          <div>
-            <p className="text-xs font-bold text-sky-400 uppercase tracking-widest">RV Insurance Specialists</p>
-            <h2 className="text-xl font-bold">Get Your Motorhome Quote</h2>
-          </div>
-        </div>
-        <p className="text-slate-400 text-sm">NZ&apos;s leading RV insurance specialists. Takes about 2 minutes.</p>
-        <div className="flex flex-wrap gap-4 mt-4">
-          {['No obligation', 'NZ specialist insurer', 'Response within 30 mins'].map(t => (
-            <div key={t} className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-sky-400" />
-              <span className="text-xs text-slate-300">{t}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Card */}
       <div className="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden">
         <div className="p-6 sm:p-8">
