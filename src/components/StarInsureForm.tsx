@@ -6,7 +6,7 @@ import TurnstileWidget, { type TurnstileHandle } from './TurnstileWidget';
 import {
   ChevronRight, ChevronLeft, Check, Search, Loader2,
   User, Mail, Phone, MapPin, Calendar, Shield, AlertCircle,
-  Car, Home, Truck, Caravan, Anchor, Star
+  Car, Home, Truck, Caravan, Anchor
 } from 'lucide-react';
 
 /* ─── Types ─────────────────────────────────────────── */
@@ -231,46 +231,47 @@ function Input({ icon: Icon, ...props }: { icon: React.FC<{ className?: string }
 }
 
 function DobField({ value, onChange }: { value: string; onChange: (v: string) => void }) {
-  const parts = value ? value.split('-') : ['', '', ''];
-  const year = parts[0] || '';
-  const month = parts[1] || '';
-  const day = parts[2] || '';
+  const init = value ? value.split('-') : ['', '', ''];
+  const [year,  setYear]  = useState(init[0] || '');
+  const [month, setMonth] = useState(init[1] || '');
+  const [day,   setDay]   = useState(init[2] || '');
 
-  function update(y: string, m: string, d: string) {
+  function commit(y: string, m: string, d: string) {
     if (y && m && d) onChange(`${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`);
     else onChange('');
   }
 
   const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
   const maxDay = month && year ? new Date(Number(year), Number(month), 0).getDate() : 31;
-  const days = Array.from({ length: maxDay }, (_, i) => String(i + 1));
-  const currentYear = new Date().getFullYear();
-  const years = Array.from({ length: currentYear - 1924 }, (_, i) => String(currentYear - 17 - i));
+  const days   = Array.from({ length: maxDay }, (_, i) => String(i + 1));
+  const curY   = new Date().getFullYear();
+  const years  = Array.from({ length: curY - 1924 }, (_, i) => String(curY - 17 - i));
 
-  const selectClass = "w-full px-3 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm appearance-none";
+  const sel = "w-full px-3 py-3 border border-slate-200 rounded-xl bg-white text-slate-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent text-sm appearance-none";
+  const chev = <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>;
 
   return (
     <div className="grid grid-cols-3 gap-2">
       <div className="relative">
-        <select value={day} onChange={e => update(year, month, e.target.value)} className={selectClass}>
+        <select value={day} onChange={e => { const v = e.target.value; setDay(v); commit(year, month, v); }} className={sel}>
           <option value="">Day</option>
-          {days.map(d => <option key={d} value={d}>{d}</option>)}
+          {days.map(d => <option key={d} value={d.padStart(2,'0')}>{d}</option>)}
         </select>
-        <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+        {chev}
       </div>
       <div className="relative">
-        <select value={month} onChange={e => update(year, e.target.value, day)} className={selectClass}>
+        <select value={month} onChange={e => { const v = e.target.value; setMonth(v); commit(year, v, day); }} className={sel}>
           <option value="">Month</option>
           {MONTHS.map((m, i) => <option key={m} value={String(i + 1).padStart(2,'0')}>{m}</option>)}
         </select>
-        <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+        {chev}
       </div>
       <div className="relative">
-        <select value={year} onChange={e => update(e.target.value, month, day)} className={selectClass}>
+        <select value={year} onChange={e => { const v = e.target.value; setYear(v); commit(v, month, day); }} className={sel}>
           <option value="">Year</option>
           {years.map(y => <option key={y} value={y}>{y}</option>)}
         </select>
-        <svg className="absolute right-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+        {chev}
       </div>
     </div>
   );
