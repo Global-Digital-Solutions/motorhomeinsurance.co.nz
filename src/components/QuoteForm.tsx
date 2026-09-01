@@ -37,7 +37,7 @@ const securityBadges = [
 const trustPoints = [
   'Compare quotes from multiple licensed brokers',
   'No obligation — take your time to decide',
-  'ICNZ-registered brokers only',
+  'FSPR-registered advisers only',
   'Personalised advice for your motorhome',
   'Results delivered within 24 hours',
 ];
@@ -262,7 +262,7 @@ export default function QuoteForm({ mode = 'full' }: QuoteFormProps) {
                 <span className="inline-block text-xs font-bold text-sky-400 uppercase tracking-widest mb-3">Why use our service</span>
                 <h3 className="text-2xl font-bold text-white leading-snug">Expert brokers. Impartial advice. No cost to you.</h3>
                 <p className="text-slate-400 mt-3 text-sm leading-relaxed">
-                  We connect you with ICNZ-registered motorhome insurance specialists who do the shopping around for you. One form, multiple competitive quotes.
+                  We connect you with FSPR-registered motorhome insurance specialists who do the shopping around for you. One form, multiple competitive quotes.
                 </p>
               </div>
 
