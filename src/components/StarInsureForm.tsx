@@ -348,7 +348,7 @@ export default function StarInsureForm() {
       if (!res.ok) throw new Error('Submission failed');
       router.push('/thank-you/');
     } catch {
-      setSubmitError('Something went wrong. Please try again or call 0800 250 600.');
+      setSubmitError('Something went wrong. Please try again or contact hello@cover4you.co.nz.');
       setIsSubmitting(false);
     }
   }
